@@ -18,6 +18,7 @@ import { WaterFlowDataSource } from '../viewmodel/WaterFlowDataSource';
 import { CommonConstants as Const } from '../common/constants/CommonConstants';
 import { waterFlowData } from '../viewmodel/HomeViewModel';
 import FlowItemComponent from '../view/FlowItemComponent';
+import { router } from '@kit.ArkUI';
 
 /**
  * Water flow component.
@@ -40,6 +41,12 @@ export default struct WaterFlowComponent {
           FlowItemComponent({ item: item })
 
         }
+        .onClick(()=>{
+          router.pushUrl({
+            url:'pages/ProductDetailPage',
+            params:item
+          })
+        })
       }, (item: ProductItem) => JSON.stringify(item))
     }
     .layoutWeight(Const.WATER_FLOW_LAYOUT_WEIGHT)
