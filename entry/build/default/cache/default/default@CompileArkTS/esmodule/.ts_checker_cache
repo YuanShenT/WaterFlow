@@ -1520,26 +1520,21 @@
       "error": false
     },
     "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/WaterFlowComponent.ets": {
-      "mtimeMs": 1765879370213.942,
+      "mtimeMs": 1765885391424.0198,
       "children": [
-        "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/ProductItem.ets",
-        "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/WaterFlowDataSource.ets",
         "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/common/constants/CommonConstants.ets",
-        "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets",
-        "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/ets/api/@ohos.app.ability.common.d.ts",
-        "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/service/ProductService.ets",
-        "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/MockData.ets"
+        "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/MockData.ets",
+        "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/WaterFlowDataSource.ets",
+        "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/ProductItem.ets",
+        "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets"
       ],
       "parent": [
         "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/pages/HomePage.ets"
       ],
-      "error": true,
-      "errorCodes": [
-        28007
-      ]
+      "error": false
     },
     "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/pages/HomePage.ets": {
-      "mtimeMs": 1765879370213.279,
+      "mtimeMs": 1765885411630.5933,
       "children": [
         "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/common/constants/CommonConstants.ets",
         "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/ClassifyComponent.ets",
@@ -1551,7 +1546,7 @@
       "error": false
     },
     "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/HomeViewModel.ets": {
-      "mtimeMs": 1765879370214.0625,
+      "mtimeMs": 1765885886329.418,
       "children": [
         "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/ProductItem.ets"
       ],
@@ -1562,7 +1557,7 @@
       "error": false
     },
     "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/ProductItem.ets": {
-      "mtimeMs": 1765879370214.2087,
+      "mtimeMs": 1765884887446.03,
       "children": [],
       "parent": [
         "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/HomeViewModel.ets",
@@ -1570,12 +1565,13 @@
         "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/WaterFlowDataSource.ets",
         "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets",
         "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/service/ProductService.ets",
-        "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/pages/ProductDetailPage.ets"
+        "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/pages/ProductDetailPage.ets",
+        "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/MockData.ets"
       ],
       "error": false
     },
     "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/WaterFlowDataSource.ets": {
-      "mtimeMs": 1765879370214.2795,
+      "mtimeMs": 1765885188507.4485,
       "children": [
         "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/ProductItem.ets"
       ],
@@ -1617,9 +1613,9 @@
       ]
     },
     "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/MockData.ets": {
-      "mtimeMs": 1765879370214.137,
+      "mtimeMs": 1765884914195.1086,
       "children": [
-        "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/service/ProductService.ets"
+        "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/ProductItem.ets"
       ],
       "parent": [
         "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/WaterFlowComponent.ets"
@@ -1671,7 +1667,7 @@
       "error": false
     },
     "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/pages/ProductDetailPage.ets": {
-      "mtimeMs": 1765882985121.6006,
+      "mtimeMs": 1765885753766.662,
       "children": [
         "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/ets/api/@ohos.router.d.ts",
         "/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/ProductItem.ets"

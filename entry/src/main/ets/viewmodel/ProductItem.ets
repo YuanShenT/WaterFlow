@@ -1,67 +1,50 @@
-/*
- * Copyright (c) 2023 Huawei Device Co., Ltd.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-export interface IProductItem {
-  /**
-   * Product image url.
-   */
-  image_url: ResourceStr;
-
-  /**
-   * Product name.
-   */
-  name: string;
-
-  /**
-   * Product discount.
-   */
-  discount: string;
-
-  /**
-   * Product price.
-   */
-  price: string;
-
-  /**
-   * Product promotion.
-   */
-  promotion: string;
-
-  /**
-   * Product bonus points.
-   */
-  bonus_points: string;
-}
-
 /**
- * Water flow item.
+ * 商品数据模型
+ * 对应 MockData 中的数据结构
  */
-export default class ProductItem implements IProductItem {
+@Observed
+export default class ProductItem {
+  /** 商品列表展示图片 */
   image_url: ResourceStr;
+
+  /** 商品名称 */
   name: string;
+
+  /** 折扣信息 (e.g. "限时省200") */
   discount: string;
+
+  /** 价格 (e.g. "¥4088") */
   price: string;
+
+  /** 促销标签 (e.g. "限时") */
   promotion: string;
+
+  /** 积分赠送信息 */
   bonus_points: string;
 
-  constructor(props: IProductItem) {
-    this.image_url = props.image_url;
-    this.name = props.name;
-    this.discount = props.discount;
-    this.price = props.price;
-    this.promotion = props.promotion;
-    this.bonus_points = props.bonus_points;
+  /** [新增] 商品详细介绍文案 */
+  description: string;
+
+  /** [新增] 详情页轮播图列表 */
+  detailImages: ResourceStr[];
+
+  constructor(
+    image_url: ResourceStr,
+    name: string,
+    discount: string,
+    price: string,
+    promotion: string,
+    bonus_points: string,
+    description: string,
+    detailImages: ResourceStr[]
+  ) {
+    this.image_url = image_url;
+    this.name = name;
+    this.discount = discount;
+    this.price = price;
+    this.promotion = promotion;
+    this.bonus_points = bonus_points;
+    this.description = description;
+    this.detailImages = detailImages;
   }
 }

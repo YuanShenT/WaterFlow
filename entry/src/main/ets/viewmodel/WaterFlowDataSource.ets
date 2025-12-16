@@ -1,73 +1,75 @@
-/*
- * Copyright (c) 2023 Huawei Device Co., Ltd.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 import ProductItem from './ProductItem';
 
 /**
- * Water flow data source.
+ * 瀑布流数据源实现 IDataSource 接口
+ * 用于 WaterFlow 组件的 LazyForEach 加载
  */
-export class WaterFlowDataSource implements IDataSource {
+export default class WaterFlowDataSource implements IDataSource {
   private dataArray: ProductItem[] = [];
   private listeners: DataChangeListener[] = [];
 
-  /**
-   * Set water flow data array.
-   *
-   * @param {ProductItem[]} productDataArray Displaying water flow Data.
-   */
-  public setDataArray(productDataArray: ProductItem[]): void {
-    this.dataArray = productDataArray;
+  constructor(element: ProductItem[]) {
+    this.dataArray = element;
   }
 
-  /**
-   * Get the total number of data records.
-   */
   public totalCount(): number {
     return this.dataArray.length;
   }
 
-  /**
-   * Get the data corresponding to the index.
-   *
-   * @param {number} index Data index.
-   * @returns Return ProductItem.
-   */
   public getData(index: number): ProductItem {
     return this.dataArray[index];
   }
 
-  /**
-   * Register a controller that changes data.
-   *
-   * @param {DataChangeListener} listener Data change listener
-   */
+  public addData(index: number, data: ProductItem): void {
+    this.dataArray.splice(index, 0, data);
+    this.notifyDataAdd(index);
+  }
+
+  public pushData(data: ProductItem): void {
+    this.dataArray.push(data);
+    this.notifyDataAdd(this.dataArray.length - 1);
+  }
+
   registerDataChangeListener(listener: DataChangeListener): void {
     if (this.listeners.indexOf(listener) < 0) {
       this.listeners.push(listener);
     }
   }
 
-  /**
-   * Register a controller that changes data.
-   *
-   * @param {DataChangeListener} listener  Data change listener
-   */
   unregisterDataChangeListener(listener: DataChangeListener): void {
-    let pos = this.listeners.indexOf(listener);
+    const pos = this.listeners.indexOf(listener);
     if (pos >= 0) {
       this.listeners.splice(pos, 1);
     }
+  }
+
+  notifyDataReload(): void {
+    this.listeners.forEach(listener => {
+      listener.onDataReloaded();
+    })
+  }
+
+  notifyDataAdd(index: number): void {
+    this.listeners.forEach(listener => {
+      listener.onDataAdd(index);
+    })
+  }
+
+  notifyDataChange(index: number): void {
+    this.listeners.forEach(listener => {
+      listener.onDataChange(index);
+    })
+  }
+
+  notifyDataDelete(index: number): void {
+    this.listeners.forEach(listener => {
+      listener.onDataDelete(index);
+    })
+  }
+
+  notifyDataMove(from: number, to: number): void {
+    this.listeners.forEach(listener => {
+      listener.onDataMove(from, to);
+    })
   }
 }

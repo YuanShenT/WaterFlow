@@ -8544,3 +8544,1546 @@ Require stack:
 [2025-12-16T19:03:26.085] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
 [2025-12-16T19:03:26.085] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
 [2025-12-16T19:03:26.087] [DEBUG] debug-file - worker[8] exits with exit code 1.
+[2025-12-16T19:43:43.027] [DEBUG] debug-file - session manager: set active socket. socketId=oY2EC7Ub8UY1aNpEAAAL
+[2025-12-16T19:43:43.029] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2025-12-16T19:43:43.032] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' },
+  optimizationStrategy: 'memory',
+  hotCompile: undefined,
+  hotReloadBuild: undefined
+}
+[2025-12-16T19:43:43.035] [DEBUG] debug-file - Cache service initialization finished in 3 ms 
+[2025-12-16T19:43:43.035] [DEBUG] debug-file - hvigorfile, resolving /Users/zouchaoxu/WaterFlow/hvigorfile.ts
+[2025-12-16T19:43:43.069] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2025-12-16T19:43:43.070] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2025-12-16T19:43:43.076] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2025-12-16T19:43:43.076] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2025-12-16T19:43:43.076] [DEBUG] debug-file - Product 'default' build option initialized
+[2025-12-16T19:43:43.076] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2025-12-16T19:43:43.077] [DEBUG] debug-file - Obtain build option for product 'default'in this build.
+[2025-12-16T19:43:43.077] [DEBUG] debug-file - No signingConfig found, initRemoteHspCache failed.
+[2025-12-16T19:43:43.078] [DEBUG] debug-file - Start recording SDK configuration permission data.
+[2025-12-16T19:43:43.091] [DEBUG] debug-file - Sdk init in 14 ms 
+[2025-12-16T19:43:43.092] [DEBUG] debug-file - Project task initialization takes 1 ms 
+[2025-12-16T19:43:43.092] [DEBUG] debug-file - hvigorfile, resolve finished /Users/zouchaoxu/WaterFlow/hvigorfile.ts
+[2025-12-16T19:43:43.092] [DEBUG] debug-file - hvigorfile, resolving /Users/zouchaoxu/WaterFlow/entry/hvigorfile.ts
+[2025-12-16T19:43:43.094] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2025-12-16T19:43:43.094] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2025-12-16T19:43:43.094] [DEBUG] debug-file - failed to load cangjie to dynamically generate schemas: Error: Cannot find module '@ohos/cangjie-build-support/index'
+Require stack:
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/factory/plugin-factory.js
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/index.js
+- /Users/zouchaoxu/WaterFlow/hvigorfile.ts
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/internal/lifecycle/configuration.js
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/boot/index.js
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/daemon/cluster/worker-process-lifecycle.js
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/daemon/process/daemon-process-boot-script.js
+[2025-12-16T19:43:43.097] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=release
+[2025-12-16T19:43:43.097] [DEBUG] debug-file - Target 'default' config initialized
+[2025-12-16T19:43:43.097] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2025-12-16T19:43:43.097] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2025-12-16T19:43:43.097] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2025-12-16T19:43:43.097] [DEBUG] debug-file - Target 'default' config initialized
+[2025-12-16T19:43:43.097] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2025-12-16T19:43:43.097] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2025-12-16T19:43:43.097] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2025-12-16T19:43:43.097] [DEBUG] debug-file - Target 'default' config initialized
+[2025-12-16T19:43:43.097] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2025-12-16T19:43:43.097] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2025-12-16T19:43:43.097] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2025-12-16T19:43:43.099] [DEBUG] debug-file - Module entry task initialization takes 2 ms 
+[2025-12-16T19:43:43.099] [DEBUG] debug-file - hvigorfile, resolve finished /Users/zouchaoxu/WaterFlow/entry/hvigorfile.ts
+[2025-12-16T19:43:43.131] [DEBUG] debug-file - hvigorfile, resolve hvigorfile dependencies in 32 ms 
+[2025-12-16T19:43:43.131] [DEBUG] debug-file - project has submodules:entry
+[2025-12-16T19:43:43.132] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2025-12-16T19:43:43.133] [DEBUG] debug-file - load to the disk finished
+[2025-12-16T19:43:43.133] [DEBUG] debug-file - Start to initialize dependency information.
+[2025-12-16T19:43:43.133] [DEBUG] debug-file - Module WaterFlow Collected Dependency: 
+[2025-12-16T19:43:43.133] [DEBUG] debug-file - Module WaterFlow's total dependency: 0
+[2025-12-16T19:43:43.134] [DEBUG] debug-file - Start to initialize dependency information.
+[2025-12-16T19:43:43.134] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2025-12-16T19:43:43.134] [DEBUG] debug-file - Module entry's total dependency: 0
+[2025-12-16T19:43:43.135] [DEBUG] debug-file - Configuration phase cost:100 ms 
+[2025-12-16T19:43:43.135] [DEBUG] debug-file - Configuration task cost before running: 105 ms 
+[2025-12-16T19:43:43.136] [DEBUG] debug-file - Executing task :entry:default@PreBuild
+[2025-12-16T19:43:43.137] [DEBUG] debug-file - Task 'entry:default@PreBuild' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:43:43.137] [DEBUG] debug-file - Incremental task entry:default@PreBuild pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.138] [DEBUG] debug-file - entry : default@PreBuild cost memory 0.22057342529296875
+[2025-12-16T19:43:43.138] [INFO] debug-file - UP-TO-DATE :entry:default@PreBuild...  
+[2025-12-16T19:43:43.138] [DEBUG] debug-file - Executing task :entry:default@CreateModuleInfo
+[2025-12-16T19:43:43.138] [DEBUG] debug-file - Task 'entry:default@CreateModuleInfo' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:43:43.138] [DEBUG] debug-file - entry : default@CreateModuleInfo cost memory 0.03983306884765625
+[2025-12-16T19:43:43.138] [DEBUG] debug-file - runTaskFromQueue task cost before running: 107 ms 
+[2025-12-16T19:43:43.138] [INFO] debug-file - Finished :entry:default@CreateModuleInfo... after 1 ms 
+[2025-12-16T19:43:43.138] [DEBUG] debug-file - Executing task :entry:default@GenerateMetadata
+[2025-12-16T19:43:43.138] [DEBUG] debug-file - Task 'entry:default@GenerateMetadata' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:43:43.138] [DEBUG] debug-file - Incremental task entry:default@GenerateMetadata pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.138] [DEBUG] debug-file - entry : default@GenerateMetadata cost memory 0.08077239990234375
+[2025-12-16T19:43:43.138] [INFO] debug-file - UP-TO-DATE :entry:default@GenerateMetadata...  
+[2025-12-16T19:43:43.139] [DEBUG] debug-file - Executing task :entry:default@ConfigureCmake
+[2025-12-16T19:43:43.139] [DEBUG] debug-file - entry : default@ConfigureCmake cost memory 0.0161590576171875
+[2025-12-16T19:43:43.139] [DEBUG] debug-file - runTaskFromQueue task cost before running: 108 ms 
+[2025-12-16T19:43:43.139] [INFO] debug-file - Finished :entry:default@ConfigureCmake... after 1 ms 
+[2025-12-16T19:43:43.139] [DEBUG] debug-file - Executing task :entry:default@MergeProfile
+[2025-12-16T19:43:43.139] [DEBUG] debug-file - Task 'entry:default@MergeProfile' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:43:43.139] [DEBUG] debug-file - Incremental task entry:default@MergeProfile pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.139] [DEBUG] debug-file - entry : default@MergeProfile cost memory 0.11148834228515625
+[2025-12-16T19:43:43.139] [INFO] debug-file - UP-TO-DATE :entry:default@MergeProfile...  
+[2025-12-16T19:43:43.140] [DEBUG] debug-file - Executing task :entry:default@CreateBuildProfile
+[2025-12-16T19:43:43.140] [DEBUG] debug-file - Task 'entry:default@CreateBuildProfile' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:43:43.140] [DEBUG] debug-file - Incremental task entry:default@CreateBuildProfile pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.140] [DEBUG] debug-file - entry : default@CreateBuildProfile cost memory 0.084808349609375
+[2025-12-16T19:43:43.140] [INFO] debug-file - UP-TO-DATE :entry:default@CreateBuildProfile...  
+[2025-12-16T19:43:43.140] [DEBUG] debug-file - Executing task :entry:default@PreCheckSyscap
+[2025-12-16T19:43:43.140] [DEBUG] debug-file - entry : default@PreCheckSyscap cost memory 0.01639556884765625
+[2025-12-16T19:43:43.140] [DEBUG] debug-file - runTaskFromQueue task cost before running: 110 ms 
+[2025-12-16T19:43:43.140] [INFO] debug-file - Finished :entry:default@PreCheckSyscap... after 1 ms 
+[2025-12-16T19:43:43.140] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgContextInfo
+[2025-12-16T19:43:43.141] [DEBUG] debug-file - Task 'entry:default@GeneratePkgContextInfo' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:43:43.141] [DEBUG] debug-file - entry : default@GeneratePkgContextInfo cost memory 0.39925384521484375
+[2025-12-16T19:43:43.141] [DEBUG] debug-file - runTaskFromQueue task cost before running: 111 ms 
+[2025-12-16T19:43:43.142] [INFO] debug-file - Finished :entry:default@GeneratePkgContextInfo... after 2 ms 
+[2025-12-16T19:43:43.142] [DEBUG] debug-file - Executing task :entry:default@ProcessIntegratedHsp
+[2025-12-16T19:43:43.142] [DEBUG] debug-file - entry:default@ProcessIntegratedHsp is not up-to-date, since the output file '/Users/zouchaoxu/WaterFlow/build/cache/default/integrated_hsp/integratedHspCache.json' does not exist.
+[2025-12-16T19:43:43.142] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.142] [DEBUG] debug-file - entry : default@ProcessIntegratedHsp cost memory 0.060272216796875
+[2025-12-16T19:43:43.142] [DEBUG] debug-file - runTaskFromQueue task cost before running: 112 ms 
+[2025-12-16T19:43:43.142] [INFO] debug-file - Finished :entry:default@ProcessIntegratedHsp... after 1 ms 
+[2025-12-16T19:43:43.142] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithCmake
+[2025-12-16T19:43:43.142] [DEBUG] debug-file - entry : default@BuildNativeWithCmake cost memory 0.01720428466796875
+[2025-12-16T19:43:43.142] [DEBUG] debug-file - runTaskFromQueue task cost before running: 112 ms 
+[2025-12-16T19:43:43.142] [INFO] debug-file - Finished :entry:default@BuildNativeWithCmake... after 1 ms 
+[2025-12-16T19:43:43.142] [DEBUG] debug-file - Executing task :entry:default@MakePackInfo
+[2025-12-16T19:43:43.143] [DEBUG] debug-file - Incremental task entry:default@MakePackInfo pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.143] [DEBUG] debug-file - entry : default@MakePackInfo cost memory 0.0880126953125
+[2025-12-16T19:43:43.143] [INFO] debug-file - UP-TO-DATE :entry:default@MakePackInfo...  
+[2025-12-16T19:43:43.143] [DEBUG] debug-file - Executing task :entry:default@SyscapTransform
+[2025-12-16T19:43:43.143] [DEBUG] debug-file - File: '/Users/zouchaoxu/WaterFlow/entry/src/main/syscap.json' from 'sysCapJsonPath' is not exists, just ignore.
+[2025-12-16T19:43:43.143] [DEBUG] debug-file - Task 'entry:default@SyscapTransform' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:43:43.143] [DEBUG] debug-file - entry:default@SyscapTransform is not up-to-date, since the output file '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/syscap/default/rpcid.sc' does not exist.
+[2025-12-16T19:43:43.143] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.143] [DEBUG] debug-file - entry : default@SyscapTransform cost memory 0.11785888671875
+[2025-12-16T19:43:43.143] [DEBUG] debug-file - runTaskFromQueue task cost before running: 113 ms 
+[2025-12-16T19:43:43.143] [INFO] debug-file - Finished :entry:default@SyscapTransform... after 1 ms 
+[2025-12-16T19:43:43.144] [DEBUG] debug-file - Executing task :entry:default@ProcessProfile
+[2025-12-16T19:43:43.144] [DEBUG] debug-file - Task 'entry:default@ProcessProfile' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:43:43.144] [DEBUG] debug-file - Incremental task entry:default@ProcessProfile pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.144] [DEBUG] debug-file - entry : default@ProcessProfile cost memory 0.1151885986328125
+[2025-12-16T19:43:43.144] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessProfile...  
+[2025-12-16T19:43:43.144] [DEBUG] debug-file - Executing task :entry:default@ProcessRouterMap
+[2025-12-16T19:43:43.145] [DEBUG] debug-file - Incremental task entry:default@ProcessRouterMap pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.145] [DEBUG] debug-file - entry : default@ProcessRouterMap cost memory 0.096588134765625
+[2025-12-16T19:43:43.145] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessRouterMap...  
+[2025-12-16T19:43:43.145] [DEBUG] debug-file - Executing task :entry:default@ProcessShareConfig
+[2025-12-16T19:43:43.146] [DEBUG] debug-file - Incremental task entry:default@ProcessShareConfig pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.146] [DEBUG] debug-file - entry : default@ProcessShareConfig cost memory -3.934783935546875
+[2025-12-16T19:43:43.146] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessShareConfig...  
+[2025-12-16T19:43:43.146] [DEBUG] debug-file - Executing task :entry:default@ProcessStartupConfig
+[2025-12-16T19:43:43.146] [DEBUG] debug-file - Task 'entry:default@ProcessStartupConfig' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:43:43.146] [DEBUG] debug-file - entry:default@ProcessStartupConfig is not up-to-date, since the output file '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/startup/default/startup_config.json' does not exist.
+[2025-12-16T19:43:43.147] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.147] [DEBUG] debug-file - entry : default@ProcessStartupConfig cost memory 0.26495361328125
+[2025-12-16T19:43:43.147] [DEBUG] debug-file - runTaskFromQueue task cost before running: 116 ms 
+[2025-12-16T19:43:43.147] [INFO] debug-file - Finished :entry:default@ProcessStartupConfig... after 1 ms 
+[2025-12-16T19:43:43.147] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithNinja
+[2025-12-16T19:43:43.147] [DEBUG] debug-file - entry : default@BuildNativeWithNinja cost memory 0.0216522216796875
+[2025-12-16T19:43:43.147] [DEBUG] debug-file - runTaskFromQueue task cost before running: 116 ms 
+[2025-12-16T19:43:43.147] [INFO] debug-file - Finished :entry:default@BuildNativeWithNinja... after 1 ms 
+[2025-12-16T19:43:43.147] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@ProcessResource
+[2025-12-16T19:43:43.148] [DEBUG] debug-file - Executing task :entry:default@ProcessResource
+[2025-12-16T19:43:43.148] [DEBUG] debug-file - Task 'entry:default@ProcessResource' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:43:43.148] [DEBUG] debug-file - Incremental task entry:default@ProcessResource pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.148] [DEBUG] debug-file - entry : default@ProcessResource cost memory 0.11222076416015625
+[2025-12-16T19:43:43.148] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessResource...  
+[2025-12-16T19:43:43.148] [DEBUG] debug-file - Executing task :entry:default@GenerateLoaderJson
+[2025-12-16T19:43:43.148] [DEBUG] debug-file - Task 'entry:default@GenerateLoaderJson' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:43:43.149] [DEBUG] debug-file - Incremental task entry:default@GenerateLoaderJson pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.149] [DEBUG] debug-file - entry : default@GenerateLoaderJson cost memory 0.35703277587890625
+[2025-12-16T19:43:43.150] [INFO] debug-file - UP-TO-DATE :entry:default@GenerateLoaderJson...  
+[2025-12-16T19:43:43.150] [DEBUG] debug-file - Executing task :entry:default@ProcessLibs
+[2025-12-16T19:43:43.150] [DEBUG] debug-file - Incremental task entry:default@ProcessLibs pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.150] [DEBUG] debug-file - entry : default@ProcessLibs cost memory 0.07894134521484375
+[2025-12-16T19:43:43.150] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessLibs...  
+[2025-12-16T19:43:43.150] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@CompileResource
+[2025-12-16T19:43:43.150] [DEBUG] debug-file - Executing task :entry:default@CompileResource
+[2025-12-16T19:43:43.153] [DEBUG] debug-file - Incremental task entry:default@CompileResource pre-execution cost: 2 ms .
+[2025-12-16T19:43:43.153] [DEBUG] debug-file - entry : default@CompileResource cost memory 0.47499847412109375
+[2025-12-16T19:43:43.153] [INFO] debug-file - UP-TO-DATE :entry:default@CompileResource...  
+[2025-12-16T19:43:43.153] [DEBUG] debug-file - Executing task :entry:default@DoNativeStrip
+[2025-12-16T19:43:43.153] [DEBUG] debug-file - Task 'entry:default@DoNativeStrip' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:43:43.153] [DEBUG] debug-file - Incremental task entry:default@DoNativeStrip pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.153] [DEBUG] debug-file - entry : default@DoNativeStrip cost memory 0.068939208984375
+[2025-12-16T19:43:43.153] [INFO] debug-file - UP-TO-DATE :entry:default@DoNativeStrip...  
+[2025-12-16T19:43:43.153] [DEBUG] debug-file - Executing task :entry:default@CompileArkTS
+[2025-12-16T19:43:43.153] [DEBUG] debug-file - obfuscationOptions: undefined
+[2025-12-16T19:43:43.153] [DEBUG] debug-file - Task 'entry:default@CompileArkTS' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:43:43.154] [DEBUG] debug-file - entry:default@CompileArkTS is not up-to-date, since the input file '/Users/zouchaoxu/WaterFlow/entry/src/main/ets' has been changed.
+[2025-12-16T19:43:43.154] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.156] [DEBUG] debug-file - build config:
+[2025-12-16T19:43:43.156] [DEBUG] debug-file - {
+  moduleType: 'entry',
+  perf: 0,
+  targetName: '.default',
+  packageManagerType: 'ohpm',
+  localPropertiesPath: '/Users/zouchaoxu/WaterFlow/local.properties',
+  isPreview: false,
+  isOhosTest: false,
+  isLocalTest: false,
+  buildMode: 'Debug',
+  hotReloadBuild: undefined,
+  watchMode: 'false',
+  aceProfilePath: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/resources/base/profile',
+  etsLoaderPath: '/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/ets/build-tools/ets-loader',
+  modulePath: '/Users/zouchaoxu/WaterFlow/entry',
+  testFrameworkPar: {
+    testMode: undefined,
+    coveragePathFilter: undefined,
+    coverageMode: undefined
+  },
+  needCoverageInsert: false,
+  debugLine: false,
+  projectTopDir: '/Users/zouchaoxu/WaterFlow',
+  compileSdkVersion: 21,
+  compatibleSdkVersion: 17,
+  originCompatibleSdkVersion: '5.0.5(17)',
+  compatibleSdkVersionStage: undefined,
+  bundleName: 'c***w',
+  etsLoaderVersion: '6.0.1.112',
+  etsLoaderReleaseType: 'Release',
+  aotCompileMode: 'type',
+  apPath: '/Users/zouchaoxu/WaterFlow/entry/modules.ap',
+  entryModuleName: 'entry',
+  entryModuleVersion: '1.0.0',
+  entryPackageName: 'entry',
+  allModuleNameHash: '0d832e44618c81aa5a4d872d57088c7a325af20077ce1c4c1cddfcda6f03a97a',
+  externalApiPaths: [ '/Applications/DevEco-Studio.app/Contents/sdk/default/hms/ets' ],
+  compilerTypes: [],
+  isCrossplatform: false,
+  hvigorPluginFile: undefined,
+  compilePluginPath: undefined,
+  buildGeneratedProfilePath: '/Users/zouchaoxu/WaterFlow/entry/build/default/generated/profile/default',
+  bundleType: 'app',
+  arkTSVersion: undefined,
+  apiVersion: 21,
+  needCompleteSourcesMap: false,
+  isFaMode: false,
+  buildDir: '/Users/zouchaoxu/WaterFlow/entry/build',
+  deviceTypes: [ 'phone' ],
+  pkgContextInfo: undefined,
+  ohPackagePathMap: {},
+  dependencyAliasMap: {},
+  permission: { requestPermissions: undefined, definePermissions: undefined },
+  integratedHsp: false,
+  projectArkOption: undefined,
+  sourceMapDir: undefined,
+  branchElimination: false,
+  transformLib: undefined,
+  tsImportSendable: false,
+  resolveConflictMode: true,
+  depName2RootPath: {},
+  depName2DepInfo: {},
+  rootPathSet: [ '/Users/zouchaoxu/WaterFlow' ],
+  useNativeResolver: true,
+  shouldEmitJs: true,
+  useTscResolve: false,
+  singleFileEmit: false,
+  userProjectConfig: {
+    autoLazyImport: false,
+    allowEmptyBundleName: false,
+    reExportCheckMode: 'noCheck',
+    executionMode: 'memory',
+    usePathPlaceholder: false,
+    writeRollupCache: true,
+    isExpandImportEnabled: false,
+    expandImportExclude: '',
+    lazyImportExclude: '',
+    lazyImportInclude: '',
+    ignoreCrossplatformCheck: false,
+    isHarDeduplicateEnabled: false,
+    enableStrictCheckOHModule: false,
+    useDeclarationFileSignature: false,
+    isPreloadSoEnabled: false
+  },
+  skipOhModulesLint: false,
+  executionMode: 'memory',
+  arkCompileCachePath: '/Users/zouchaoxu/WaterFlow/entry/build/default/cache/default/default@CompileArkTS/esmodule',
+  autoLazyFilter: undefined,
+  isHarDeduplicateEnabled: false,
+  intermediateHarDuplicateDirPath: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/har_duplicate/default',
+  autoLazyImport: false,
+  allowEmptyBundleName: false,
+  reExportCheckMode: 'noCheck',
+  usePathPlaceholder: false,
+  writeRollupCache: true,
+  isExpandImportEnabled: false,
+  expandImportExclude: '',
+  lazyImportExclude: '',
+  lazyImportInclude: '',
+  ignoreCrossplatformCheck: false,
+  enableStrictCheckOHModule: false,
+  useDeclarationFileSignature: false,
+  isPreloadSoEnabled: false,
+  strictMode: undefined,
+  useNormalizedOHMUrl: false,
+  caseSensitiveCheck: false,
+  aceModuleJsonPath: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ark_module.json',
+  appResource: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ResourceTable.txt',
+  rawFileResource: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/resources/rawfile',
+  resourceTableHash: 'd39cbbb7efc1f2ced562bc30af11eee28c993529443b26b61ce8241d5d36bf52',
+  runtimeOS: 'HarmonyOS',
+  sdkInfo: 'false:21:6.0.1.112:Release',
+  aceModuleRoot: '/Users/zouchaoxu/WaterFlow/entry/src/main/ets',
+  compileMode: 'esmodule',
+  aceSuperVisualPath: '/Users/zouchaoxu/WaterFlow/entry/src/main/supervisual',
+  aceBuildJson: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader/default/loader.json',
+  cachePath: '/Users/zouchaoxu/WaterFlow/entry/build/default/cache/default/default@CompileArkTS/esmodule/debug',
+  aceModuleBuild: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader_out/default/ets',
+  supportChunks: true,
+  declaredFilesPath: undefined,
+  shouldCollectDirectImportees: false,
+  isByteCodeHarOptimize: false,
+  expandImportPath: undefined,
+  pkgNameToPkgBriefInfo: {
+    entry: {
+      pkgRoot: '/Users/zouchaoxu/WaterFlow/entry',
+      originalSourceRoots: undefined,
+      sourceRoots: [Array],
+      pkgName: 'entry'
+    }
+  },
+  projectModel: {
+    '/Users/zouchaoxu/WaterFlow/entry/src/main': {
+      moduleName: 'entry',
+      modulePkgPath: '/Users/zouchaoxu/WaterFlow/entry',
+      belongProjectPath: '/Users/zouchaoxu/WaterFlow'
+    },
+    '/Users/zouchaoxu/WaterFlow/entry': {
+      moduleName: 'entry',
+      modulePkgPath: '/Users/zouchaoxu/WaterFlow/entry',
+      belongProjectPath: '/Users/zouchaoxu/WaterFlow'
+    },
+    '/Users/zouchaoxu/WaterFlow': {
+      moduleName: 'WaterFlow',
+      modulePkgPath: '/Users/zouchaoxu/WaterFlow',
+      belongProjectPath: '/Users/zouchaoxu/WaterFlow'
+    }
+  },
+  pkgJsonFileHash: '1af4330f9f73b1410effde44d78453021b93a33aa036a2c2f5498f1b10407de0',
+  allModulePaths: [ '/Users/zouchaoxu/WaterFlow/entry' ],
+  routerMap: {},
+  obfuscationOptions: undefined,
+  byteCodeHarToDependencyKeys: undefined,
+  compileBlockPkg: [],
+  mockParams: {
+    decorator: '@MockSetup',
+    packageName: '@ohos/hamock',
+    etsSourceRootPath: 'src/main/ets',
+    mockConfigPath: undefined,
+    mockConfigKey2ModuleInfo: {},
+    source2ModuleIdMap: {}
+  },
+  copyCodeResourceEnable: true,
+  copyCodeResourceExcludes: [],
+  copyCodeResourceIncludes: undefined,
+  uiTransformOptimization: false,
+  sdkPath: '/Applications/DevEco-Studio.app/Contents/sdk',
+  needPreloadSoFileSet: {},
+  preloadSoFilePath: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/preload/default/preload.json',
+  useSourceHash: false,
+  localModuleParamMap: {},
+  otherPaths: {
+    'entry/*': [ '../*', '../../../build/default/generated/profile/default/*' ]
+  },
+  collectImportersConfig: undefined
+}
+[2025-12-16T19:43:43.156] [DEBUG] debug-file - Compile arkts with external api path: /Applications/DevEco-Studio.app/Contents/sdk/default/hms/ets
+[2025-12-16T19:43:43.156] [DEBUG] debug-file - default@CompileArkTS work[6] is submitted.
+[2025-12-16T19:43:43.156] [DEBUG] debug-file - default@CompileArkTS work[6] is pushed to ready queue.
+[2025-12-16T19:43:43.156] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2025-12-16T19:43:43.156] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2025-12-16T19:43:43.156] [DEBUG] debug-file - A work dispatched to worker[7] failed because unable to get work from ready queue.
+[2025-12-16T19:43:43.156] [DEBUG] debug-file - A work dispatched to worker[6] failed because unable to get work from ready queue.
+[2025-12-16T19:43:43.156] [DEBUG] debug-file - A work dispatched to worker[5] failed because unable to get work from ready queue.
+[2025-12-16T19:43:43.156] [DEBUG] debug-file - default@CompileArkTS work[6] has been dispatched to worker[4].
+[2025-12-16T19:43:43.157] [DEBUG] debug-file - default@CompileArkTS work[6] is dispatched.
+[2025-12-16T19:43:43.157] [DEBUG] debug-file - CopyResources startTime: 437637297700541
+[2025-12-16T19:43:43.157] [DEBUG] debug-file - default@CompileArkTS work[7] is submitted.
+[2025-12-16T19:43:43.157] [DEBUG] debug-file - default@CompileArkTS work[7] is pushed to ready queue.
+[2025-12-16T19:43:43.157] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2025-12-16T19:43:43.157] [DEBUG] debug-file - Create  resident worker with id: 8.
+[2025-12-16T19:43:43.157] [DEBUG] debug-file - default@CompileArkTS work[7] has been dispatched to worker[8].
+[2025-12-16T19:43:43.157] [DEBUG] debug-file - default@CompileArkTS work[7] is dispatched.
+[2025-12-16T19:43:43.157] [DEBUG] debug-file - entry : default@CompileArkTS cost memory 1.1000595092773438
+[2025-12-16T19:43:43.157] [DEBUG] debug-file - Executing task :entry:default@BuildJS
+[2025-12-16T19:43:43.157] [DEBUG] debug-file - Task 'entry:default@BuildJS' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:43:43.158] [DEBUG] debug-file - entry : default@BuildJS cost memory 0.1135406494140625
+[2025-12-16T19:43:43.158] [DEBUG] debug-file - runTaskFromQueue task cost before running: 127 ms 
+[2025-12-16T19:43:43.158] [INFO] debug-file - Finished :entry:default@BuildJS... after 1 ms 
+[2025-12-16T19:43:43.158] [DEBUG] debug-file - Executing task :entry:default@CacheNativeLibs
+[2025-12-16T19:43:43.158] [DEBUG] debug-file - Task 'entry:default@CacheNativeLibs' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:43:43.158] [DEBUG] debug-file - Incremental task entry:default@CacheNativeLibs pre-execution cost: 1 ms .
+[2025-12-16T19:43:43.158] [DEBUG] debug-file - entry : default@CacheNativeLibs cost memory 0.07631683349609375
+[2025-12-16T19:43:43.159] [INFO] debug-file - UP-TO-DATE :entry:default@CacheNativeLibs...  
+[2025-12-16T19:43:43.445] [DEBUG] debug-file - worker[8] has one work done.
+[2025-12-16T19:43:43.445] [DEBUG] debug-file - CopyResources is end, endTime: 437637585859458
+[2025-12-16T19:43:43.445] [DEBUG] debug-file - default@CompileArkTS work[7] done.
+[2025-12-16T19:43:43.445] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2025-12-16T19:43:43.606] [DEBUG] debug-file - Ark compile task finished.finished time is 437637747492583
+[2025-12-16T19:43:43.606] [DEBUG] debug-file - worker[4] has one work error.
+[2025-12-16T19:43:43.607] [DEBUG] debug-file - default@CompileArkTS work[6] failed.
+[2025-12-16T19:43:43.607] [ERROR] debug-file - Failed :entry:default@CompileArkTS... 
+[2025-12-16T19:43:43.607] [WARN] debug-file - 
+[33m1 WARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets:68:61
+ 'animateTo' has been deprecated.
+[39m[39m
+[33m2 WARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets:69:85
+ 'animateTo' has been deprecated.
+[39m[39m
+[33m3 WARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets:73:7
+ 'animateTo' has been deprecated.
+[39m[39m
+[33m4 WARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets:74:26
+ 'animateTo' has been deprecated.
+[39m[39m
+[33m5 WARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets:74:90
+ 'pushUrl' has been deprecated.
+[39m[39m
+[33m6 WARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/pages/ProductDetailPage.ets:21:27
+ 'getParams' has been deprecated.
+[39m[39m
+[33m7 WARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/pages/ProductDetailPage.ets:256:20
+ 'back' has been deprecated.
+[39m[39m
+[2025-12-16T19:43:43.607] [DEBUG] debug-file - hvigor build process will be closed with an error.
+[2025-12-16T19:43:43.607] [DEBUG] debug-file - ERROR: stacktrace = Error: ArkTS Compiler Error
+[31m1 ERROR: [31m10505001 ArkTS Compiler Error
+Error Message: Module '"./ProductItem"' has no exported member 'IProductItem'. Did you mean to use 'import IProductItem from "./ProductItem"' instead? At File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/HomeViewModel.ets:16:10
+[39m
+[39m
+[31m2 ERROR: [31m10505001 ArkTS Compiler Error
+Error Message: Expected 8 arguments, but got 1. At File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/pages/ProductDetailPage.ets:8:33
+[39m
+[39m
+[31mCOMPILE RESULT:FAIL {ERROR:3 WARN:7}[39m
+    at runArkPack (/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-compose/dist/src/arkts-pack.js:1:5721)
+ArkTSCompilerError: ArkTS Compiler Error
+    at throwArkTsCompilerError (/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-compose/dist/src/data/compose-error.js:1:423)
+    at throwErrorIfHasErrorInfo (/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-compose/dist/src/plugins/common-plugin.js:1:4478)
+    at Object.handler (/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-compose/dist/src/plugins/common-plugin.js:1:2547)
+    at /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-base/node_modules/rollup/dist/shared/rollup.js:27765:40
+[2025-12-16T19:43:43.607] [ERROR] debug-file - Error: ArkTS Compiler Error
+[31m1 ERROR: [31m10505001 ArkTS Compiler Error
+Error Message: Module '"./ProductItem"' has no exported member 'IProductItem'. Did you mean to use 'import IProductItem from "./ProductItem"' instead? At File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/HomeViewModel.ets:16:10
+[39m
+[39m
+[31m2 ERROR: [31m10505001 ArkTS Compiler Error
+Error Message: Expected 8 arguments, but got 1. At File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/pages/ProductDetailPage.ets:8:33
+[39m
+[39m
+[31mCOMPILE RESULT:FAIL {ERROR:3 WARN:7}[39m
+    at runArkPack (/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-compose/dist/src/arkts-pack.js:1:5721)
+ArkTSCompilerError: ArkTS Compiler Error
+    at throwArkTsCompilerError (/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-compose/dist/src/data/compose-error.js:1:423)
+    at throwErrorIfHasErrorInfo (/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-compose/dist/src/plugins/common-plugin.js:1:4478)
+    at Object.handler (/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-compose/dist/src/plugins/common-plugin.js:1:2547)
+    at /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-base/node_modules/rollup/dist/shared/rollup.js:27765:40
+[2025-12-16T19:43:43.608] [ERROR] debug-file - BUILD FAILED in 577 ms 
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@PreBuild is up-to-date.
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - Update task entry:default@CreateModuleInfo output file:/Users/zouchaoxu/WaterFlow/entry/build/default/generated/profile/default/ModuleInfo.ts cache.
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - Incremental task entry:default@CreateModuleInfo post-execution cost:1 ms .
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateMetadata is up-to-date.
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MergeProfile is up-to-date.
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CreateBuildProfile is up-to-date.
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - Update task entry:default@GeneratePkgContextInfo output file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader/default/pkgContextInfo.json cache.
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgContextInfo post-execution cost:1 ms .
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - Update task entry:default@ProcessIntegratedHsp output file:/Users/zouchaoxu/WaterFlow/build/cache/default/integrated_hsp/integratedHspCache.json cache.
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp post-execution cost:1 ms .
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MakePackInfo is up-to-date.
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/syscap_tool cache by regenerate.
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/ets/api/device-define cache by regenerate.
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - Update task entry:default@SyscapTransform output file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/syscap/default/rpcid.sc cache.
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform post-execution cost:1 ms .
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessProfile is up-to-date.
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessRouterMap is up-to-date.
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessShareConfig is up-to-date.
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - Update task entry:default@ProcessStartupConfig output file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/startup/default/startup_config.json cache.
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig post-execution cost:1 ms .
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessResource is up-to-date.
+[2025-12-16T19:43:43.608] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateLoaderJson is up-to-date.
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessLibs is up-to-date.
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CompileResource is up-to-date.
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@DoNativeStrip is up-to-date.
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader/default cache by regenerate.
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ResourceTable.txt cache by regenerate.
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ark_module.json cache by regenerate.
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/resources/base/profile cache by regenerate.
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/src/main/ets cache from map.
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/generated/profile/default/BuildProfile.ets cache by regenerate.
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - Update task entry:default@CompileArkTS output file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader_out/default/ets cache.
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS post-execution cost:1 ms .
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader/default cache by regenerate.
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ResourceTable.txt cache by regenerate.
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ark_module.json cache by regenerate.
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/resources/base/profile cache by regenerate.
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - Update task entry:default@BuildJS output file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader_out/default/js cache.
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - Incremental task entry:default@BuildJS post-execution cost:1 ms .
+[2025-12-16T19:43:43.609] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CacheNativeLibs is up-to-date.
+[2025-12-16T19:43:43.613] [DEBUG] debug-file - Cleanup worker 8.
+[2025-12-16T19:43:43.613] [DEBUG] debug-file - Worker 8 has been cleaned up.
+[2025-12-16T19:43:43.613] [DEBUG] debug-file - Current idle worker size: 1.
+[2025-12-16T19:43:43.613] [DEBUG] debug-file - Current resident worker size: 2.
+[2025-12-16T19:43:43.613] [DEBUG] debug-file - hvigor build process will be closed.
+[2025-12-16T19:43:43.615] [DEBUG] debug-file - session manager: send message to worker process.
+[2025-12-16T19:43:43.615] [DEBUG] debug-file - session manager: send message to worker process.
+[2025-12-16T19:43:43.616] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2025-12-16T19:43:43.616] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2025-12-16T19:43:43.617] [DEBUG] debug-file - worker[8] exits with exit code 1.
+[2025-12-16T19:49:24.485] [DEBUG] debug-file - session manager: set active socket. socketId=O2ws2sg0MLPfMS9bAAAN
+[2025-12-16T19:49:24.485] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2025-12-16T19:49:24.486] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' },
+  optimizationStrategy: 'memory',
+  hotCompile: undefined,
+  hotReloadBuild: undefined
+}
+[2025-12-16T19:49:24.488] [DEBUG] debug-file - Cache service initialization finished in 2 ms 
+[2025-12-16T19:49:24.488] [DEBUG] debug-file - hvigorfile, resolving /Users/zouchaoxu/WaterFlow/hvigorfile.ts
+[2025-12-16T19:49:24.490] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2025-12-16T19:49:24.491] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2025-12-16T19:49:24.492] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2025-12-16T19:49:24.492] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2025-12-16T19:49:24.492] [DEBUG] debug-file - Product 'default' build option initialized
+[2025-12-16T19:49:24.492] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2025-12-16T19:49:24.492] [DEBUG] debug-file - Obtain build option for product 'default'in this build.
+[2025-12-16T19:49:24.492] [DEBUG] debug-file - No signingConfig found, initRemoteHspCache failed.
+[2025-12-16T19:49:24.493] [DEBUG] debug-file - Start recording SDK configuration permission data.
+[2025-12-16T19:49:24.505] [DEBUG] debug-file - Sdk init in 14 ms 
+[2025-12-16T19:49:24.506] [DEBUG] debug-file - Project task initialization takes 1 ms 
+[2025-12-16T19:49:24.507] [DEBUG] debug-file - hvigorfile, resolve finished /Users/zouchaoxu/WaterFlow/hvigorfile.ts
+[2025-12-16T19:49:24.507] [DEBUG] debug-file - hvigorfile, resolving /Users/zouchaoxu/WaterFlow/entry/hvigorfile.ts
+[2025-12-16T19:49:24.508] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2025-12-16T19:49:24.508] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2025-12-16T19:49:24.509] [DEBUG] debug-file - failed to load cangjie to dynamically generate schemas: Error: Cannot find module '@ohos/cangjie-build-support/index'
+Require stack:
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/factory/plugin-factory.js
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/index.js
+- /Users/zouchaoxu/WaterFlow/hvigorfile.ts
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/internal/lifecycle/configuration.js
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/boot/index.js
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/daemon/cluster/worker-process-lifecycle.js
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/daemon/process/daemon-process-boot-script.js
+[2025-12-16T19:49:24.510] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=release
+[2025-12-16T19:49:24.510] [DEBUG] debug-file - Target 'default' config initialized
+[2025-12-16T19:49:24.510] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2025-12-16T19:49:24.510] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2025-12-16T19:49:24.510] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2025-12-16T19:49:24.510] [DEBUG] debug-file - Target 'default' config initialized
+[2025-12-16T19:49:24.510] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2025-12-16T19:49:24.510] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2025-12-16T19:49:24.510] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2025-12-16T19:49:24.510] [DEBUG] debug-file - Target 'default' config initialized
+[2025-12-16T19:49:24.510] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2025-12-16T19:49:24.510] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2025-12-16T19:49:24.510] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2025-12-16T19:49:24.511] [DEBUG] debug-file - Module entry task initialization takes 1 ms 
+[2025-12-16T19:49:24.511] [DEBUG] debug-file - hvigorfile, resolve finished /Users/zouchaoxu/WaterFlow/entry/hvigorfile.ts
+[2025-12-16T19:49:24.547] [DEBUG] debug-file - hvigorfile, resolve hvigorfile dependencies in 37 ms 
+[2025-12-16T19:49:24.547] [DEBUG] debug-file - project has submodules:entry
+[2025-12-16T19:49:24.548] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2025-12-16T19:49:24.549] [DEBUG] debug-file - load to the disk finished
+[2025-12-16T19:49:24.549] [DEBUG] debug-file - Start to initialize dependency information.
+[2025-12-16T19:49:24.550] [DEBUG] debug-file - Module WaterFlow Collected Dependency: 
+[2025-12-16T19:49:24.550] [DEBUG] debug-file - Module WaterFlow's total dependency: 0
+[2025-12-16T19:49:24.550] [DEBUG] debug-file - Start to initialize dependency information.
+[2025-12-16T19:49:24.550] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2025-12-16T19:49:24.550] [DEBUG] debug-file - Module entry's total dependency: 0
+[2025-12-16T19:49:24.550] [DEBUG] debug-file - Configuration phase cost:63 ms 
+[2025-12-16T19:49:24.551] [DEBUG] debug-file - Configuration task cost before running: 65 ms 
+[2025-12-16T19:49:24.551] [DEBUG] debug-file - Executing task :entry:default@PreBuild
+[2025-12-16T19:49:24.551] [DEBUG] debug-file - Task 'entry:default@PreBuild' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:49:24.552] [DEBUG] debug-file - Incremental task entry:default@PreBuild pre-execution cost: 1 ms .
+[2025-12-16T19:49:24.552] [DEBUG] debug-file - entry : default@PreBuild cost memory 0.21439361572265625
+[2025-12-16T19:49:24.552] [INFO] debug-file - UP-TO-DATE :entry:default@PreBuild...  
+[2025-12-16T19:49:24.552] [DEBUG] debug-file - Executing task :entry:default@CreateModuleInfo
+[2025-12-16T19:49:24.552] [DEBUG] debug-file - Task 'entry:default@CreateModuleInfo' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:49:24.552] [DEBUG] debug-file - entry : default@CreateModuleInfo cost memory 0.0386199951171875
+[2025-12-16T19:49:24.552] [DEBUG] debug-file - runTaskFromQueue task cost before running: 67 ms 
+[2025-12-16T19:49:24.552] [INFO] debug-file - Finished :entry:default@CreateModuleInfo... after 1 ms 
+[2025-12-16T19:49:24.552] [DEBUG] debug-file - Executing task :entry:default@GenerateMetadata
+[2025-12-16T19:49:24.552] [DEBUG] debug-file - Task 'entry:default@GenerateMetadata' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:49:24.552] [DEBUG] debug-file - Incremental task entry:default@GenerateMetadata pre-execution cost: 1 ms .
+[2025-12-16T19:49:24.552] [DEBUG] debug-file - entry : default@GenerateMetadata cost memory 0.07933807373046875
+[2025-12-16T19:49:24.552] [INFO] debug-file - UP-TO-DATE :entry:default@GenerateMetadata...  
+[2025-12-16T19:49:24.553] [DEBUG] debug-file - Executing task :entry:default@ConfigureCmake
+[2025-12-16T19:49:24.553] [DEBUG] debug-file - entry : default@ConfigureCmake cost memory 0.0157318115234375
+[2025-12-16T19:49:24.553] [DEBUG] debug-file - runTaskFromQueue task cost before running: 67 ms 
+[2025-12-16T19:49:24.553] [INFO] debug-file - Finished :entry:default@ConfigureCmake... after 1 ms 
+[2025-12-16T19:49:24.553] [DEBUG] debug-file - Executing task :entry:default@MergeProfile
+[2025-12-16T19:49:24.553] [DEBUG] debug-file - Task 'entry:default@MergeProfile' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:49:24.553] [DEBUG] debug-file - Incremental task entry:default@MergeProfile pre-execution cost: 1 ms .
+[2025-12-16T19:49:24.553] [DEBUG] debug-file - entry : default@MergeProfile cost memory 0.11011505126953125
+[2025-12-16T19:49:24.553] [INFO] debug-file - UP-TO-DATE :entry:default@MergeProfile...  
+[2025-12-16T19:49:24.553] [DEBUG] debug-file - Executing task :entry:default@CreateBuildProfile
+[2025-12-16T19:49:24.553] [DEBUG] debug-file - Task 'entry:default@CreateBuildProfile' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:49:24.553] [DEBUG] debug-file - Incremental task entry:default@CreateBuildProfile pre-execution cost: 1 ms .
+[2025-12-16T19:49:24.553] [DEBUG] debug-file - entry : default@CreateBuildProfile cost memory 0.0833740234375
+[2025-12-16T19:49:24.553] [INFO] debug-file - UP-TO-DATE :entry:default@CreateBuildProfile...  
+[2025-12-16T19:49:24.553] [DEBUG] debug-file - Executing task :entry:default@PreCheckSyscap
+[2025-12-16T19:49:24.553] [DEBUG] debug-file - entry : default@PreCheckSyscap cost memory 0.01595306396484375
+[2025-12-16T19:49:24.554] [DEBUG] debug-file - runTaskFromQueue task cost before running: 68 ms 
+[2025-12-16T19:49:24.554] [INFO] debug-file - Finished :entry:default@PreCheckSyscap... after 1 ms 
+[2025-12-16T19:49:24.554] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgContextInfo
+[2025-12-16T19:49:24.554] [DEBUG] debug-file - Task 'entry:default@GeneratePkgContextInfo' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:49:24.554] [DEBUG] debug-file - entry : default@GeneratePkgContextInfo cost memory 0.1988677978515625
+[2025-12-16T19:49:24.554] [DEBUG] debug-file - runTaskFromQueue task cost before running: 69 ms 
+[2025-12-16T19:49:24.554] [INFO] debug-file - Finished :entry:default@GeneratePkgContextInfo... after 1 ms 
+[2025-12-16T19:49:24.555] [DEBUG] debug-file - Executing task :entry:default@ProcessIntegratedHsp
+[2025-12-16T19:49:24.555] [DEBUG] debug-file - entry:default@ProcessIntegratedHsp is not up-to-date, since the output file '/Users/zouchaoxu/WaterFlow/build/cache/default/integrated_hsp/integratedHspCache.json' does not exist.
+[2025-12-16T19:49:24.555] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp pre-execution cost: 1 ms .
+[2025-12-16T19:49:24.555] [DEBUG] debug-file - entry : default@ProcessIntegratedHsp cost memory 0.0585174560546875
+[2025-12-16T19:49:24.555] [DEBUG] debug-file - runTaskFromQueue task cost before running: 69 ms 
+[2025-12-16T19:49:24.555] [INFO] debug-file - Finished :entry:default@ProcessIntegratedHsp... after 1 ms 
+[2025-12-16T19:49:24.555] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithCmake
+[2025-12-16T19:49:24.555] [DEBUG] debug-file - entry : default@BuildNativeWithCmake cost memory 0.01677703857421875
+[2025-12-16T19:49:24.555] [DEBUG] debug-file - runTaskFromQueue task cost before running: 70 ms 
+[2025-12-16T19:49:24.555] [INFO] debug-file - Finished :entry:default@BuildNativeWithCmake... after 1 ms 
+[2025-12-16T19:49:24.555] [DEBUG] debug-file - Executing task :entry:default@MakePackInfo
+[2025-12-16T19:49:24.555] [DEBUG] debug-file - Incremental task entry:default@MakePackInfo pre-execution cost: 1 ms .
+[2025-12-16T19:49:24.555] [DEBUG] debug-file - entry : default@MakePackInfo cost memory 0.0868682861328125
+[2025-12-16T19:49:24.555] [INFO] debug-file - UP-TO-DATE :entry:default@MakePackInfo...  
+[2025-12-16T19:49:24.556] [DEBUG] debug-file - Executing task :entry:default@SyscapTransform
+[2025-12-16T19:49:24.556] [DEBUG] debug-file - File: '/Users/zouchaoxu/WaterFlow/entry/src/main/syscap.json' from 'sysCapJsonPath' is not exists, just ignore.
+[2025-12-16T19:49:24.556] [DEBUG] debug-file - Task 'entry:default@SyscapTransform' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:49:24.556] [DEBUG] debug-file - entry:default@SyscapTransform is not up-to-date, since the output file '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/syscap/default/rpcid.sc' does not exist.
+[2025-12-16T19:49:24.556] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform pre-execution cost: 1 ms .
+[2025-12-16T19:49:24.556] [DEBUG] debug-file - entry : default@SyscapTransform cost memory 0.11614990234375
+[2025-12-16T19:49:24.556] [DEBUG] debug-file - runTaskFromQueue task cost before running: 70 ms 
+[2025-12-16T19:49:24.556] [INFO] debug-file - Finished :entry:default@SyscapTransform... after 1 ms 
+[2025-12-16T19:49:24.556] [DEBUG] debug-file - Executing task :entry:default@ProcessProfile
+[2025-12-16T19:49:24.556] [DEBUG] debug-file - Task 'entry:default@ProcessProfile' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:49:24.556] [DEBUG] debug-file - Incremental task entry:default@ProcessProfile pre-execution cost: 1 ms .
+[2025-12-16T19:49:24.557] [DEBUG] debug-file - entry : default@ProcessProfile cost memory 0.11295318603515625
+[2025-12-16T19:49:24.557] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessProfile...  
+[2025-12-16T19:49:24.557] [DEBUG] debug-file - Executing task :entry:default@ProcessRouterMap
+[2025-12-16T19:49:24.557] [DEBUG] debug-file - Incremental task entry:default@ProcessRouterMap pre-execution cost: 1 ms .
+[2025-12-16T19:49:24.557] [DEBUG] debug-file - entry : default@ProcessRouterMap cost memory 0.095703125
+[2025-12-16T19:49:24.557] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessRouterMap...  
+[2025-12-16T19:49:24.557] [DEBUG] debug-file - Executing task :entry:default@ProcessShareConfig
+[2025-12-16T19:49:24.557] [DEBUG] debug-file - Incremental task entry:default@ProcessShareConfig pre-execution cost: 1 ms .
+[2025-12-16T19:49:24.557] [DEBUG] debug-file - entry : default@ProcessShareConfig cost memory 0.08562469482421875
+[2025-12-16T19:49:24.557] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessShareConfig...  
+[2025-12-16T19:49:24.558] [DEBUG] debug-file - Executing task :entry:default@ProcessStartupConfig
+[2025-12-16T19:49:24.558] [DEBUG] debug-file - Task 'entry:default@ProcessStartupConfig' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:49:24.558] [DEBUG] debug-file - entry:default@ProcessStartupConfig is not up-to-date, since the output file '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/startup/default/startup_config.json' does not exist.
+[2025-12-16T19:49:24.558] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig pre-execution cost: 1 ms .
+[2025-12-16T19:49:24.558] [DEBUG] debug-file - entry : default@ProcessStartupConfig cost memory 0.08812713623046875
+[2025-12-16T19:49:24.558] [DEBUG] debug-file - runTaskFromQueue task cost before running: 72 ms 
+[2025-12-16T19:49:24.558] [INFO] debug-file - Finished :entry:default@ProcessStartupConfig... after 1 ms 
+[2025-12-16T19:49:24.558] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithNinja
+[2025-12-16T19:49:24.558] [DEBUG] debug-file - entry : default@BuildNativeWithNinja cost memory 0.0212249755859375
+[2025-12-16T19:49:24.558] [DEBUG] debug-file - runTaskFromQueue task cost before running: 73 ms 
+[2025-12-16T19:49:24.558] [INFO] debug-file - Finished :entry:default@BuildNativeWithNinja... after 1 ms 
+[2025-12-16T19:49:24.558] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@ProcessResource
+[2025-12-16T19:49:24.558] [DEBUG] debug-file - Executing task :entry:default@ProcessResource
+[2025-12-16T19:49:24.559] [DEBUG] debug-file - Task 'entry:default@ProcessResource' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:49:24.559] [DEBUG] debug-file - Incremental task entry:default@ProcessResource pre-execution cost: 1 ms .
+[2025-12-16T19:49:24.559] [DEBUG] debug-file - entry : default@ProcessResource cost memory 0.11075592041015625
+[2025-12-16T19:49:24.559] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessResource...  
+[2025-12-16T19:49:24.559] [DEBUG] debug-file - Executing task :entry:default@GenerateLoaderJson
+[2025-12-16T19:49:24.559] [DEBUG] debug-file - Task 'entry:default@GenerateLoaderJson' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:49:24.560] [DEBUG] debug-file - Incremental task entry:default@GenerateLoaderJson pre-execution cost: 1 ms .
+[2025-12-16T19:49:24.560] [DEBUG] debug-file - entry : default@GenerateLoaderJson cost memory 0.35498046875
+[2025-12-16T19:49:24.561] [INFO] debug-file - UP-TO-DATE :entry:default@GenerateLoaderJson...  
+[2025-12-16T19:49:24.561] [DEBUG] debug-file - Executing task :entry:default@ProcessLibs
+[2025-12-16T19:49:24.562] [DEBUG] debug-file - Incremental task entry:default@ProcessLibs pre-execution cost: 1 ms .
+[2025-12-16T19:49:24.562] [DEBUG] debug-file - entry : default@ProcessLibs cost memory -4.857231140136719
+[2025-12-16T19:49:24.562] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessLibs...  
+[2025-12-16T19:49:24.562] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@CompileResource
+[2025-12-16T19:49:24.562] [DEBUG] debug-file - Executing task :entry:default@CompileResource
+[2025-12-16T19:49:24.564] [DEBUG] debug-file - Incremental task entry:default@CompileResource pre-execution cost: 2 ms .
+[2025-12-16T19:49:24.564] [DEBUG] debug-file - entry : default@CompileResource cost memory 0.47588348388671875
+[2025-12-16T19:49:24.565] [INFO] debug-file - UP-TO-DATE :entry:default@CompileResource...  
+[2025-12-16T19:49:24.565] [DEBUG] debug-file - Executing task :entry:default@DoNativeStrip
+[2025-12-16T19:49:24.565] [DEBUG] debug-file - Task 'entry:default@DoNativeStrip' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:49:24.565] [DEBUG] debug-file - Incremental task entry:default@DoNativeStrip pre-execution cost: 1 ms .
+[2025-12-16T19:49:24.565] [DEBUG] debug-file - entry : default@DoNativeStrip cost memory 0.06731414794921875
+[2025-12-16T19:49:24.565] [INFO] debug-file - UP-TO-DATE :entry:default@DoNativeStrip...  
+[2025-12-16T19:49:24.565] [DEBUG] debug-file - Executing task :entry:default@CompileArkTS
+[2025-12-16T19:49:24.565] [DEBUG] debug-file - obfuscationOptions: undefined
+[2025-12-16T19:49:24.565] [DEBUG] debug-file - Task 'entry:default@CompileArkTS' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - build config:
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - {
+  moduleType: 'entry',
+  perf: 0,
+  targetName: '.default',
+  packageManagerType: 'ohpm',
+  localPropertiesPath: '/Users/zouchaoxu/WaterFlow/local.properties',
+  isPreview: false,
+  isOhosTest: false,
+  isLocalTest: false,
+  buildMode: 'Debug',
+  hotReloadBuild: undefined,
+  watchMode: 'false',
+  aceProfilePath: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/resources/base/profile',
+  etsLoaderPath: '/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/ets/build-tools/ets-loader',
+  modulePath: '/Users/zouchaoxu/WaterFlow/entry',
+  testFrameworkPar: {
+    testMode: undefined,
+    coveragePathFilter: undefined,
+    coverageMode: undefined
+  },
+  needCoverageInsert: false,
+  debugLine: false,
+  projectTopDir: '/Users/zouchaoxu/WaterFlow',
+  compileSdkVersion: 21,
+  compatibleSdkVersion: 17,
+  originCompatibleSdkVersion: '5.0.5(17)',
+  compatibleSdkVersionStage: undefined,
+  bundleName: 'c***w',
+  etsLoaderVersion: '6.0.1.112',
+  etsLoaderReleaseType: 'Release',
+  aotCompileMode: 'type',
+  apPath: '/Users/zouchaoxu/WaterFlow/entry/modules.ap',
+  entryModuleName: 'entry',
+  entryModuleVersion: '1.0.0',
+  entryPackageName: 'entry',
+  allModuleNameHash: '0d832e44618c81aa5a4d872d57088c7a325af20077ce1c4c1cddfcda6f03a97a',
+  externalApiPaths: [ '/Applications/DevEco-Studio.app/Contents/sdk/default/hms/ets' ],
+  compilerTypes: [],
+  isCrossplatform: false,
+  hvigorPluginFile: undefined,
+  compilePluginPath: undefined,
+  buildGeneratedProfilePath: '/Users/zouchaoxu/WaterFlow/entry/build/default/generated/profile/default',
+  bundleType: 'app',
+  arkTSVersion: undefined,
+  apiVersion: 21,
+  needCompleteSourcesMap: false,
+  isFaMode: false,
+  buildDir: '/Users/zouchaoxu/WaterFlow/entry/build',
+  deviceTypes: [ 'phone' ],
+  pkgContextInfo: undefined,
+  ohPackagePathMap: {},
+  dependencyAliasMap: {},
+  permission: { requestPermissions: undefined, definePermissions: undefined },
+  integratedHsp: false,
+  projectArkOption: undefined,
+  sourceMapDir: undefined,
+  branchElimination: false,
+  transformLib: undefined,
+  tsImportSendable: false,
+  resolveConflictMode: true,
+  depName2RootPath: {},
+  depName2DepInfo: {},
+  rootPathSet: [ '/Users/zouchaoxu/WaterFlow' ],
+  useNativeResolver: true,
+  shouldEmitJs: true,
+  useTscResolve: false,
+  singleFileEmit: false,
+  userProjectConfig: {
+    autoLazyImport: false,
+    allowEmptyBundleName: false,
+    reExportCheckMode: 'noCheck',
+    executionMode: 'memory',
+    usePathPlaceholder: false,
+    writeRollupCache: true,
+    isExpandImportEnabled: false,
+    expandImportExclude: '',
+    lazyImportExclude: '',
+    lazyImportInclude: '',
+    ignoreCrossplatformCheck: false,
+    isHarDeduplicateEnabled: false,
+    enableStrictCheckOHModule: false,
+    useDeclarationFileSignature: false,
+    isPreloadSoEnabled: false
+  },
+  skipOhModulesLint: false,
+  executionMode: 'memory',
+  arkCompileCachePath: '/Users/zouchaoxu/WaterFlow/entry/build/default/cache/default/default@CompileArkTS/esmodule',
+  autoLazyFilter: undefined,
+  isHarDeduplicateEnabled: false,
+  intermediateHarDuplicateDirPath: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/har_duplicate/default',
+  autoLazyImport: false,
+  allowEmptyBundleName: false,
+  reExportCheckMode: 'noCheck',
+  usePathPlaceholder: false,
+  writeRollupCache: true,
+  isExpandImportEnabled: false,
+  expandImportExclude: '',
+  lazyImportExclude: '',
+  lazyImportInclude: '',
+  ignoreCrossplatformCheck: false,
+  enableStrictCheckOHModule: false,
+  useDeclarationFileSignature: false,
+  isPreloadSoEnabled: false,
+  strictMode: undefined,
+  useNormalizedOHMUrl: false,
+  caseSensitiveCheck: false,
+  aceModuleJsonPath: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ark_module.json',
+  appResource: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ResourceTable.txt',
+  rawFileResource: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/resources/rawfile',
+  resourceTableHash: 'd39cbbb7efc1f2ced562bc30af11eee28c993529443b26b61ce8241d5d36bf52',
+  runtimeOS: 'HarmonyOS',
+  sdkInfo: 'false:21:6.0.1.112:Release',
+  aceModuleRoot: '/Users/zouchaoxu/WaterFlow/entry/src/main/ets',
+  compileMode: 'esmodule',
+  aceSuperVisualPath: '/Users/zouchaoxu/WaterFlow/entry/src/main/supervisual',
+  aceBuildJson: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader/default/loader.json',
+  cachePath: '/Users/zouchaoxu/WaterFlow/entry/build/default/cache/default/default@CompileArkTS/esmodule/debug',
+  aceModuleBuild: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader_out/default/ets',
+  supportChunks: true,
+  declaredFilesPath: undefined,
+  shouldCollectDirectImportees: false,
+  isByteCodeHarOptimize: false,
+  expandImportPath: undefined,
+  pkgNameToPkgBriefInfo: {
+    entry: {
+      pkgRoot: '/Users/zouchaoxu/WaterFlow/entry',
+      originalSourceRoots: undefined,
+      sourceRoots: [Array],
+      pkgName: 'entry'
+    }
+  },
+  projectModel: {
+    '/Users/zouchaoxu/WaterFlow/entry/src/main': {
+      moduleName: 'entry',
+      modulePkgPath: '/Users/zouchaoxu/WaterFlow/entry',
+      belongProjectPath: '/Users/zouchaoxu/WaterFlow'
+    },
+    '/Users/zouchaoxu/WaterFlow/entry': {
+      moduleName: 'entry',
+      modulePkgPath: '/Users/zouchaoxu/WaterFlow/entry',
+      belongProjectPath: '/Users/zouchaoxu/WaterFlow'
+    },
+    '/Users/zouchaoxu/WaterFlow': {
+      moduleName: 'WaterFlow',
+      modulePkgPath: '/Users/zouchaoxu/WaterFlow',
+      belongProjectPath: '/Users/zouchaoxu/WaterFlow'
+    }
+  },
+  pkgJsonFileHash: '1af4330f9f73b1410effde44d78453021b93a33aa036a2c2f5498f1b10407de0',
+  allModulePaths: [ '/Users/zouchaoxu/WaterFlow/entry' ],
+  routerMap: {},
+  obfuscationOptions: undefined,
+  byteCodeHarToDependencyKeys: undefined,
+  compileBlockPkg: [],
+  mockParams: {
+    decorator: '@MockSetup',
+    packageName: '@ohos/hamock',
+    etsSourceRootPath: 'src/main/ets',
+    mockConfigPath: undefined,
+    mockConfigKey2ModuleInfo: {},
+    source2ModuleIdMap: {}
+  },
+  copyCodeResourceEnable: true,
+  copyCodeResourceExcludes: [],
+  copyCodeResourceIncludes: undefined,
+  uiTransformOptimization: false,
+  sdkPath: '/Applications/DevEco-Studio.app/Contents/sdk',
+  needPreloadSoFileSet: {},
+  preloadSoFilePath: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/preload/default/preload.json',
+  useSourceHash: false,
+  localModuleParamMap: {},
+  otherPaths: {
+    'entry/*': [ '../*', '../../../build/default/generated/profile/default/*' ]
+  },
+  collectImportersConfig: undefined
+}
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - Compile arkts with external api path: /Applications/DevEco-Studio.app/Contents/sdk/default/hms/ets
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - default@CompileArkTS work[8] is submitted.
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - default@CompileArkTS work[8] is pushed to ready queue.
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - A work dispatched to worker[7] failed because unable to get work from ready queue.
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - A work dispatched to worker[6] failed because unable to get work from ready queue.
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - A work dispatched to worker[5] failed because unable to get work from ready queue.
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - default@CompileArkTS work[8] has been dispatched to worker[4].
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - default@CompileArkTS work[8] is dispatched.
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - CopyResources startTime: 437978707768250
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - default@CompileArkTS work[9] is submitted.
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - default@CompileArkTS work[9] is pushed to ready queue.
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2025-12-16T19:49:24.567] [DEBUG] debug-file - Create  resident worker with id: 8.
+[2025-12-16T19:49:24.568] [DEBUG] debug-file - default@CompileArkTS work[9] has been dispatched to worker[8].
+[2025-12-16T19:49:24.568] [DEBUG] debug-file - default@CompileArkTS work[9] is dispatched.
+[2025-12-16T19:49:24.568] [DEBUG] debug-file - entry : default@CompileArkTS cost memory 0.9110946655273438
+[2025-12-16T19:49:24.568] [DEBUG] debug-file - Executing task :entry:default@BuildJS
+[2025-12-16T19:49:24.568] [DEBUG] debug-file - Task 'entry:default@BuildJS' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:49:24.568] [DEBUG] debug-file - entry : default@BuildJS cost memory 0.10875701904296875
+[2025-12-16T19:49:24.568] [DEBUG] debug-file - runTaskFromQueue task cost before running: 83 ms 
+[2025-12-16T19:49:24.568] [INFO] debug-file - Finished :entry:default@BuildJS... after 1 ms 
+[2025-12-16T19:49:24.568] [DEBUG] debug-file - Executing task :entry:default@CacheNativeLibs
+[2025-12-16T19:49:24.568] [DEBUG] debug-file - Task 'entry:default@CacheNativeLibs' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:49:24.569] [DEBUG] debug-file - Incremental task entry:default@CacheNativeLibs pre-execution cost: 1 ms .
+[2025-12-16T19:49:24.569] [DEBUG] debug-file - entry : default@CacheNativeLibs cost memory 0.07485198974609375
+[2025-12-16T19:49:24.569] [INFO] debug-file - UP-TO-DATE :entry:default@CacheNativeLibs...  
+[2025-12-16T19:49:24.816] [DEBUG] debug-file - worker[8] has one work done.
+[2025-12-16T19:49:24.817] [DEBUG] debug-file - CopyResources is end, endTime: 437978957184458
+[2025-12-16T19:49:24.817] [DEBUG] debug-file - default@CompileArkTS work[9] done.
+[2025-12-16T19:49:24.817] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2025-12-16T19:49:24.847] [DEBUG] debug-file - Ark compile task finished.finished time is 437978987132083
+[2025-12-16T19:49:24.847] [DEBUG] debug-file - worker[4] has one work error.
+[2025-12-16T19:49:24.847] [DEBUG] debug-file - default@CompileArkTS work[8] failed.
+[2025-12-16T19:49:24.847] [ERROR] debug-file - Failed :entry:default@CompileArkTS... 
+[2025-12-16T19:49:24.847] [WARN] debug-file - 
+[33m1 WARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets:68:61
+ 'animateTo' has been deprecated.
+[39m[39m
+[33m2 WARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets:69:85
+ 'animateTo' has been deprecated.
+[39m[39m
+[33m3 WARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets:73:7
+ 'animateTo' has been deprecated.
+[39m[39m
+[33m4 WARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets:74:26
+ 'animateTo' has been deprecated.
+[39m[39m
+[33m5 WARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets:74:90
+ 'pushUrl' has been deprecated.
+[39m[39m
+[33m6 WARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/pages/ProductDetailPage.ets:20:27
+ 'getParams' has been deprecated.
+[39m[39m
+[33m7 WARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/pages/ProductDetailPage.ets:148:35
+ 'back' has been deprecated.
+[39m[39m
+[2025-12-16T19:49:24.847] [DEBUG] debug-file - hvigor build process will be closed with an error.
+[2025-12-16T19:49:24.847] [DEBUG] debug-file - ERROR: stacktrace = Error: ArkTS Compiler Error
+[31m1 ERROR: [31m10505001 ArkTS Compiler Error
+Error Message: Module '"./ProductItem"' has no exported member 'IProductItem'. Did you mean to use 'import IProductItem from "./ProductItem"' instead? At File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/HomeViewModel.ets:16:10
+[39m
+[39m
+[31mCOMPILE RESULT:FAIL {ERROR:2 WARN:7}[39m
+    at runArkPack (/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-compose/dist/src/arkts-pack.js:1:5721)
+ArkTSCompilerError: ArkTS Compiler Error
+    at throwArkTsCompilerError (/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-compose/dist/src/data/compose-error.js:1:423)
+    at throwErrorIfHasErrorInfo (/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-compose/dist/src/plugins/common-plugin.js:1:4478)
+    at Object.handler (/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-compose/dist/src/plugins/common-plugin.js:1:2547)
+    at /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-base/node_modules/rollup/dist/shared/rollup.js:27765:40
+[2025-12-16T19:49:24.847] [ERROR] debug-file - Error: ArkTS Compiler Error
+[31m1 ERROR: [31m10505001 ArkTS Compiler Error
+Error Message: Module '"./ProductItem"' has no exported member 'IProductItem'. Did you mean to use 'import IProductItem from "./ProductItem"' instead? At File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/HomeViewModel.ets:16:10
+[39m
+[39m
+[31mCOMPILE RESULT:FAIL {ERROR:2 WARN:7}[39m
+    at runArkPack (/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-compose/dist/src/arkts-pack.js:1:5721)
+ArkTSCompilerError: ArkTS Compiler Error
+    at throwArkTsCompilerError (/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-compose/dist/src/data/compose-error.js:1:423)
+    at throwErrorIfHasErrorInfo (/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-compose/dist/src/plugins/common-plugin.js:1:4478)
+    at Object.handler (/Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-compose/dist/src/plugins/common-plugin.js:1:2547)
+    at /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/node_modules/@ohos/hvigor-arkts-base/node_modules/rollup/dist/shared/rollup.js:27765:40
+[2025-12-16T19:49:24.847] [ERROR] debug-file - BUILD FAILED in 362 ms 
+[2025-12-16T19:49:24.847] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@PreBuild is up-to-date.
+[2025-12-16T19:49:24.847] [DEBUG] debug-file - Update task entry:default@CreateModuleInfo output file:/Users/zouchaoxu/WaterFlow/entry/build/default/generated/profile/default/ModuleInfo.ts cache.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - Incremental task entry:default@CreateModuleInfo post-execution cost:1 ms .
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateMetadata is up-to-date.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MergeProfile is up-to-date.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CreateBuildProfile is up-to-date.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - Update task entry:default@GeneratePkgContextInfo output file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader/default/pkgContextInfo.json cache.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgContextInfo post-execution cost:1 ms .
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - Update task entry:default@ProcessIntegratedHsp output file:/Users/zouchaoxu/WaterFlow/build/cache/default/integrated_hsp/integratedHspCache.json cache.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp post-execution cost:1 ms .
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MakePackInfo is up-to-date.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/syscap_tool cache by regenerate.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/ets/api/device-define cache by regenerate.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - Update task entry:default@SyscapTransform output file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/syscap/default/rpcid.sc cache.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform post-execution cost:1 ms .
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessProfile is up-to-date.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessRouterMap is up-to-date.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessShareConfig is up-to-date.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - Update task entry:default@ProcessStartupConfig output file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/startup/default/startup_config.json cache.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig post-execution cost:1 ms .
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessResource is up-to-date.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateLoaderJson is up-to-date.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessLibs is up-to-date.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CompileResource is up-to-date.
+[2025-12-16T19:49:24.848] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@DoNativeStrip is up-to-date.
+[2025-12-16T19:49:24.849] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader/default cache by regenerate.
+[2025-12-16T19:49:24.849] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ResourceTable.txt cache by regenerate.
+[2025-12-16T19:49:24.849] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ark_module.json cache by regenerate.
+[2025-12-16T19:49:24.849] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/resources/base/profile cache by regenerate.
+[2025-12-16T19:49:24.849] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/src/main/ets cache by regenerate.
+[2025-12-16T19:49:24.849] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/generated/profile/default/BuildProfile.ets cache by regenerate.
+[2025-12-16T19:49:24.849] [DEBUG] debug-file - Update task entry:default@CompileArkTS output file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader_out/default/ets cache.
+[2025-12-16T19:49:24.849] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS post-execution cost:1 ms .
+[2025-12-16T19:49:24.849] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader/default cache by regenerate.
+[2025-12-16T19:49:24.849] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ResourceTable.txt cache by regenerate.
+[2025-12-16T19:49:24.849] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ark_module.json cache by regenerate.
+[2025-12-16T19:49:24.849] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/resources/base/profile cache by regenerate.
+[2025-12-16T19:49:24.850] [DEBUG] debug-file - Update task entry:default@BuildJS output file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader_out/default/js cache.
+[2025-12-16T19:49:24.850] [DEBUG] debug-file - Incremental task entry:default@BuildJS post-execution cost:1 ms .
+[2025-12-16T19:49:24.850] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CacheNativeLibs is up-to-date.
+[2025-12-16T19:49:24.852] [DEBUG] debug-file - Cleanup worker 8.
+[2025-12-16T19:49:24.853] [DEBUG] debug-file - Worker 8 has been cleaned up.
+[2025-12-16T19:49:24.853] [DEBUG] debug-file - Current idle worker size: 1.
+[2025-12-16T19:49:24.853] [DEBUG] debug-file - Current resident worker size: 2.
+[2025-12-16T19:49:24.853] [DEBUG] debug-file - hvigor build process will be closed.
+[2025-12-16T19:49:24.855] [DEBUG] debug-file - session manager: send message to worker process.
+[2025-12-16T19:49:24.856] [DEBUG] debug-file - session manager: send message to worker process.
+[2025-12-16T19:49:24.856] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2025-12-16T19:49:24.856] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2025-12-16T19:49:24.856] [DEBUG] debug-file - worker[8] exits with exit code 1.
+[2025-12-16T19:54:38.532] [DEBUG] debug-file - session manager: set active socket. socketId=XVikrjOFIoJ43CJ6AAAP
+[2025-12-16T19:54:38.533] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2025-12-16T19:54:38.534] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' },
+  optimizationStrategy: 'memory',
+  hotCompile: undefined,
+  hotReloadBuild: undefined
+}
+[2025-12-16T19:54:38.536] [DEBUG] debug-file - Cache service initialization finished in 2 ms 
+[2025-12-16T19:54:38.536] [DEBUG] debug-file - hvigorfile, resolving /Users/zouchaoxu/WaterFlow/hvigorfile.ts
+[2025-12-16T19:54:38.539] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2025-12-16T19:54:38.539] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2025-12-16T19:54:38.540] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2025-12-16T19:54:38.540] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2025-12-16T19:54:38.540] [DEBUG] debug-file - Product 'default' build option initialized
+[2025-12-16T19:54:38.540] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2025-12-16T19:54:38.540] [DEBUG] debug-file - Obtain build option for product 'default'in this build.
+[2025-12-16T19:54:38.540] [DEBUG] debug-file - No signingConfig found, initRemoteHspCache failed.
+[2025-12-16T19:54:38.541] [DEBUG] debug-file - Start recording SDK configuration permission data.
+[2025-12-16T19:54:38.552] [DEBUG] debug-file - Sdk init in 12 ms 
+[2025-12-16T19:54:38.553] [DEBUG] debug-file - Project task initialization takes 1 ms 
+[2025-12-16T19:54:38.553] [DEBUG] debug-file - hvigorfile, resolve finished /Users/zouchaoxu/WaterFlow/hvigorfile.ts
+[2025-12-16T19:54:38.554] [DEBUG] debug-file - hvigorfile, resolving /Users/zouchaoxu/WaterFlow/entry/hvigorfile.ts
+[2025-12-16T19:54:38.555] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2025-12-16T19:54:38.555] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2025-12-16T19:54:38.555] [DEBUG] debug-file - failed to load cangjie to dynamically generate schemas: Error: Cannot find module '@ohos/cangjie-build-support/index'
+Require stack:
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/src/plugin/factory/plugin-factory.js
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor-ohos-plugin/index.js
+- /Users/zouchaoxu/WaterFlow/hvigorfile.ts
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/internal/lifecycle/configuration.js
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/boot/index.js
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/daemon/cluster/worker-process-lifecycle.js
+- /Applications/DevEco-Studio.app/Contents/tools/hvigor/hvigor/src/base/daemon/process/daemon-process-boot-script.js
+[2025-12-16T19:54:38.556] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=release
+[2025-12-16T19:54:38.556] [DEBUG] debug-file - Target 'default' config initialized
+[2025-12-16T19:54:38.556] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2025-12-16T19:54:38.556] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2025-12-16T19:54:38.556] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2025-12-16T19:54:38.556] [DEBUG] debug-file - Target 'default' config initialized
+[2025-12-16T19:54:38.556] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2025-12-16T19:54:38.556] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2025-12-16T19:54:38.556] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2025-12-16T19:54:38.556] [DEBUG] debug-file - Target 'default' config initialized
+[2025-12-16T19:54:38.556] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2025-12-16T19:54:38.557] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2025-12-16T19:54:38.557] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2025-12-16T19:54:38.557] [DEBUG] debug-file - Module entry task initialization takes 1 ms 
+[2025-12-16T19:54:38.557] [DEBUG] debug-file - hvigorfile, resolve finished /Users/zouchaoxu/WaterFlow/entry/hvigorfile.ts
+[2025-12-16T19:54:38.593] [DEBUG] debug-file - hvigorfile, resolve hvigorfile dependencies in 36 ms 
+[2025-12-16T19:54:38.593] [DEBUG] debug-file - project has submodules:entry
+[2025-12-16T19:54:38.593] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2025-12-16T19:54:38.594] [DEBUG] debug-file - load to the disk finished
+[2025-12-16T19:54:38.594] [DEBUG] debug-file - Start to initialize dependency information.
+[2025-12-16T19:54:38.594] [DEBUG] debug-file - Module WaterFlow Collected Dependency: 
+[2025-12-16T19:54:38.594] [DEBUG] debug-file - Module WaterFlow's total dependency: 0
+[2025-12-16T19:54:38.595] [DEBUG] debug-file - Start to initialize dependency information.
+[2025-12-16T19:54:38.595] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2025-12-16T19:54:38.595] [DEBUG] debug-file - Module entry's total dependency: 0
+[2025-12-16T19:54:38.595] [DEBUG] debug-file - Configuration phase cost:60 ms 
+[2025-12-16T19:54:38.596] [DEBUG] debug-file - Configuration task cost before running: 63 ms 
+[2025-12-16T19:54:38.596] [DEBUG] debug-file - Executing task :entry:default@PreBuild
+[2025-12-16T19:54:38.596] [DEBUG] debug-file - Task 'entry:default@PreBuild' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:38.597] [DEBUG] debug-file - Incremental task entry:default@PreBuild pre-execution cost: 1 ms .
+[2025-12-16T19:54:38.597] [DEBUG] debug-file - entry : default@PreBuild cost memory 0.2148895263671875
+[2025-12-16T19:54:38.597] [INFO] debug-file - UP-TO-DATE :entry:default@PreBuild...  
+[2025-12-16T19:54:38.597] [DEBUG] debug-file - Executing task :entry:default@CreateModuleInfo
+[2025-12-16T19:54:38.597] [DEBUG] debug-file - Task 'entry:default@CreateModuleInfo' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:38.597] [DEBUG] debug-file - entry : default@CreateModuleInfo cost memory 0.0386199951171875
+[2025-12-16T19:54:38.597] [DEBUG] debug-file - runTaskFromQueue task cost before running: 64 ms 
+[2025-12-16T19:54:38.597] [INFO] debug-file - Finished :entry:default@CreateModuleInfo... after 1 ms 
+[2025-12-16T19:54:38.597] [DEBUG] debug-file - Executing task :entry:default@GenerateMetadata
+[2025-12-16T19:54:38.597] [DEBUG] debug-file - Task 'entry:default@GenerateMetadata' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:38.597] [DEBUG] debug-file - Incremental task entry:default@GenerateMetadata pre-execution cost: 1 ms .
+[2025-12-16T19:54:38.597] [DEBUG] debug-file - entry : default@GenerateMetadata cost memory 0.0815582275390625
+[2025-12-16T19:54:38.597] [INFO] debug-file - UP-TO-DATE :entry:default@GenerateMetadata...  
+[2025-12-16T19:54:38.598] [DEBUG] debug-file - Executing task :entry:default@ConfigureCmake
+[2025-12-16T19:54:38.598] [DEBUG] debug-file - entry : default@ConfigureCmake cost memory 0.0157318115234375
+[2025-12-16T19:54:38.598] [DEBUG] debug-file - runTaskFromQueue task cost before running: 65 ms 
+[2025-12-16T19:54:38.598] [INFO] debug-file - Finished :entry:default@ConfigureCmake... after 1 ms 
+[2025-12-16T19:54:38.598] [DEBUG] debug-file - Executing task :entry:default@MergeProfile
+[2025-12-16T19:54:38.598] [DEBUG] debug-file - Task 'entry:default@MergeProfile' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:38.598] [DEBUG] debug-file - Incremental task entry:default@MergeProfile pre-execution cost: 1 ms .
+[2025-12-16T19:54:38.598] [DEBUG] debug-file - entry : default@MergeProfile cost memory 0.1101531982421875
+[2025-12-16T19:54:38.598] [INFO] debug-file - UP-TO-DATE :entry:default@MergeProfile...  
+[2025-12-16T19:54:38.598] [DEBUG] debug-file - Executing task :entry:default@CreateBuildProfile
+[2025-12-16T19:54:38.598] [DEBUG] debug-file - Task 'entry:default@CreateBuildProfile' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:38.598] [DEBUG] debug-file - Incremental task entry:default@CreateBuildProfile pre-execution cost: 1 ms .
+[2025-12-16T19:54:38.598] [DEBUG] debug-file - entry : default@CreateBuildProfile cost memory 0.08580780029296875
+[2025-12-16T19:54:38.598] [INFO] debug-file - UP-TO-DATE :entry:default@CreateBuildProfile...  
+[2025-12-16T19:54:38.599] [DEBUG] debug-file - Executing task :entry:default@PreCheckSyscap
+[2025-12-16T19:54:38.599] [DEBUG] debug-file - entry : default@PreCheckSyscap cost memory 0.01595306396484375
+[2025-12-16T19:54:38.599] [DEBUG] debug-file - runTaskFromQueue task cost before running: 66 ms 
+[2025-12-16T19:54:38.599] [INFO] debug-file - Finished :entry:default@PreCheckSyscap... after 1 ms 
+[2025-12-16T19:54:38.599] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgContextInfo
+[2025-12-16T19:54:38.599] [DEBUG] debug-file - Task 'entry:default@GeneratePkgContextInfo' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:38.599] [DEBUG] debug-file - entry : default@GeneratePkgContextInfo cost memory 0.20755767822265625
+[2025-12-16T19:54:38.599] [DEBUG] debug-file - runTaskFromQueue task cost before running: 67 ms 
+[2025-12-16T19:54:38.600] [INFO] debug-file - Finished :entry:default@GeneratePkgContextInfo... after 1 ms 
+[2025-12-16T19:54:38.600] [DEBUG] debug-file - Executing task :entry:default@ProcessIntegratedHsp
+[2025-12-16T19:54:38.600] [DEBUG] debug-file - entry:default@ProcessIntegratedHsp is not up-to-date, since the output file '/Users/zouchaoxu/WaterFlow/build/cache/default/integrated_hsp/integratedHspCache.json' does not exist.
+[2025-12-16T19:54:38.600] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp pre-execution cost: 1 ms .
+[2025-12-16T19:54:38.600] [DEBUG] debug-file - entry : default@ProcessIntegratedHsp cost memory 0.05849456787109375
+[2025-12-16T19:54:38.600] [DEBUG] debug-file - runTaskFromQueue task cost before running: 67 ms 
+[2025-12-16T19:54:38.600] [INFO] debug-file - Finished :entry:default@ProcessIntegratedHsp... after 1 ms 
+[2025-12-16T19:54:38.600] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithCmake
+[2025-12-16T19:54:38.600] [DEBUG] debug-file - entry : default@BuildNativeWithCmake cost memory 0.01677703857421875
+[2025-12-16T19:54:38.600] [DEBUG] debug-file - runTaskFromQueue task cost before running: 67 ms 
+[2025-12-16T19:54:38.600] [INFO] debug-file - Finished :entry:default@BuildNativeWithCmake... after 1 ms 
+[2025-12-16T19:54:38.600] [DEBUG] debug-file - Executing task :entry:default@MakePackInfo
+[2025-12-16T19:54:38.600] [DEBUG] debug-file - Incremental task entry:default@MakePackInfo pre-execution cost: 1 ms .
+[2025-12-16T19:54:38.601] [DEBUG] debug-file - entry : default@MakePackInfo cost memory 0.0889129638671875
+[2025-12-16T19:54:38.601] [INFO] debug-file - UP-TO-DATE :entry:default@MakePackInfo...  
+[2025-12-16T19:54:38.601] [DEBUG] debug-file - Executing task :entry:default@SyscapTransform
+[2025-12-16T19:54:38.601] [DEBUG] debug-file - File: '/Users/zouchaoxu/WaterFlow/entry/src/main/syscap.json' from 'sysCapJsonPath' is not exists, just ignore.
+[2025-12-16T19:54:38.601] [DEBUG] debug-file - Task 'entry:default@SyscapTransform' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:38.601] [DEBUG] debug-file - entry:default@SyscapTransform is not up-to-date, since the output file '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/syscap/default/rpcid.sc' does not exist.
+[2025-12-16T19:54:38.601] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform pre-execution cost: 1 ms .
+[2025-12-16T19:54:38.601] [DEBUG] debug-file - entry : default@SyscapTransform cost memory 0.12085723876953125
+[2025-12-16T19:54:38.601] [DEBUG] debug-file - runTaskFromQueue task cost before running: 68 ms 
+[2025-12-16T19:54:38.601] [INFO] debug-file - Finished :entry:default@SyscapTransform... after 1 ms 
+[2025-12-16T19:54:38.601] [DEBUG] debug-file - Executing task :entry:default@ProcessProfile
+[2025-12-16T19:54:38.602] [DEBUG] debug-file - Task 'entry:default@ProcessProfile' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:38.602] [DEBUG] debug-file - Incremental task entry:default@ProcessProfile pre-execution cost: 1 ms .
+[2025-12-16T19:54:38.602] [DEBUG] debug-file - entry : default@ProcessProfile cost memory 0.1153106689453125
+[2025-12-16T19:54:38.602] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessProfile...  
+[2025-12-16T19:54:38.602] [DEBUG] debug-file - Executing task :entry:default@ProcessRouterMap
+[2025-12-16T19:54:38.602] [DEBUG] debug-file - Incremental task entry:default@ProcessRouterMap pre-execution cost: 1 ms .
+[2025-12-16T19:54:38.602] [DEBUG] debug-file - entry : default@ProcessRouterMap cost memory 0.095703125
+[2025-12-16T19:54:38.602] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessRouterMap...  
+[2025-12-16T19:54:38.602] [DEBUG] debug-file - Executing task :entry:default@ProcessShareConfig
+[2025-12-16T19:54:38.602] [DEBUG] debug-file - Incremental task entry:default@ProcessShareConfig pre-execution cost: 1 ms .
+[2025-12-16T19:54:38.602] [DEBUG] debug-file - entry : default@ProcessShareConfig cost memory 0.0856475830078125
+[2025-12-16T19:54:38.603] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessShareConfig...  
+[2025-12-16T19:54:38.603] [DEBUG] debug-file - Executing task :entry:default@ProcessStartupConfig
+[2025-12-16T19:54:38.603] [DEBUG] debug-file - Task 'entry:default@ProcessStartupConfig' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:38.603] [DEBUG] debug-file - entry:default@ProcessStartupConfig is not up-to-date, since the output file '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/startup/default/startup_config.json' does not exist.
+[2025-12-16T19:54:38.603] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig pre-execution cost: 1 ms .
+[2025-12-16T19:54:38.603] [DEBUG] debug-file - entry : default@ProcessStartupConfig cost memory 0.088134765625
+[2025-12-16T19:54:38.603] [DEBUG] debug-file - runTaskFromQueue task cost before running: 70 ms 
+[2025-12-16T19:54:38.603] [INFO] debug-file - Finished :entry:default@ProcessStartupConfig... after 1 ms 
+[2025-12-16T19:54:38.603] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithNinja
+[2025-12-16T19:54:38.603] [DEBUG] debug-file - entry : default@BuildNativeWithNinja cost memory 0.0212249755859375
+[2025-12-16T19:54:38.603] [DEBUG] debug-file - runTaskFromQueue task cost before running: 70 ms 
+[2025-12-16T19:54:38.603] [INFO] debug-file - Finished :entry:default@BuildNativeWithNinja... after 1 ms 
+[2025-12-16T19:54:38.603] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@ProcessResource
+[2025-12-16T19:54:38.604] [DEBUG] debug-file - Executing task :entry:default@ProcessResource
+[2025-12-16T19:54:38.604] [DEBUG] debug-file - Task 'entry:default@ProcessResource' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:38.604] [DEBUG] debug-file - Incremental task entry:default@ProcessResource pre-execution cost: 1 ms .
+[2025-12-16T19:54:38.604] [DEBUG] debug-file - entry : default@ProcessResource cost memory 0.110809326171875
+[2025-12-16T19:54:38.604] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessResource...  
+[2025-12-16T19:54:38.604] [DEBUG] debug-file - Executing task :entry:default@GenerateLoaderJson
+[2025-12-16T19:54:38.604] [DEBUG] debug-file - Task 'entry:default@GenerateLoaderJson' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:38.605] [DEBUG] debug-file - Incremental task entry:default@GenerateLoaderJson pre-execution cost: 1 ms .
+[2025-12-16T19:54:38.605] [DEBUG] debug-file - entry : default@GenerateLoaderJson cost memory 0.3530426025390625
+[2025-12-16T19:54:38.605] [INFO] debug-file - UP-TO-DATE :entry:default@GenerateLoaderJson...  
+[2025-12-16T19:54:38.606] [DEBUG] debug-file - Executing task :entry:default@ProcessLibs
+[2025-12-16T19:54:38.607] [DEBUG] debug-file - Incremental task entry:default@ProcessLibs pre-execution cost: 1 ms .
+[2025-12-16T19:54:38.607] [DEBUG] debug-file - entry : default@ProcessLibs cost memory -4.8518829345703125
+[2025-12-16T19:54:38.607] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessLibs...  
+[2025-12-16T19:54:38.607] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@CompileResource
+[2025-12-16T19:54:38.607] [DEBUG] debug-file - Executing task :entry:default@CompileResource
+[2025-12-16T19:54:38.609] [DEBUG] debug-file - Incremental task entry:default@CompileResource pre-execution cost: 2 ms .
+[2025-12-16T19:54:38.609] [DEBUG] debug-file - entry : default@CompileResource cost memory 0.469085693359375
+[2025-12-16T19:54:38.609] [INFO] debug-file - UP-TO-DATE :entry:default@CompileResource...  
+[2025-12-16T19:54:38.609] [DEBUG] debug-file - Executing task :entry:default@DoNativeStrip
+[2025-12-16T19:54:38.609] [DEBUG] debug-file - Task 'entry:default@DoNativeStrip' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:38.609] [DEBUG] debug-file - Incremental task entry:default@DoNativeStrip pre-execution cost: 1 ms .
+[2025-12-16T19:54:38.610] [DEBUG] debug-file - entry : default@DoNativeStrip cost memory 0.06731414794921875
+[2025-12-16T19:54:38.610] [INFO] debug-file - UP-TO-DATE :entry:default@DoNativeStrip...  
+[2025-12-16T19:54:38.610] [DEBUG] debug-file - Executing task :entry:default@CompileArkTS
+[2025-12-16T19:54:38.610] [DEBUG] debug-file - obfuscationOptions: undefined
+[2025-12-16T19:54:38.610] [DEBUG] debug-file - Task 'entry:default@CompileArkTS' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:38.611] [DEBUG] debug-file - build config:
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - {
+  moduleType: 'entry',
+  perf: 0,
+  targetName: '.default',
+  packageManagerType: 'ohpm',
+  localPropertiesPath: '/Users/zouchaoxu/WaterFlow/local.properties',
+  isPreview: false,
+  isOhosTest: false,
+  isLocalTest: false,
+  buildMode: 'Debug',
+  hotReloadBuild: undefined,
+  watchMode: 'false',
+  aceProfilePath: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/resources/base/profile',
+  etsLoaderPath: '/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/ets/build-tools/ets-loader',
+  modulePath: '/Users/zouchaoxu/WaterFlow/entry',
+  testFrameworkPar: {
+    testMode: undefined,
+    coveragePathFilter: undefined,
+    coverageMode: undefined
+  },
+  needCoverageInsert: false,
+  debugLine: false,
+  projectTopDir: '/Users/zouchaoxu/WaterFlow',
+  compileSdkVersion: 21,
+  compatibleSdkVersion: 17,
+  originCompatibleSdkVersion: '5.0.5(17)',
+  compatibleSdkVersionStage: undefined,
+  bundleName: 'c***w',
+  etsLoaderVersion: '6.0.1.112',
+  etsLoaderReleaseType: 'Release',
+  aotCompileMode: 'type',
+  apPath: '/Users/zouchaoxu/WaterFlow/entry/modules.ap',
+  entryModuleName: 'entry',
+  entryModuleVersion: '1.0.0',
+  entryPackageName: 'entry',
+  allModuleNameHash: '0d832e44618c81aa5a4d872d57088c7a325af20077ce1c4c1cddfcda6f03a97a',
+  externalApiPaths: [ '/Applications/DevEco-Studio.app/Contents/sdk/default/hms/ets' ],
+  compilerTypes: [],
+  isCrossplatform: false,
+  hvigorPluginFile: undefined,
+  compilePluginPath: undefined,
+  buildGeneratedProfilePath: '/Users/zouchaoxu/WaterFlow/entry/build/default/generated/profile/default',
+  bundleType: 'app',
+  arkTSVersion: undefined,
+  apiVersion: 21,
+  needCompleteSourcesMap: false,
+  isFaMode: false,
+  buildDir: '/Users/zouchaoxu/WaterFlow/entry/build',
+  deviceTypes: [ 'phone' ],
+  pkgContextInfo: undefined,
+  ohPackagePathMap: {},
+  dependencyAliasMap: {},
+  permission: { requestPermissions: undefined, definePermissions: undefined },
+  integratedHsp: false,
+  projectArkOption: undefined,
+  sourceMapDir: undefined,
+  branchElimination: false,
+  transformLib: undefined,
+  tsImportSendable: false,
+  resolveConflictMode: true,
+  depName2RootPath: {},
+  depName2DepInfo: {},
+  rootPathSet: [ '/Users/zouchaoxu/WaterFlow' ],
+  useNativeResolver: true,
+  shouldEmitJs: true,
+  useTscResolve: false,
+  singleFileEmit: false,
+  userProjectConfig: {
+    autoLazyImport: false,
+    allowEmptyBundleName: false,
+    reExportCheckMode: 'noCheck',
+    executionMode: 'memory',
+    usePathPlaceholder: false,
+    writeRollupCache: true,
+    isExpandImportEnabled: false,
+    expandImportExclude: '',
+    lazyImportExclude: '',
+    lazyImportInclude: '',
+    ignoreCrossplatformCheck: false,
+    isHarDeduplicateEnabled: false,
+    enableStrictCheckOHModule: false,
+    useDeclarationFileSignature: false,
+    isPreloadSoEnabled: false
+  },
+  skipOhModulesLint: false,
+  executionMode: 'memory',
+  arkCompileCachePath: '/Users/zouchaoxu/WaterFlow/entry/build/default/cache/default/default@CompileArkTS/esmodule',
+  autoLazyFilter: undefined,
+  isHarDeduplicateEnabled: false,
+  intermediateHarDuplicateDirPath: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/har_duplicate/default',
+  autoLazyImport: false,
+  allowEmptyBundleName: false,
+  reExportCheckMode: 'noCheck',
+  usePathPlaceholder: false,
+  writeRollupCache: true,
+  isExpandImportEnabled: false,
+  expandImportExclude: '',
+  lazyImportExclude: '',
+  lazyImportInclude: '',
+  ignoreCrossplatformCheck: false,
+  enableStrictCheckOHModule: false,
+  useDeclarationFileSignature: false,
+  isPreloadSoEnabled: false,
+  strictMode: undefined,
+  useNormalizedOHMUrl: false,
+  caseSensitiveCheck: false,
+  aceModuleJsonPath: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ark_module.json',
+  appResource: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ResourceTable.txt',
+  rawFileResource: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/resources/rawfile',
+  resourceTableHash: 'd39cbbb7efc1f2ced562bc30af11eee28c993529443b26b61ce8241d5d36bf52',
+  runtimeOS: 'HarmonyOS',
+  sdkInfo: 'false:21:6.0.1.112:Release',
+  aceModuleRoot: '/Users/zouchaoxu/WaterFlow/entry/src/main/ets',
+  compileMode: 'esmodule',
+  aceSuperVisualPath: '/Users/zouchaoxu/WaterFlow/entry/src/main/supervisual',
+  aceBuildJson: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader/default/loader.json',
+  cachePath: '/Users/zouchaoxu/WaterFlow/entry/build/default/cache/default/default@CompileArkTS/esmodule/debug',
+  aceModuleBuild: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader_out/default/ets',
+  supportChunks: true,
+  declaredFilesPath: undefined,
+  shouldCollectDirectImportees: false,
+  isByteCodeHarOptimize: false,
+  expandImportPath: undefined,
+  pkgNameToPkgBriefInfo: {
+    entry: {
+      pkgRoot: '/Users/zouchaoxu/WaterFlow/entry',
+      originalSourceRoots: undefined,
+      sourceRoots: [Array],
+      pkgName: 'entry'
+    }
+  },
+  projectModel: {
+    '/Users/zouchaoxu/WaterFlow/entry/src/main': {
+      moduleName: 'entry',
+      modulePkgPath: '/Users/zouchaoxu/WaterFlow/entry',
+      belongProjectPath: '/Users/zouchaoxu/WaterFlow'
+    },
+    '/Users/zouchaoxu/WaterFlow/entry': {
+      moduleName: 'entry',
+      modulePkgPath: '/Users/zouchaoxu/WaterFlow/entry',
+      belongProjectPath: '/Users/zouchaoxu/WaterFlow'
+    },
+    '/Users/zouchaoxu/WaterFlow': {
+      moduleName: 'WaterFlow',
+      modulePkgPath: '/Users/zouchaoxu/WaterFlow',
+      belongProjectPath: '/Users/zouchaoxu/WaterFlow'
+    }
+  },
+  pkgJsonFileHash: '1af4330f9f73b1410effde44d78453021b93a33aa036a2c2f5498f1b10407de0',
+  allModulePaths: [ '/Users/zouchaoxu/WaterFlow/entry' ],
+  routerMap: {},
+  obfuscationOptions: undefined,
+  byteCodeHarToDependencyKeys: undefined,
+  compileBlockPkg: [],
+  mockParams: {
+    decorator: '@MockSetup',
+    packageName: '@ohos/hamock',
+    etsSourceRootPath: 'src/main/ets',
+    mockConfigPath: undefined,
+    mockConfigKey2ModuleInfo: {},
+    source2ModuleIdMap: {}
+  },
+  copyCodeResourceEnable: true,
+  copyCodeResourceExcludes: [],
+  copyCodeResourceIncludes: undefined,
+  uiTransformOptimization: false,
+  sdkPath: '/Applications/DevEco-Studio.app/Contents/sdk',
+  needPreloadSoFileSet: {},
+  preloadSoFilePath: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/preload/default/preload.json',
+  useSourceHash: false,
+  localModuleParamMap: {},
+  otherPaths: {
+    'entry/*': [ '../*', '../../../build/default/generated/profile/default/*' ]
+  },
+  collectImportersConfig: undefined
+}
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - Compile arkts with external api path: /Applications/DevEco-Studio.app/Contents/sdk/default/hms/ets
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - default@CompileArkTS work[10] is submitted.
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - default@CompileArkTS work[10] is pushed to ready queue.
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - A work dispatched to worker[7] failed because unable to get work from ready queue.
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - A work dispatched to worker[6] failed because unable to get work from ready queue.
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - A work dispatched to worker[5] failed because unable to get work from ready queue.
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - default@CompileArkTS work[10] has been dispatched to worker[4].
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - default@CompileArkTS work[10] is dispatched.
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - CopyResources startTime: 438292751905375
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - default@CompileArkTS work[11] is submitted.
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - default@CompileArkTS work[11] is pushed to ready queue.
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - Create  resident worker with id: 8.
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - default@CompileArkTS work[11] has been dispatched to worker[8].
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - default@CompileArkTS work[11] is dispatched.
+[2025-12-16T19:54:38.612] [DEBUG] debug-file - entry : default@CompileArkTS cost memory 0.9020614624023438
+[2025-12-16T19:54:38.613] [DEBUG] debug-file - Executing task :entry:default@BuildJS
+[2025-12-16T19:54:38.613] [DEBUG] debug-file - Task 'entry:default@BuildJS' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:38.613] [DEBUG] debug-file - entry : default@BuildJS cost memory 0.11293792724609375
+[2025-12-16T19:54:38.613] [DEBUG] debug-file - runTaskFromQueue task cost before running: 80 ms 
+[2025-12-16T19:54:38.613] [INFO] debug-file - Finished :entry:default@BuildJS... after 1 ms 
+[2025-12-16T19:54:38.613] [DEBUG] debug-file - Executing task :entry:default@CacheNativeLibs
+[2025-12-16T19:54:38.613] [DEBUG] debug-file - Task 'entry:default@CacheNativeLibs' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:38.614] [DEBUG] debug-file - Incremental task entry:default@CacheNativeLibs pre-execution cost: 1 ms .
+[2025-12-16T19:54:38.614] [DEBUG] debug-file - entry : default@CacheNativeLibs cost memory 0.07485198974609375
+[2025-12-16T19:54:38.614] [INFO] debug-file - UP-TO-DATE :entry:default@CacheNativeLibs...  
+[2025-12-16T19:54:38.849] [DEBUG] debug-file - worker[8] has one work done.
+[2025-12-16T19:54:38.849] [DEBUG] debug-file - CopyResources is end, endTime: 438292989006625
+[2025-12-16T19:54:38.849] [DEBUG] debug-file - default@CompileArkTS work[11] done.
+[2025-12-16T19:54:38.849] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2025-12-16T19:54:39.400] [WARN] debug-file - [33mWARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets:68:61
+ 'animateTo' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets:69:85
+ 'animateTo' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets:73:7
+ 'animateTo' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets:74:26
+ 'animateTo' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/view/FlowItemComponent.ets:74:90
+ 'pushUrl' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/pages/ProductDetailPage.ets:20:27
+ 'getParams' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: /Users/zouchaoxu/WaterFlow/entry/src/main/ets/pages/ProductDetailPage.ets:148:35
+ 'back' has been deprecated.
+[39m[39m
+
+[2025-12-16T19:54:39.400] [DEBUG] debug-file - Ark compile task finished.finished time is 438293540097166
+[2025-12-16T19:54:39.401] [DEBUG] debug-file - worker[4] has one work done.
+[2025-12-16T19:54:39.401] [DEBUG] debug-file - default@CompileArkTS work[10] done.
+[2025-12-16T19:54:39.401] [DEBUG] debug-file - A work dispatched to worker[4] failed because unable to get work from ready queue.
+[2025-12-16T19:54:39.402] [INFO] debug-file - Finished :entry:default@CompileArkTS... after 791 ms 
+[2025-12-16T19:54:39.402] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgModuleJson
+[2025-12-16T19:54:39.402] [DEBUG] debug-file - File: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/preload/default/preload.json' from 'preloadSoJsonPath' is not exists, just ignore.
+[2025-12-16T19:54:39.402] [DEBUG] debug-file - Error occurs while handling @Input 'shouldDeduplicateHar': The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
+[2025-12-16T19:54:39.402] [DEBUG] debug-file - Task 'entry:default@GeneratePkgModuleJson' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:39.402] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgModuleJson pre-execution cost: 1 ms .
+[2025-12-16T19:54:39.402] [DEBUG] debug-file - entry : default@GeneratePkgModuleJson cost memory 0.09712982177734375
+[2025-12-16T19:54:39.402] [INFO] debug-file - UP-TO-DATE :entry:default@GeneratePkgModuleJson...  
+[2025-12-16T19:54:39.403] [DEBUG] debug-file - Executing task :entry:default@ProcessCompiledResources
+[2025-12-16T19:54:39.403] [DEBUG] debug-file - File: '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/preload/default/preload.json' from 'preloadSoJsonPath' is not exists, just ignore.
+[2025-12-16T19:54:39.403] [DEBUG] debug-file - Task 'entry:default@ProcessCompiledResources' cost while wrapping incremental declarations: 1 ms 
+[2025-12-16T19:54:39.403] [DEBUG] debug-file - entry : default@ProcessCompiledResources cost memory 0.0587310791015625
+[2025-12-16T19:54:39.403] [DEBUG] debug-file - runTaskFromQueue task cost before running: 870 ms 
+[2025-12-16T19:54:39.403] [INFO] debug-file - Finished :entry:default@ProcessCompiledResources... after 1 ms 
+[2025-12-16T19:54:39.403] [DEBUG] debug-file - Executing task :entry:default@PackageHap
+[2025-12-16T19:54:39.404] [DEBUG] debug-file - entry:default@PackageHap is not up-to-date, since the input file '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader_out/default/ets' has been changed.
+[2025-12-16T19:54:39.404] [DEBUG] debug-file - Incremental task entry:default@PackageHap pre-execution cost: 1 ms .
+[2025-12-16T19:54:39.404] [DEBUG] debug-file - Use tool [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/lib/app_packing_tool.jar]
+ [
+  'java',
+  '-Dfile.encoding=utf-8',
+  '-jar',
+  '/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/lib/app_packing_tool.jar',
+  '--mode',
+  'hap',
+  '--force',
+  'true',
+  '--lib-path',
+  '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/stripped_native_libs/default',
+  '--json-path',
+  '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/package/default/module.json',
+  '--resources-path',
+  '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/resources',
+  '--index-path',
+  '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/resources.index',
+  '--pack-info-path',
+  '/Users/zouchaoxu/WaterFlow/entry/build/default/outputs/default/pack.info',
+  '--out-path',
+  '/Users/zouchaoxu/WaterFlow/entry/build/default/outputs/default/entry-default-unsigned.hap',
+  '--ets-path',
+  '/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader_out/default/ets'
+]
+[2025-12-16T19:54:39.436] [DEBUG] debug-file - java daemon socket received message:{"code":0,"message":"pack success"}
+[2025-12-16T19:54:39.437] [DEBUG] debug-file - entry : default@PackageHap cost memory 0.5617828369140625
+[2025-12-16T19:54:39.437] [DEBUG] debug-file - runTaskFromQueue task cost before running: 904 ms 
+[2025-12-16T19:54:39.437] [INFO] debug-file - Finished :entry:default@PackageHap... after 34 ms 
+[2025-12-16T19:54:39.437] [DEBUG] debug-file - Executing task :entry:default@PackingCheck
+[2025-12-16T19:54:39.439] [DEBUG] debug-file - entry : default@PackingCheck cost memory 0.41522979736328125
+[2025-12-16T19:54:39.439] [DEBUG] debug-file - runTaskFromQueue task cost before running: 906 ms 
+[2025-12-16T19:54:39.439] [INFO] debug-file - Finished :entry:default@PackingCheck... after 2 ms 
+[2025-12-16T19:54:39.439] [DEBUG] debug-file - Executing task :entry:default@SignHap
+[2025-12-16T19:54:39.439] [WARN] debug-file - Will skip sign 'hos_hap'. No signingConfigs profile is configured in current project.
+             If needed, configure the signingConfigs in /Users/zouchaoxu/WaterFlow/build-profile.json5.
+[2025-12-16T19:54:39.440] [DEBUG] debug-file - entry:default@SignHap is not up-to-date, since the input file '/Users/zouchaoxu/WaterFlow/entry/build/default/outputs/default/entry-default-unsigned.hap' has been changed.
+[2025-12-16T19:54:39.440] [DEBUG] debug-file - Incremental task entry:default@SignHap pre-execution cost: 1 ms .
+[2025-12-16T19:54:39.440] [DEBUG] debug-file - entry : default@SignHap cost memory 0.08483123779296875
+[2025-12-16T19:54:39.440] [DEBUG] debug-file - runTaskFromQueue task cost before running: 907 ms 
+[2025-12-16T19:54:39.440] [INFO] debug-file - Finished :entry:default@SignHap... after 1 ms 
+[2025-12-16T19:54:39.440] [DEBUG] debug-file - Executing task :entry:default@CollectDebugSymbol
+[2025-12-16T19:54:39.440] [DEBUG] debug-file - entry : default@CollectDebugSymbol cost memory 0.0767059326171875
+[2025-12-16T19:54:39.440] [DEBUG] debug-file - runTaskFromQueue task cost before running: 907 ms 
+[2025-12-16T19:54:39.440] [INFO] debug-file - Finished :entry:default@CollectDebugSymbol... after 1 ms 
+[2025-12-16T19:54:39.441] [DEBUG] debug-file - Executing task :entry:assembleHap
+[2025-12-16T19:54:39.441] [DEBUG] debug-file - entry : assembleHap cost memory 0.013824462890625
+[2025-12-16T19:54:39.441] [DEBUG] debug-file - runTaskFromQueue task cost before running: 908 ms 
+[2025-12-16T19:54:39.441] [INFO] debug-file - Finished :entry:assembleHap... after 1 ms 
+[2025-12-16T19:54:39.441] [INFO] debug-file - BUILD SUCCESSFUL in 908 ms 
+[2025-12-16T19:54:39.441] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@PreBuild is up-to-date.
+[2025-12-16T19:54:39.441] [DEBUG] debug-file - Update task entry:default@CreateModuleInfo output file:/Users/zouchaoxu/WaterFlow/entry/build/default/generated/profile/default/ModuleInfo.ts cache.
+[2025-12-16T19:54:39.441] [DEBUG] debug-file - Incremental task entry:default@CreateModuleInfo post-execution cost:1 ms .
+[2025-12-16T19:54:39.441] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateMetadata is up-to-date.
+[2025-12-16T19:54:39.441] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MergeProfile is up-to-date.
+[2025-12-16T19:54:39.441] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CreateBuildProfile is up-to-date.
+[2025-12-16T19:54:39.441] [DEBUG] debug-file - Update task entry:default@GeneratePkgContextInfo output file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader/default/pkgContextInfo.json cache.
+[2025-12-16T19:54:39.441] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgContextInfo post-execution cost:1 ms .
+[2025-12-16T19:54:39.441] [DEBUG] debug-file - Update task entry:default@ProcessIntegratedHsp output file:/Users/zouchaoxu/WaterFlow/build/cache/default/integrated_hsp/integratedHspCache.json cache.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp post-execution cost:1 ms .
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MakePackInfo is up-to-date.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains/syscap_tool cache by regenerate.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/ets/api/device-define cache by regenerate.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - Update task entry:default@SyscapTransform output file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/syscap/default/rpcid.sc cache.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform post-execution cost:1 ms .
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessProfile is up-to-date.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessRouterMap is up-to-date.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessShareConfig is up-to-date.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - Update task entry:default@ProcessStartupConfig output file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/startup/default/startup_config.json cache.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig post-execution cost:1 ms .
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessResource is up-to-date.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateLoaderJson is up-to-date.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessLibs is up-to-date.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CompileResource is up-to-date.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@DoNativeStrip is up-to-date.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader/default cache by regenerate.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ResourceTable.txt cache by regenerate.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ark_module.json cache by regenerate.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/resources/base/profile cache by regenerate.
+[2025-12-16T19:54:39.442] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/src/main/ets cache by regenerate.
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/generated/profile/default/BuildProfile.ets cache by regenerate.
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - Update task entry:default@CompileArkTS output file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader_out/default/ets cache.
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS post-execution cost:1 ms .
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader/default cache by regenerate.
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ResourceTable.txt cache by regenerate.
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/ark_module.json cache by regenerate.
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - Update task entry:default@BuildJS input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/resources/base/profile cache by regenerate.
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - Update task entry:default@BuildJS output file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader_out/default/js cache.
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - Incremental task entry:default@BuildJS post-execution cost:1 ms .
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CacheNativeLibs is up-to-date.
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GeneratePkgModuleJson is up-to-date.
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - Incremental task entry:default@ProcessCompiledResources post-execution cost:1 ms .
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/stripped_native_libs/default cache by regenerate.
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/module.json cache by regenerate.
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/resources cache by regenerate.
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/res/default/resources.index cache by regenerate.
+[2025-12-16T19:54:39.443] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Users/zouchaoxu/WaterFlow/entry/build/default/outputs/default/pack.info cache by regenerate.
+[2025-12-16T19:54:39.444] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader_out/default/ets cache from map.
+[2025-12-16T19:54:39.444] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader_out/default/ets/sourceMaps.map cache by regenerate.
+[2025-12-16T19:54:39.444] [DEBUG] debug-file - Update task entry:default@PackageHap input file:/Users/zouchaoxu/WaterFlow/entry/build/default/generated/profile/default/BuildProfile.ets cache by regenerate.
+[2025-12-16T19:54:39.444] [DEBUG] debug-file - Update task entry:default@PackageHap output file:/Users/zouchaoxu/WaterFlow/entry/build/default/outputs/default/entry-default-unsigned.hap cache.
+[2025-12-16T19:54:39.444] [DEBUG] debug-file - Update task entry:default@PackageHap output file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/source_map/default/sourceMaps.map cache.
+[2025-12-16T19:54:39.444] [DEBUG] debug-file - Update task entry:default@PackageHap output file:/Users/zouchaoxu/WaterFlow/entry/build/default/outputs/default/mapping/sourceMaps.map cache.
+[2025-12-16T19:54:39.444] [DEBUG] debug-file - Incremental task entry:default@PackageHap post-execution cost:1 ms .
+[2025-12-16T19:54:39.444] [DEBUG] debug-file - Update task entry:default@SignHap input file:/Users/zouchaoxu/WaterFlow/entry/build/default/outputs/default/entry-default-unsigned.hap cache from map.
+[2025-12-16T19:54:39.444] [DEBUG] debug-file - Update task entry:default@SignHap output file:/Users/zouchaoxu/WaterFlow/entry/build/default/outputs/default/entry-default-signed.hap cache.
+[2025-12-16T19:54:39.444] [DEBUG] debug-file - Incremental task entry:default@SignHap post-execution cost:1 ms .
+[2025-12-16T19:54:39.444] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/loader_out/default/ets/sourceMaps.map cache by regenerate.
+[2025-12-16T19:54:39.444] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol input file:/Users/zouchaoxu/WaterFlow/entry/build/default/intermediates/libs/default cache by regenerate.
+[2025-12-16T19:54:39.444] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol output file:/Users/zouchaoxu/WaterFlow/entry/build/default/outputs/default/symbol cache.
+[2025-12-16T19:54:39.444] [DEBUG] debug-file - Incremental task entry:default@CollectDebugSymbol post-execution cost:1 ms .
+[2025-12-16T19:54:39.447] [DEBUG] debug-file - Cleanup worker 8.
+[2025-12-16T19:54:39.447] [DEBUG] debug-file - Worker 8 has been cleaned up.
+[2025-12-16T19:54:39.447] [DEBUG] debug-file - Current idle worker size: 1.
+[2025-12-16T19:54:39.447] [DEBUG] debug-file - Current resident worker size: 2.
+[2025-12-16T19:54:39.447] [DEBUG] debug-file - hvigor build process will be closed.
+[2025-12-16T19:54:39.448] [DEBUG] debug-file - java daemon socket close code:1000 reason:close by user
+[2025-12-16T19:54:39.450] [DEBUG] debug-file - session manager: send message to worker process.
+[2025-12-16T19:54:39.451] [DEBUG] debug-file - session manager: send message to worker process.
+[2025-12-16T19:54:39.451] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2025-12-16T19:54:39.451] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2025-12-16T19:54:39.452] [DEBUG] debug-file - worker[8] exits with exit code 1.

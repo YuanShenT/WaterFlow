@@ -1,4 +1,4 @@
-Ôr@Ÿªassertions¤code´customTransformCache¬dependencies¢id¤meta±moduleSideEffects¬originalCode±originalSourcemap«resolvedIds®sourcemapChainµsyntheticNamedExportsµtransformDependencies®transformFiles¨cacheAstÔrAÚiDif (!("finalizeConstruction" in ViewPU.prototype)) {
+Ôr@Ÿªassertions¤code´customTransformCache¬dependencies¢id¤meta±moduleSideEffects¬originalCode±originalSourcemap«resolvedIds®sourcemapChainµsyntheticNamedExportsµtransformDependencies®transformFiles¨cacheAstÔrAÚ0½if (!("finalizeConstruction" in ViewPU.prototype)) {
     Reflect.set(ViewPU.prototype, "finalizeConstruction", () => { });
 }
 import router from '@ohos.router';
@@ -9,24 +9,13 @@ class ProductDetail extends ViewPU {
         if (typeof paramsLambda === "function") {
             this.paramsGenerator_ = paramsLambda;
         }
-        this.__product = new ObservedPropertyObjectPU(new ProductItem({
-            image_url: { "id": 16777305, "type": 20000, params: [], "bundleName": "com.huawei.waterflow", "moduleName": "entry" },
-            name: 'åŠ è½½ä¸­...',
-            discount: '',
-            price: '0',
-            promotion: '',
-            bonus_points: ''
-        }), this, "product");
-        this.descriptionText = "ã€æ­£å“ä¿éšœã€‘ç²¾é€‰ä¼˜è´¨é¢æ–™ï¼Œèˆ’é€‚é€æ°”ã€‚å¤å¤æœ‹å…‹æ‘‡æ»šé£Žæ ¼ï¼Œè‡´æ•¬ç»å…¸ç”µå½±ã€Šæå‡»ä¿±ä¹éƒ¨ã€‹ã€‚æ‰‹å·¥ä¸ç½‘å°åˆ·ï¼Œå›¾æ¡ˆæ¸…æ™°è€æ´—ã€‚æ— è®ºæ˜¯æ—¥å¸¸ç©¿æ­è¿˜æ˜¯DIYæ”¹é€ ï¼Œéƒ½èƒ½å½°æ˜¾ç‹¬ç‰¹çš„ä¸ªæ€§ã€‚\n\né€‚ç”¨äºŽï¼šTæ¤ã€å«è¡£ã€å¸†å¸ƒåŒ…ã€ç‰›ä»”å¤–å¥—ç­‰å¤šç§æè´¨ã€‚\n\næ³¨æ„äº‹é¡¹ï¼š\n1. è¯·å‹¿é«˜æ¸©ç†¨çƒ«å›¾æ¡ˆéƒ¨åˆ†ã€‚\n2. å»ºè®®ç¿»é¢æ´—æ¶¤ã€‚\n3. æ‰‹å·¥åˆ¶å“ï¼Œå¾®å°ç‘•ç–µå±žäºŽæ­£å¸¸çŽ°è±¡ï¼Œä»‹æ„æ…Žæ‹ã€‚";
+        this.__product = new ObservedPropertyObjectPU(new ProductItem({ "id": 16777305, "type": 20000, params: [], "bundleName": "com.huawei.waterflow", "moduleName": "entry" }, '', '', '', '', '', '', []), this, "product");
         this.setInitiallyProvidedValue(params);
         this.finalizeConstruction();
     }
     setInitiallyProvidedValue(params) {
         if (params.product !== undefined) {
             this.product = params.product;
-        }
-        if (params.descriptionText !== undefined) {
-            this.descriptionText = params.descriptionText;
         }
     }
     updateStateVars(params) {
@@ -51,38 +40,14 @@ class ProductDetail extends ViewPU {
             this.product = params;
         }
     }
-    ServiceItem(icon, text, parent = null) {
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Row.create();
-        }, Row);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create(icon);
-            Image.width(14);
-            Image.height(14);
-            Image.fillColor('#FF0036');
-            Image.margin({ right: 4 });
-        }, Image);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create(text);
-            Text.fontSize(12);
-            Text.fontColor('#666');
-        }, Text);
-        Text.pop();
-        Row.pop();
-    }
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // ä½¿ç”¨ Stack å¸ƒå±€ï¼Œä¸ºäº†è®©åº•éƒ¨çš„â€œè´­ä¹°æŒ‰é’®â€å›ºå®šåœ¨æœ€ä¸‹æ–¹
-            Stack.create({ alignContent: Alignment.Bottom });
+            Stack.create({ alignContent: Alignment.BottomEnd });
         }, Stack);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // --- 1. ä¸»å†…å®¹æ»šåŠ¨åŒº ---
             Scroll.create();
-            // --- 1. ä¸»å†…å®¹æ»šåŠ¨åŒº ---
             Scroll.width('100%');
-            // --- 1. ä¸»å†…å®¹æ»šåŠ¨åŒº ---
             Scroll.height('100%');
-            // --- 1. ä¸»å†…å®¹æ»šåŠ¨åŒº ---
             Scroll.scrollBar(BarState.Off);
         }, Scroll);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
@@ -91,7 +56,7 @@ class ProductDetail extends ViewPU {
             Column.backgroundColor('#F5F5F5');
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // 1.1 é¡¶éƒ¨å¤§å›¾
+            // 1. é¡¶éƒ¨å¤§å›¾
             Stack.create({ alignContent: Alignment.BottomEnd });
         }, Stack);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
@@ -101,31 +66,23 @@ class ProductDetail extends ViewPU {
             Image.objectFit(ImageFit.Cover);
         }, Image);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // æ¨¡æ‹Ÿå›¾ç‰‡å¼ æ•°æŒ‡ç¤ºå™¨
             Text.create('1/5');
-            // æ¨¡æ‹Ÿå›¾ç‰‡å¼ æ•°æŒ‡ç¤ºå™¨
             Text.fontSize(12);
-            // æ¨¡æ‹Ÿå›¾ç‰‡å¼ æ•°æŒ‡ç¤ºå™¨
             Text.fontColor(Color.White);
-            // æ¨¡æ‹Ÿå›¾ç‰‡å¼ æ•°æŒ‡ç¤ºå™¨
             Text.backgroundColor('#80000000');
-            // æ¨¡æ‹Ÿå›¾ç‰‡å¼ æ•°æŒ‡ç¤ºå™¨
             Text.padding({ left: 10, right: 10, top: 4, bottom: 4 });
-            // æ¨¡æ‹Ÿå›¾ç‰‡å¼ æ•°æŒ‡ç¤ºå™¨
             Text.borderRadius(12);
-            // æ¨¡æ‹Ÿå›¾ç‰‡å¼ æ•°æŒ‡ç¤ºå™¨
             Text.margin({ right: 16, bottom: 16 });
         }, Text);
-        // æ¨¡æ‹Ÿå›¾ç‰‡å¼ æ•°æŒ‡ç¤ºå™¨
         Text.pop();
-        // 1.1 é¡¶éƒ¨å¤§å›¾
+        // 1. é¡¶éƒ¨å¤§å›¾
         Stack.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // 1.2 ä»·æ ¼ä¸Žé”€é‡åŒº
+            // 2. ä»·æ ¼ä¸Žé”€é‡
             Column.create();
-            // 1.2 ä»·æ ¼ä¸Žé”€é‡åŒº
+            // 2. ä»·æ ¼ä¸Žé”€é‡
             Column.padding(16);
-            // 1.2 ä»·æ ¼ä¸Žé”€é‡åŒº
+            // 2. ä»·æ ¼ä¸Žé”€é‡
             Column.backgroundColor(Color.White);
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
@@ -135,38 +92,20 @@ class ProductDetail extends ViewPU {
             Row.margin({ bottom: 8 });
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // ã€ä¼˜åŒ–1ã€‘æ˜¾ç¤ºä¸»ä»·æ ¼
-            // å•ç‹¬æ˜¾ç¤ºäººæ°‘å¸ç¬¦å·
             Text.create('Â¥');
-            // ã€ä¼˜åŒ–1ã€‘æ˜¾ç¤ºä¸»ä»·æ ¼
-            // å•ç‹¬æ˜¾ç¤ºäººæ°‘å¸ç¬¦å·
             Text.fontSize(16);
-            // ã€ä¼˜åŒ–1ã€‘æ˜¾ç¤ºä¸»ä»·æ ¼
-            // å•ç‹¬æ˜¾ç¤ºäººæ°‘å¸ç¬¦å·
             Text.fontColor('#FF5000');
-            // ã€ä¼˜åŒ–1ã€‘æ˜¾ç¤ºä¸»ä»·æ ¼
-            // å•ç‹¬æ˜¾ç¤ºäººæ°‘å¸ç¬¦å·
             Text.baselineOffset(-4);
-            // ã€ä¼˜åŒ–1ã€‘æ˜¾ç¤ºä¸»ä»·æ ¼
-            // å•ç‹¬æ˜¾ç¤ºäººæ°‘å¸ç¬¦å·
             Text.fontWeight(FontWeight.Bold);
         }, Text);
-        // ã€ä¼˜åŒ–1ã€‘æ˜¾ç¤ºä¸»ä»·æ ¼
-        // å•ç‹¬æ˜¾ç¤ºäººæ°‘å¸ç¬¦å·
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // ä½¿ç”¨ .replace(/[^\d.]/g, '') ç¡®ä¿è¿™é‡Œåªæ˜¾ç¤ºçº¯æ•°å­—ï¼Œé˜²æ­¢å‡ºçŽ° "Â¥Â¥9.5" çš„æƒ…å†µ
             Text.create(this.product.price.replace(/[^\d.]/g, ''));
-            // ä½¿ç”¨ .replace(/[^\d.]/g, '') ç¡®ä¿è¿™é‡Œåªæ˜¾ç¤ºçº¯æ•°å­—ï¼Œé˜²æ­¢å‡ºçŽ° "Â¥Â¥9.5" çš„æƒ…å†µ
             Text.fontSize(28);
-            // ä½¿ç”¨ .replace(/[^\d.]/g, '') ç¡®ä¿è¿™é‡Œåªæ˜¾ç¤ºçº¯æ•°å­—ï¼Œé˜²æ­¢å‡ºçŽ° "Â¥Â¥9.5" çš„æƒ…å†µ
             Text.fontColor('#FF5000');
-            // ä½¿ç”¨ .replace(/[^\d.]/g, '') ç¡®ä¿è¿™é‡Œåªæ˜¾ç¤ºçº¯æ•°å­—ï¼Œé˜²æ­¢å‡ºçŽ° "Â¥Â¥9.5" çš„æƒ…å†µ
             Text.fontWeight(FontWeight.Bold);
-            // ä½¿ç”¨ .replace(/[^\d.]/g, '') ç¡®ä¿è¿™é‡Œåªæ˜¾ç¤ºçº¯æ•°å­—ï¼Œé˜²æ­¢å‡ºçŽ° "Â¥Â¥9.5" çš„æƒ…å†µ
             Text.margin({ right: 8 });
         }, Text);
-        // ä½¿ç”¨ .replace(/[^\d.]/g, '') ç¡®ä¿è¿™é‡Œåªæ˜¾ç¤ºçº¯æ•°å­—ï¼Œé˜²æ­¢å‡ºçŽ° "Â¥Â¥9.5" çš„æƒ…å†µ
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create('åˆ¸åŽ');
@@ -193,35 +132,25 @@ class ProductDetail extends ViewPU {
             Row.width('100%');
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // ã€ä¼˜åŒ–2ã€‘è§£å†³ NaN é—®é¢˜
-            // æ ¸å¿ƒé€»è¾‘ï¼šå…ˆç”¨ replace æŠŠéžæ•°å­—å­—ç¬¦åˆ æŽ‰ï¼Œå†è½¬æˆæ•°å­—è¿›è¡Œä¹˜æ³•è®¡ç®—
             Text.create('ä¼˜æƒ å‰ Â¥' + (parseFloat(this.product.price.replace(/[^\d.]/g, '') || '0') * 1.2).toFixed(0));
-            // ã€ä¼˜åŒ–2ã€‘è§£å†³ NaN é—®é¢˜
-            // æ ¸å¿ƒé€»è¾‘ï¼šå…ˆç”¨ replace æŠŠéžæ•°å­—å­—ç¬¦åˆ æŽ‰ï¼Œå†è½¬æˆæ•°å­—è¿›è¡Œä¹˜æ³•è®¡ç®—
             Text.fontSize(12);
-            // ã€ä¼˜åŒ–2ã€‘è§£å†³ NaN é—®é¢˜
-            // æ ¸å¿ƒé€»è¾‘ï¼šå…ˆç”¨ replace æŠŠéžæ•°å­—å­—ç¬¦åˆ æŽ‰ï¼Œå†è½¬æˆæ•°å­—è¿›è¡Œä¹˜æ³•è®¡ç®—
             Text.fontColor('#999');
-            // ã€ä¼˜åŒ–2ã€‘è§£å†³ NaN é—®é¢˜
-            // æ ¸å¿ƒé€»è¾‘ï¼šå…ˆç”¨ replace æŠŠéžæ•°å­—å­—ç¬¦åˆ æŽ‰ï¼Œå†è½¬æˆæ•°å­—è¿›è¡Œä¹˜æ³•è®¡ç®—
             Text.decoration({ type: TextDecorationType.LineThrough });
         }, Text);
-        // ã€ä¼˜åŒ–2ã€‘è§£å†³ NaN é—®é¢˜
-        // æ ¸å¿ƒé€»è¾‘ï¼šå…ˆç”¨ replace æŠŠéžæ•°å­—å­—ç¬¦åˆ æŽ‰ï¼Œå†è½¬æˆæ•°å­—è¿›è¡Œä¹˜æ³•è®¡ç®—
         Text.pop();
         Row.pop();
-        // 1.2 ä»·æ ¼ä¸Žé”€é‡åŒº
+        // 2. ä»·æ ¼ä¸Žé”€é‡
         Column.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // 1.3 æ ‡é¢˜ä¸Žå‰¯æ ‡é¢˜
+            // 3. æ ‡é¢˜
             Column.create();
-            // 1.3 æ ‡é¢˜ä¸Žå‰¯æ ‡é¢˜
+            // 3. æ ‡é¢˜
             Column.padding({ left: 16, right: 16, bottom: 16 });
-            // 1.3 æ ‡é¢˜ä¸Žå‰¯æ ‡é¢˜
+            // 3. æ ‡é¢˜
             Column.backgroundColor(Color.White);
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create(this.product.name + " ç»å…¸ç”µå½±æœ‹å…‹æ‘‡æ»šæ–‡åŒ–å–·å°è¡£æœåŒ…åŒ…DIYå¸ƒè´´");
+            Text.create(this.product.name);
             Text.fontSize(18);
             Text.fontWeight(FontWeight.Bold);
             Text.maxLines(2);
@@ -231,9 +160,7 @@ class ProductDetail extends ViewPU {
         }, Text);
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // æ ‡ç­¾è¡Œ
             Row.create({ space: 8 });
-            // æ ‡ç­¾è¡Œ
             Row.width('100%');
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
@@ -254,113 +181,8 @@ class ProductDetail extends ViewPU {
             Text.borderRadius(2);
         }, Text);
         Text.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('æ–°å“');
-            Text.fontSize(10);
-            Text.fontColor(Color.White);
-            Text.backgroundColor('#FF0036');
-            Text.padding(2);
-            Text.borderRadius(2);
-        }, Text);
-        Text.pop();
-        // æ ‡ç­¾è¡Œ
         Row.pop();
-        // 1.3 æ ‡é¢˜ä¸Žå‰¯æ ‡é¢˜
-        Column.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // åˆ†éš”æ¡
-            Divider.create();
-            // åˆ†éš”æ¡
-            Divider.strokeWidth(8);
-            // åˆ†éš”æ¡
-            Divider.color('#F5F5F5');
-        }, Divider);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // 1.4 å‘è´§ä¸ŽæœåŠ¡ (æ¨¡æ‹Ÿ)
-            Column.create();
-            // 1.4 å‘è´§ä¸ŽæœåŠ¡ (æ¨¡æ‹Ÿ)
-            Column.padding({ left: 16, right: 16 });
-            // 1.4 å‘è´§ä¸ŽæœåŠ¡ (æ¨¡æ‹Ÿ)
-            Column.backgroundColor(Color.White);
-        }, Column);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Row.create();
-            Row.width('100%');
-            Row.padding({ top: 12, bottom: 12 });
-        }, Row);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('å‘è´§');
-            Text.fontColor('#999');
-            Text.fontSize(14);
-            Text.width(40);
-        }, Text);
-        Text.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('æ¹–å—é•¿æ²™ | å¿«é€’: 0.00');
-            Text.fontSize(14);
-            Text.fontColor('#333');
-        }, Text);
-        Text.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Blank.create();
-        }, Blank);
-        Blank.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('æœˆé”€ 200+');
-            Text.fontSize(12);
-            Text.fontColor('#999');
-        }, Text);
-        Text.pop();
-        Row.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Divider.create();
-            Divider.color('#EEE');
-        }, Divider);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Row.create();
-            Row.width('100%');
-            Row.padding({ top: 12, bottom: 12 });
-        }, Row);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('ä¿éšœ');
-            Text.fontColor('#999');
-            Text.fontSize(14);
-            Text.width(40);
-        }, Text);
-        Text.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Row.create({ space: 10 });
-        }, Row);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('7å¤©æ— ç†ç”±');
-            Text.fontSize(12);
-            Text.fontColor('#333');
-        }, Text);
-        Text.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('è¿è´¹é™©');
-            Text.fontSize(12);
-            Text.fontColor('#333');
-        }, Text);
-        Text.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('å…¬ç›Šå®è´');
-            Text.fontSize(12);
-            Text.fontColor('#333');
-        }, Text);
-        Text.pop();
-        Row.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Blank.create();
-        }, Blank);
-        Blank.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('>');
-            Text.fontColor('#CCC');
-        }, Text);
-        Text.pop();
-        Row.pop();
-        // 1.4 å‘è´§ä¸ŽæœåŠ¡ (æ¨¡æ‹Ÿ)
+        // 3. æ ‡é¢˜
         Column.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Divider.create();
@@ -368,77 +190,13 @@ class ProductDetail extends ViewPU {
             Divider.color('#F5F5F5');
         }, Divider);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // 1.5 å®è´è¯„ä»· (æ¨¡æ‹Ÿ)
+            // 4. è¯¦æƒ…ä»‹ç» (è¯»å–æ–°å­—æ®µ description)
             Column.create();
-            // 1.5 å®è´è¯„ä»· (æ¨¡æ‹Ÿ)
+            // 4. è¯¦æƒ…ä»‹ç» (è¯»å–æ–°å­—æ®µ description)
             Column.backgroundColor(Color.White);
-        }, Column);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Row.create();
-            Row.width('100%');
-            Row.padding(16);
-        }, Row);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('å®è´è¯„ä»· (13)');
-            Text.fontSize(16);
-            Text.fontWeight(FontWeight.Bold);
-        }, Text);
-        Text.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Blank.create();
-        }, Blank);
-        Blank.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('æŸ¥çœ‹å…¨éƒ¨ >');
-            Text.fontSize(12);
-            Text.fontColor('#FF5000');
-        }, Text);
-        Text.pop();
-        Row.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // æ¨¡æ‹Ÿä¸€æ¡è¯„è®º
-            Row.create();
-            // æ¨¡æ‹Ÿä¸€æ¡è¯„è®º
-            Row.width('100%');
-            // æ¨¡æ‹Ÿä¸€æ¡è¯„è®º
-            Row.padding({ left: 16, bottom: 8 });
-        }, Row);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 16777217, "type": 20000, params: [], "bundleName": "com.huawei.waterflow", "moduleName": "entry" });
-            Image.width(24);
-            Image.height(24);
-            Image.borderRadius(12);
-            Image.margin({ right: 8 });
-        }, Image);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('t***1');
-            Text.fontSize(12);
-            Text.fontColor('#999');
-        }, Text);
-        Text.pop();
-        // æ¨¡æ‹Ÿä¸€æ¡è¯„è®º
-        Row.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('è´¨é‡å¾ˆå¥½ï¼Œå¸ƒæ–™å¾ˆåŽšå®žï¼Œå°åˆ·ä¹Ÿå¾ˆæ¸…æ™°ï¼Œéžå¸¸å–œæ¬¢ï¼');
-            Text.fontSize(14);
-            Text.padding({ left: 16, right: 16, bottom: 16 });
-        }, Text);
-        Text.pop();
-        // 1.5 å®è´è¯„ä»· (æ¨¡æ‹Ÿ)
-        Column.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Divider.create();
-            Divider.strokeWidth(8);
-            Divider.color('#F5F5F5');
-        }, Divider);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // 1.6 å•†å“è¯¦æƒ…é•¿æ–‡æ¡ˆ (ä½ è¦æ±‚çš„ä»‹ç»è¯è¯­)
-            Column.create();
-            // 1.6 å•†å“è¯¦æƒ…é•¿æ–‡æ¡ˆ (ä½ è¦æ±‚çš„ä»‹ç»è¯è¯­)
-            Column.backgroundColor(Color.White);
-            // 1.6 å•†å“è¯¦æƒ…é•¿æ–‡æ¡ˆ (ä½ è¦æ±‚çš„ä»‹ç»è¯è¯­)
+            // 4. è¯¦æƒ…ä»‹ç» (è¯»å–æ–°å­—æ®µ description)
             Column.width('100%');
-            // 1.6 å•†å“è¯¦æƒ…é•¿æ–‡æ¡ˆ (ä½ è¦æ±‚çš„ä»‹ç»è¯è¯­)
+            // 4. è¯¦æƒ…ä»‹ç» (è¯»å–æ–°å­—æ®µ description)
             Column.alignItems(HorizontalAlign.Start);
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
@@ -467,7 +225,7 @@ class ProductDetail extends ViewPU {
         }, Line);
         Row.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create(this.descriptionText);
+            Text.create(this.product.description);
             Text.fontSize(15);
             Text.lineHeight(26);
             Text.fontColor('#333');
@@ -475,141 +233,60 @@ class ProductDetail extends ViewPU {
         }, Text);
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // åº•éƒ¨å ä½ï¼Œé˜²æ­¢å†…å®¹è¢«åº•éƒ¨æŒ‰é’®æŒ¡ä½
+            // è¯¦æƒ…å›¾å±•ç¤º
+            ForEach.create();
+            const forEachItemGenFunction = _item => {
+                const img = _item;
+                this.observeComponentCreation2((elmtId, isInitialRender) => {
+                    Image.create(img);
+                    Image.width('100%');
+                    Image.objectFit(ImageFit.Cover);
+                    Image.margin({ bottom: 10 });
+                }, Image);
+            };
+            this.forEachUpdateFunction(elmtId, this.product.detailImages, forEachItemGenFunction);
+        }, ForEach);
+        // è¯¦æƒ…å›¾å±•ç¤º
+        ForEach.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
             Blank.create();
-            // åº•éƒ¨å ä½ï¼Œé˜²æ­¢å†…å®¹è¢«åº•éƒ¨æŒ‰é’®æŒ¡ä½
             Blank.height(80);
         }, Blank);
-        // åº•éƒ¨å ä½ï¼Œé˜²æ­¢å†…å®¹è¢«åº•éƒ¨æŒ‰é’®æŒ¡ä½
         Blank.pop();
-        // 1.6 å•†å“è¯¦æƒ…é•¿æ–‡æ¡ˆ (ä½ è¦æ±‚çš„ä»‹ç»è¯è¯­)
+        // 4. è¯¦æƒ…ä»‹ç» (è¯»å–æ–°å­—æ®µ description)
         Column.pop();
         Column.pop();
-        // --- 1. ä¸»å†…å®¹æ»šåŠ¨åŒº ---
         Scroll.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // --- 2. åº•éƒ¨å›ºå®šæ“ä½œæ  ---
+            // åº•éƒ¨æŒ‰é’®
             Row.create();
-            // --- 2. åº•éƒ¨å›ºå®šæ“ä½œæ  ---
+            // åº•éƒ¨æŒ‰é’®
             Row.width('100%');
-            // --- 2. åº•éƒ¨å›ºå®šæ“ä½œæ  ---
-            Row.height(60);
-            // --- 2. åº•éƒ¨å›ºå®šæ“ä½œæ  ---
+            // åº•éƒ¨æŒ‰é’®
             Row.backgroundColor(Color.White);
-            // --- 2. åº•éƒ¨å›ºå®šæ“ä½œæ  ---
-            Row.border({ width: { top: 1 }, color: '#F0F0F0' });
         }, Row);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // å·¦ä¾§å›¾æ ‡åŒº
-            Row.create({ space: 15 });
-            // å·¦ä¾§å›¾æ ‡åŒº
-            Row.padding({ left: 16, right: 16 });
-        }, Row);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Column.create();
-        }, Column);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 16777217, "type": 20000, params: [], "bundleName": "com.huawei.waterflow", "moduleName": "entry" });
-            Image.width(20);
-            Image.height(20);
-        }, Image);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('åº—é“º');
-            Text.fontSize(10);
-            Text.fontColor('#666');
-            Text.margin({ top: 2 });
-        }, Text);
-        Text.pop();
-        Column.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Column.create();
-        }, Column);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 16777217, "type": 20000, params: [], "bundleName": "com.huawei.waterflow", "moduleName": "entry" });
-            Image.width(20);
-            Image.height(20);
-        }, Image);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('å®¢æœ');
-            Text.fontSize(10);
-            Text.fontColor('#666');
-            Text.margin({ top: 2 });
-        }, Text);
-        Text.pop();
-        Column.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Column.create();
-        }, Column);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 16777217, "type": 20000, params: [], "bundleName": "com.huawei.waterflow", "moduleName": "entry" });
-            Image.width(20);
-            Image.height(20);
-        }, Image);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create('æ”¶è—');
-            Text.fontSize(10);
-            Text.fontColor('#666');
-            Text.margin({ top: 2 });
-        }, Text);
-        Text.pop();
-        Column.pop();
-        // å·¦ä¾§å›¾æ ‡åŒº
-        Row.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Blank.create();
-        }, Blank);
-        Blank.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // å³ä¾§æŒ‰é’®åŒº
-            Row.create();
-            // å³ä¾§æŒ‰é’®åŒº
-            Row.margin({ right: 10 });
-        }, Row);
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Button.createWithLabel('åŠ å…¥è´­ç‰©è½¦');
-            Button.type(ButtonType.Normal);
-            Button.backgroundColor('#FFC107');
-            Button.fontColor(Color.White);
-            Button.fontSize(14);
-            Button.height(40);
-            Button.width(100);
-            Button.borderRadius({ topLeft: 20, bottomLeft: 20 });
-        }, Button);
-        Button.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Button.createWithLabel('ç«‹å³è´­ä¹°');
             Button.type(ButtonType.Normal);
             Button.backgroundColor('#FF5000');
             Button.fontColor(Color.White);
-            Button.fontSize(14);
-            Button.height(40);
-            Button.width(100);
-            Button.borderRadius({ topRight: 20, bottomRight: 20 });
-            Button.onClick(() => {
-                // ç‚¹å‡»è´­ä¹°é€»è¾‘
-                console.info('ç‚¹å‡»äº†è´­ä¹°');
-            });
+            Button.width('100%');
+            Button.height(50);
+            Button.onClick(() => { console.info('Buy'); });
         }, Button);
         Button.pop();
-        // å³ä¾§æŒ‰é’®åŒº
-        Row.pop();
-        // --- 2. åº•éƒ¨å›ºå®šæ“ä½œæ  ---
+        // åº•éƒ¨æŒ‰é’®
         Row.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            // --- 3. æ‚¬æµ®è¿”å›žæŒ‰é’® ---
-            // æ”¾åœ¨ Stack æœ€ä¸Šå±‚ï¼Œè¦†ç›–åœ¨å›¾ç‰‡ä¸Š
+            // è¿”å›žæŒ‰é’®
             Row.create();
-            // --- 3. æ‚¬æµ®è¿”å›žæŒ‰é’® ---
-            // æ”¾åœ¨ Stack æœ€ä¸Šå±‚ï¼Œè¦†ç›–åœ¨å›¾ç‰‡ä¸Š
+            // è¿”å›žæŒ‰é’®
             Row.width('100%');
-            // --- 3. æ‚¬æµ®è¿”å›žæŒ‰é’® ---
-            // æ”¾åœ¨ Stack æœ€ä¸Šå±‚ï¼Œè¦†ç›–åœ¨å›¾ç‰‡ä¸Š
+            // è¿”å›žæŒ‰é’®
             Row.height('100%');
-            // --- 3. æ‚¬æµ®è¿”å›žæŒ‰é’® ---
-            // æ”¾åœ¨ Stack æœ€ä¸Šå±‚ï¼Œè¦†ç›–åœ¨å›¾ç‰‡ä¸Š
+            // è¿”å›žæŒ‰é’®
             Row.hitTestBehavior(HitTestMode.Transparent);
-            // --- 3. æ‚¬æµ®è¿”å›žæŒ‰é’® ---
-            // æ”¾åœ¨ Stack æœ€ä¸Šå±‚ï¼Œè¦†ç›–åœ¨å›¾ç‰‡ä¸Š
+            // è¿”å›žæŒ‰é’®
             Row.alignItems(VerticalAlign.Top);
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
@@ -621,15 +298,11 @@ class ProductDetail extends ViewPU {
             Button.width(32);
             Button.height(32);
             Button.margin({ top: 10, left: 16 });
-            Button.onClick(() => {
-                router.back();
-            });
+            Button.onClick(() => { router.back(); });
         }, Button);
         Button.pop();
-        // --- 3. æ‚¬æµ®è¿”å›žæŒ‰é’® ---
-        // æ”¾åœ¨ Stack æœ€ä¸Šå±‚ï¼Œè¦†ç›–åœ¨å›¾ç‰‡ä¸Š
+        // è¿”å›žæŒ‰é’®
         Row.pop();
-        // ä½¿ç”¨ Stack å¸ƒå±€ï¼Œä¸ºäº†è®©åº•éƒ¨çš„â€œè´­ä¹°æŒ‰é’®â€å›ºå®šåœ¨æœ€ä¸‹æ–¹
         Stack.pop();
     }
     rerender() {
@@ -640,24 +313,23 @@ class ProductDetail extends ViewPU {
     }
 }
 registerNamedRoute(() => new ProductDetail(undefined, {}), "", { bundleName: "com.huawei.waterflow", moduleName: "entry", pagePath: "pages/ProductDetailPage", pageFullPath: "entry/src/main/ets/pages/ProductDetailPage", integratedHsp: "false", moduleType: "followWithHap" });
-//# sourceMappingURL=ProductDetailPage.js.mapÂ’Ùi hvigor_ignore__Applications_DevEco-Studio.app_Contents_sdk_default_openharmony_ets_api_@ohos.router.d.tsÙG/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/ProductItem.etsÙI/Users/zouchaoxu/WaterFlow/entry/src/main/ets/pages/ProductDetailPage.etsÔrB›ªmoduleName±isLocalDependency¯isNodeEntryFile§pkgPath±belongProjectPath§pkgNameªpkgVersion±dependencyPkgInfo°belongModulePath§checker¬shouldEmitJs¥entryÃÂÙ /Users/zouchaoxu/WaterFlow/entryº/Users/zouchaoxu/WaterFlow¥entry¥1.0.0Ô  Ù /Users/zouchaoxu/WaterFlow/entryÔrCÜ ®¬getNodeCount²getIdentifierCount®getSymbolCount¬getTypeCountµgetInstantiationCountµgetRelationCacheSizes±isUndefinedSymbol±isArgumentsSymbol¯isUnknownSymbol¯getMergedSymbol®getDiagnostics´getGlobalDiagnostics´getRecursionIdentity¶getUnmatchedProperties¹getTypeOfSymbolAtLocation¯getTypeOfSymbolÙ(getSymbolsOfParameterPropertyDeclaration·getDeclaredTypeOfSymbol³getPropertiesOfType±getPropertyOfTypeÙ"getPrivateIdentifierPropertyOfType·getTypeOfPropertyOfType²getIndexInfoOfType³getIndexInfosOfTypeºgetIndexInfosOfIndexSymbol³getSignaturesOfType²getIndexTypeOfType¬getIndexType¬getBaseTypes¸getBaseTypeOfLiteralType®getWidenedType³getTypeFromTypeNode°getParameterTypeÙ$getParameterIdentifierNameAtPosition¸getPromisedTypeOfPromise®getAwaitedType¸getReturnTypeOfSignature®isNullableType¯getNullableType²getNonNullableType²getNonOptionalType°getTypeArguments®typeToTypeNodeÙ$indexInfoToIndexSignatureDeclaration¿signatureToSignatureDeclaration²symbolToEntityName²symbolToExpression¬symbolToNodeÙ!symbolToTypeParameterDeclarations¼symbolToParameterDeclarationºtypeParameterToDeclaration±getSymbolsInScope³getSymbolAtLocation·getIndexInfosAtLocationÙ!getShorthandAssignmentValueSymbolÙ#getExportSpecifierLocalTargetSymbol·getExportSymbolOfSymbol±getTypeAtLocationºgetTypeAtLocationForLinterÙ tryGetTypeAtLocationWithoutCheckºgetTypeOfAssignmentPatternÙ*getPropertySymbolOfDestructuringAssignment±signatureToString¬typeToString®symbolToStringµtypePredicateToString®writeSignature©writeType«writeSymbol²writeTypePredicate¼getAugmentedPropertiesOfType®getRootSymbols²getSymbolOfExpando±getContextualTypeÙ(getContextualTypeForObjectLiteralElementÙ#getContextualTypeForArgumentAtIndexÙ getContextualTypeForJsxAttribute²isContextSensitiveÙ!getTypeOfPropertyOfContextualTypeµgetFullyQualifiedNameÙ#tryGetResolvedSignatureWithoutCheck´getResolvedSignatureÙ/getResolvedSignatureForStringLiteralCompletionsÙ$getResolvedSignatureForSignatureHelpµgetExpandedParameters¹hasEffectiveRestParameterºcontainsArgumentsReference°getConstantValueµisValidPropertyAccessÙ#isValidPropertyAccessForCompletions»getSignatureFromDeclarationºisImplementationOfOverload¹getImmediateAliasedSymbol°getAliasedSymbol¯getEmitResolver²getExportsOfModule¿getExportsAndPropertiesOfModuleÙ forEachExportAndPropertyOfModule¯getSymbolWalker±getAmbientModules¹getJsxIntrinsicTagNamesAt³isOptionalParameter»tryGetMemberInModuleExportsÙ(tryGetMemberInModuleExportsAndProperties´tryFindAmbientModuleÙ(tryFindAmbientModuleWithoutAugmentations¯getApparentType¬getUnionType²isTypeAssignableTo³createAnonymousType¯createSignature¬createSymbol¯createIndexInfoªgetAnyType­getStringType­getNumberType±createPromiseType¯createArrayType¹getElementTypeOfArrayType®getBooleanType¬getFalseType«getTrueType«getVoidType°getUndefinedType«getNullType¯getESSymbolType¬getNeverType¯getOptionalType®getPromiseType²getPromiseLikeType´getAsyncIterableType²isSymbolAccessible«isArrayType«isTupleType¯isArrayLikeTypeÙ#isTypeInvalidDueToUnionDiscriminantºgetExactOptionalProperties¿getAllPossiblePropertiesOfTypesÙ(getSuggestedSymbolForNonexistentPropertyÙ#getSuggestionForNonexistentPropertyÙ,getSuggestedSymbolForNonexistentJSXAttributeÙ&getSuggestedSymbolForNonexistentSymbolÙ!getSuggestionForNonexistentSymbolÙ&getSuggestedSymbolForNonexistentModuleÙ!getSuggestionForNonexistentExportÙ+getSuggestedSymbolForNonexistentClassMember·getBaseConstraintOfType»getDefaultFromTypeParameter«resolveName¯getJsxNamespaceµgetJsxFragmentFactory¸getAccessibleSymbolChain»getTypePredicateOfSignature¹resolveExternalModuleName»resolveExternalModuleSymbol°tryGetThisTypeAt¹getTypeArgumentConstraint¸getSuggestionDiagnostics¸runWithCancellationTokenÙ3getLocalTypeParametersOfClassOrInterfaceOrTypeAlias´isDeclarationVisible´isPropertyAccessible»getTypeOnlyAliasDeclaration¿getMemberOverrideModifierStatusÙ!isTypeParameterPossiblyReferenced²getConstEnumRelate´clearConstEnumRelateµdeleteConstEnumRelateÙ$getTypeArgumentsForResolvedSignatureµgetCheckedSourceFilesÙ"collectHaveTsNoCheckFilesForLinter·clearQualifiedNameCache®isStaticRecord²isStaticSourceFileÔ  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  ÃÃÚ&­import router from '@ohos.router';
+//# sourceMappingURL=ProductDetailPage.js.mapÂ’Ùi hvigor_ignore__Applications_DevEco-Studio.app_Contents_sdk_default_openharmony_ets_api_@ohos.router.d.tsÙG/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/ProductItem.etsÙI/Users/zouchaoxu/WaterFlow/entry/src/main/ets/pages/ProductDetailPage.etsÔrB›ªmoduleName±isLocalDependency¯isNodeEntryFile§pkgPath±belongProjectPath§pkgNameªpkgVersion±dependencyPkgInfo°belongModulePath§checker¬shouldEmitJs¥entryÃÂÙ /Users/zouchaoxu/WaterFlow/entryº/Users/zouchaoxu/WaterFlow¥entry¥1.0.0Ô  Ù /Users/zouchaoxu/WaterFlow/entryÔrCÜ ®¬getNodeCount²getIdentifierCount®getSymbolCount¬getTypeCountµgetInstantiationCountµgetRelationCacheSizes±isUndefinedSymbol±isArgumentsSymbol¯isUnknownSymbol¯getMergedSymbol®getDiagnostics´getGlobalDiagnostics´getRecursionIdentity¶getUnmatchedProperties¹getTypeOfSymbolAtLocation¯getTypeOfSymbolÙ(getSymbolsOfParameterPropertyDeclaration·getDeclaredTypeOfSymbol³getPropertiesOfType±getPropertyOfTypeÙ"getPrivateIdentifierPropertyOfType·getTypeOfPropertyOfType²getIndexInfoOfType³getIndexInfosOfTypeºgetIndexInfosOfIndexSymbol³getSignaturesOfType²getIndexTypeOfType¬getIndexType¬getBaseTypes¸getBaseTypeOfLiteralType®getWidenedType³getTypeFromTypeNode°getParameterTypeÙ$getParameterIdentifierNameAtPosition¸getPromisedTypeOfPromise®getAwaitedType¸getReturnTypeOfSignature®isNullableType¯getNullableType²getNonNullableType²getNonOptionalType°getTypeArguments®typeToTypeNodeÙ$indexInfoToIndexSignatureDeclaration¿signatureToSignatureDeclaration²symbolToEntityName²symbolToExpression¬symbolToNodeÙ!symbolToTypeParameterDeclarations¼symbolToParameterDeclarationºtypeParameterToDeclaration±getSymbolsInScope³getSymbolAtLocation·getIndexInfosAtLocationÙ!getShorthandAssignmentValueSymbolÙ#getExportSpecifierLocalTargetSymbol·getExportSymbolOfSymbol±getTypeAtLocationºgetTypeAtLocationForLinterÙ tryGetTypeAtLocationWithoutCheckºgetTypeOfAssignmentPatternÙ*getPropertySymbolOfDestructuringAssignment±signatureToString¬typeToString®symbolToStringµtypePredicateToString®writeSignature©writeType«writeSymbol²writeTypePredicate¼getAugmentedPropertiesOfType®getRootSymbols²getSymbolOfExpando±getContextualTypeÙ(getContextualTypeForObjectLiteralElementÙ#getContextualTypeForArgumentAtIndexÙ getContextualTypeForJsxAttribute²isContextSensitiveÙ!getTypeOfPropertyOfContextualTypeµgetFullyQualifiedNameÙ#tryGetResolvedSignatureWithoutCheck´getResolvedSignatureÙ/getResolvedSignatureForStringLiteralCompletionsÙ$getResolvedSignatureForSignatureHelpµgetExpandedParameters¹hasEffectiveRestParameterºcontainsArgumentsReference°getConstantValueµisValidPropertyAccessÙ#isValidPropertyAccessForCompletions»getSignatureFromDeclarationºisImplementationOfOverload¹getImmediateAliasedSymbol°getAliasedSymbol¯getEmitResolver²getExportsOfModule¿getExportsAndPropertiesOfModuleÙ forEachExportAndPropertyOfModule¯getSymbolWalker±getAmbientModules¹getJsxIntrinsicTagNamesAt³isOptionalParameter»tryGetMemberInModuleExportsÙ(tryGetMemberInModuleExportsAndProperties´tryFindAmbientModuleÙ(tryFindAmbientModuleWithoutAugmentations¯getApparentType¬getUnionType²isTypeAssignableTo³createAnonymousType¯createSignature¬createSymbol¯createIndexInfoªgetAnyType­getStringType­getNumberType±createPromiseType¯createArrayType¹getElementTypeOfArrayType®getBooleanType¬getFalseType«getTrueType«getVoidType°getUndefinedType«getNullType¯getESSymbolType¬getNeverType¯getOptionalType®getPromiseType²getPromiseLikeType´getAsyncIterableType²isSymbolAccessible«isArrayType«isTupleType¯isArrayLikeTypeÙ#isTypeInvalidDueToUnionDiscriminantºgetExactOptionalProperties¿getAllPossiblePropertiesOfTypesÙ(getSuggestedSymbolForNonexistentPropertyÙ#getSuggestionForNonexistentPropertyÙ,getSuggestedSymbolForNonexistentJSXAttributeÙ&getSuggestedSymbolForNonexistentSymbolÙ!getSuggestionForNonexistentSymbolÙ&getSuggestedSymbolForNonexistentModuleÙ!getSuggestionForNonexistentExportÙ+getSuggestedSymbolForNonexistentClassMember·getBaseConstraintOfType»getDefaultFromTypeParameter«resolveName¯getJsxNamespaceµgetJsxFragmentFactory¸getAccessibleSymbolChain»getTypePredicateOfSignature¹resolveExternalModuleName»resolveExternalModuleSymbol°tryGetThisTypeAt¹getTypeArgumentConstraint¸getSuggestionDiagnostics¸runWithCancellationTokenÙ3getLocalTypeParametersOfClassOrInterfaceOrTypeAlias´isDeclarationVisible´isPropertyAccessible»getTypeOnlyAliasDeclaration¿getMemberOverrideModifierStatusÙ!isTypeParameterPossiblyReferenced²getConstEnumRelate´clearConstEnumRelateµdeleteConstEnumRelateÙ$getTypeArgumentsForResolvedSignatureµgetCheckedSourceFilesÙ"collectHaveTsNoCheckFilesForLinter·clearQualifiedNameCache®isStaticRecord²isStaticSourceFileÔ  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  ÃÃÚ7import router from '@ohos.router';
 import ProductItem from '../viewmodel/ProductItem';
 
 @Entry
 @Component
 struct ProductDetail {
-  // æŽ¥æ”¶ä¸Šä¸ªé¡µé¢ä¼ æ¥çš„æ•°æ®
-  @State product: ProductItem = new ProductItem({
-    image_url: $r('app.media.loading'),
-    name: 'åŠ è½½ä¸­...',
-    discount: '',
-    price: '0',
-    promotion: '',
-    bonus_points: ''
-  });
-
-  // æ¨¡æ‹Ÿä¸€äº›è¯¦æƒ…é¡µç‰¹æœ‰çš„é•¿æ–‡æ¡ˆ
-  private descriptionText: string = "ã€æ­£å“ä¿éšœã€‘ç²¾é€‰ä¼˜è´¨é¢æ–™ï¼Œèˆ’é€‚é€æ°”ã€‚å¤å¤æœ‹å…‹æ‘‡æ»šé£Žæ ¼ï¼Œè‡´æ•¬ç»å…¸ç”µå½±ã€Šæå‡»ä¿±ä¹éƒ¨ã€‹ã€‚æ‰‹å·¥ä¸ç½‘å°åˆ·ï¼Œå›¾æ¡ˆæ¸…æ™°è€æ´—ã€‚æ— è®ºæ˜¯æ—¥å¸¸ç©¿æ­è¿˜æ˜¯DIYæ”¹é€ ï¼Œéƒ½èƒ½å½°æ˜¾ç‹¬ç‰¹çš„ä¸ªæ€§ã€‚\n\né€‚ç”¨äºŽï¼šTæ¤ã€å«è¡£ã€å¸†å¸ƒåŒ…ã€ç‰›ä»”å¤–å¥—ç­‰å¤šç§æè´¨ã€‚\n\næ³¨æ„äº‹é¡¹ï¼š\n1. è¯·å‹¿é«˜æ¸©ç†¨çƒ«å›¾æ¡ˆéƒ¨åˆ†ã€‚\n2. å»ºè®®ç¿»é¢æ´—æ¶¤ã€‚\n3. æ‰‹å·¥åˆ¶å“ï¼Œå¾®å°ç‘•ç–µå±žäºŽæ­£å¸¸çŽ°è±¡ï¼Œä»‹æ„æ…Žæ‹ã€‚";
+  // ä¿®å¤ç‚¹ï¼šè¿™é‡Œå¿…é¡»å¡«æ»¡8ä¸ªå‚æ•°ï¼Œå¯¹åº” ProductItem çš„æž„é€ å‡½æ•°
+  @State product: ProductItem = new ProductItem(
+    $r('app.media.loading'),
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    []
+  );
 
   aboutToAppear() {
     const params = router.getParams();
@@ -666,29 +338,17 @@ struct ProductDetail {
     }
   }
 
-  @Builder
-  ServiceItem(icon: ResourceStr, text: string) {
-    Row() {
-      Image(icon).width(14).height(14).fillColor('#FF0036').margin({ right: 4 }) // å‡è®¾ä½ æ²¡æœ‰å‹¾é€‰å›¾æ ‡ï¼Œç”¨åœ†ç‚¹æˆ–é¢œè‰²ä»£æ›¿
-      Text(text).fontSize(12).fontColor('#666')
-    }
-  }
-
   build() {
-    // ä½¿ç”¨ Stack å¸ƒå±€ï¼Œä¸ºäº†è®©åº•éƒ¨çš„â€œè´­ä¹°æŒ‰é’®â€å›ºå®šåœ¨æœ€ä¸‹æ–¹
-    Stack({ alignContent: Alignment.Bottom }) {
-
-      // --- 1. ä¸»å†…å®¹æ»šåŠ¨åŒº ---
+    Stack({ alignContent: Alignment.BottomEnd }) {
       Scroll() {
         Column() {
-          // 1.1 é¡¶éƒ¨å¤§å›¾
+          // 1. é¡¶éƒ¨å¤§å›¾
           Stack({ alignContent: Alignment.BottomEnd }) {
             Image(this.product.image_url)
               .width('100%')
-              .height(350) // å›¾ç‰‡é«˜åº¦åŠ é«˜
+              .height(350)
               .objectFit(ImageFit.Cover)
 
-            // æ¨¡æ‹Ÿå›¾ç‰‡å¼ æ•°æŒ‡ç¤ºå™¨
             Text('1/5')
               .fontSize(12)
               .fontColor(Color.White)
@@ -698,28 +358,21 @@ struct ProductDetail {
               .margin({ right: 16, bottom: 16 })
           }
 
-          // 1.2 ä»·æ ¼ä¸Žé”€é‡åŒº
+          // 2. ä»·æ ¼ä¸Žé”€é‡
           Column() {
             Row() {
-              // ã€ä¼˜åŒ–1ã€‘æ˜¾ç¤ºä¸»ä»·æ ¼
-              // å•ç‹¬æ˜¾ç¤ºäººæ°‘å¸ç¬¦å·
               Text('Â¥').fontSize(16).fontColor('#FF5000').baselineOffset(-4).fontWeight(FontWeight.Bold)
-
-              // ä½¿ç”¨ .replace(/[^\d.]/g, '') ç¡®ä¿è¿™é‡Œåªæ˜¾ç¤ºçº¯æ•°å­—ï¼Œé˜²æ­¢å‡ºçŽ° "Â¥Â¥9.5" çš„æƒ…å†µ
               Text(this.product.price.replace(/[^\d.]/g, ''))
                 .fontSize(28)
                 .fontColor('#FF5000')
                 .fontWeight(FontWeight.Bold)
                 .margin({ right: 8 })
-
               Text('åˆ¸åŽ').fontSize(12).fontColor('#FF5000').backgroundColor('#FFE4D0').padding({left:4, right:4, top:1, bottom:1}).borderRadius(2)
               Blank()
               Text('å·²å”® 98+').fontSize(12).fontColor('#999')
             }.width('100%').alignItems(VerticalAlign.Bottom).margin({ bottom: 8 })
 
             Row() {
-              // ã€ä¼˜åŒ–2ã€‘è§£å†³ NaN é—®é¢˜
-              // æ ¸å¿ƒé€»è¾‘ï¼šå…ˆç”¨ replace æŠŠéžæ•°å­—å­—ç¬¦åˆ æŽ‰ï¼Œå†è½¬æˆæ•°å­—è¿›è¡Œä¹˜æ³•è®¡ç®—
               Text('ä¼˜æƒ å‰ Â¥' + (parseFloat(this.product.price.replace(/[^\d.]/g, '') || '0') * 1.2).toFixed(0))
                 .fontSize(12)
                 .fontColor('#999')
@@ -729,9 +382,9 @@ struct ProductDetail {
           .padding(16)
           .backgroundColor(Color.White)
 
-          // 1.3 æ ‡é¢˜ä¸Žå‰¯æ ‡é¢˜
+          // 3. æ ‡é¢˜
           Column() {
-            Text(this.product.name + " ç»å…¸ç”µå½±æœ‹å…‹æ‘‡æ»šæ–‡åŒ–å–·å°è¡£æœåŒ…åŒ…DIYå¸ƒè´´") // æ‹¼æŽ¥ä¸€äº›æ¨¡æ‹Ÿæ ‡é¢˜
+            Text(this.product.name)
               .fontSize(18)
               .fontWeight(FontWeight.Bold)
               .maxLines(2)
@@ -739,69 +392,17 @@ struct ProductDetail {
               .lineHeight(24)
               .margin({ bottom: 8 })
 
-            // æ ‡ç­¾è¡Œ
             Row({ space: 8 }) {
               Text('æžé€Ÿé€€æ¬¾').fontSize(10).fontColor('#FF0036').border({ width: 1, color: '#FF0036' }).padding(2).borderRadius(2)
               Text('åŒ…é‚®').fontSize(10).fontColor('#FF0036').border({ width: 1, color: '#FF0036' }).padding(2).borderRadius(2)
-              Text('æ–°å“').fontSize(10).fontColor(Color.White).backgroundColor('#FF0036').padding(2).borderRadius(2)
-            }
-            .width('100%')
+            }.width('100%')
           }
           .padding({ left: 16, right: 16, bottom: 16 })
           .backgroundColor(Color.White)
 
-          // åˆ†éš”æ¡
           Divider().strokeWidth(8).color('#F5F5F5')
 
-          // 1.4 å‘è´§ä¸ŽæœåŠ¡ (æ¨¡æ‹Ÿ)
-          Column() {
-            Row() {
-              Text('å‘è´§').fontColor('#999').fontSize(14).width(40)
-              Text('æ¹–å—é•¿æ²™ | å¿«é€’: 0.00').fontSize(14).fontColor('#333')
-              Blank()
-              Text('æœˆé”€ 200+').fontSize(12).fontColor('#999')
-            }
-            .width('100%').padding({ top: 12, bottom: 12 })
-
-            Divider().color('#EEE')
-
-            Row() {
-              Text('ä¿éšœ').fontColor('#999').fontSize(14).width(40)
-              Row({ space: 10 }) {
-                Text('7å¤©æ— ç†ç”±').fontSize(12).fontColor('#333')
-                Text('è¿è´¹é™©').fontSize(12).fontColor('#333')
-                Text('å…¬ç›Šå®è´').fontSize(12).fontColor('#333')
-              }
-              Blank()
-              Text('>').fontColor('#CCC')
-            }
-            .width('100%').padding({ top: 12, bottom: 12 })
-          }
-          .padding({ left: 16, right: 16 })
-          .backgroundColor(Color.White)
-
-          Divider().strokeWidth(8).color('#F5F5F5')
-
-          // 1.5 å®è´è¯„ä»· (æ¨¡æ‹Ÿ)
-          Column() {
-            Row() {
-              Text('å®è´è¯„ä»· (13)').fontSize(16).fontWeight(FontWeight.Bold)
-              Blank()
-              Text('æŸ¥çœ‹å…¨éƒ¨ >').fontSize(12).fontColor('#FF5000')
-            }.width('100%').padding(16)
-
-            // æ¨¡æ‹Ÿä¸€æ¡è¯„è®º
-            Row() {
-              Image($r('app.media.app_icon')).width(24).height(24).borderRadius(12).margin({right:8}) // éœ€æ›¿æ¢ä¸ºä½ çš„é»˜è®¤å¤´åƒ
-              Text('t***1').fontSize(12).fontColor('#999')
-            }.width('100%').padding({left:16, bottom:8})
-            Text('è´¨é‡å¾ˆå¥½ï¼Œå¸ƒæ–™å¾ˆåŽšå®žï¼Œå°åˆ·ä¹Ÿå¾ˆæ¸…æ™°ï¼Œéžå¸¸å–œæ¬¢ï¼').fontSize(14).padding({left:16, right:16, bottom:16})
-          }
-          .backgroundColor(Color.White)
-
-          Divider().strokeWidth(8).color('#F5F5F5')
-
-          // 1.6 å•†å“è¯¦æƒ…é•¿æ–‡æ¡ˆ (ä½ è¦æ±‚çš„ä»‹ç»è¯è¯­)
+          // 4. è¯¦æƒ…ä»‹ç» (è¯»å–æ–°å­—æ®µ description)
           Column() {
             Row() {
               Line().width(20).height(1).backgroundColor('#CCC')
@@ -809,197 +410,102 @@ struct ProductDetail {
               Line().width(20).height(1).backgroundColor('#CCC')
             }.width('100%').justifyContent(FlexAlign.Center).padding(20)
 
-            Text(this.descriptionText)
+            Text(this.product.description)
               .fontSize(15)
               .lineHeight(26)
               .fontColor('#333')
               .padding(16)
 
-            // åº•éƒ¨å ä½ï¼Œé˜²æ­¢å†…å®¹è¢«åº•éƒ¨æŒ‰é’®æŒ¡ä½
+            // è¯¦æƒ…å›¾å±•ç¤º
+            ForEach(this.product.detailImages, (img: ResourceStr) => {
+              Image(img)
+                .width('100%')
+                .objectFit(ImageFit.Cover) // âœ… è¿™é‡Œæ”¹æˆäº† objectFit
+                .margin({ bottom: 10 })
+            })
+
             Blank().height(80)
           }
           .backgroundColor(Color.White)
           .width('100%')
           .alignItems(HorizontalAlign.Start)
-
         }
         .width('100%')
-        .backgroundColor('#F5F5F5') // æ•´ä½“èƒŒæ™¯ç°
+        .backgroundColor('#F5F5F5')
       }
       .width('100%')
       .height('100%')
       .scrollBar(BarState.Off)
 
-
-      // --- 2. åº•éƒ¨å›ºå®šæ“ä½œæ  ---
+      // åº•éƒ¨æŒ‰é’®
       Row() {
-        // å·¦ä¾§å›¾æ ‡åŒº
-        Row({ space: 15 }) {
-          Column() {
-            Image($r('app.media.app_icon')).width(20).height(20) // éœ€æ›¿æ¢ä¸ºåº—é“ºicon
-            Text('åº—é“º').fontSize(10).fontColor('#666').margin({ top: 2 })
-          }
-          Column() {
-            Image($r('app.media.app_icon')).width(20).height(20) // éœ€æ›¿æ¢ä¸ºå®¢æœicon
-            Text('å®¢æœ').fontSize(10).fontColor('#666').margin({ top: 2 })
-          }
-          Column() {
-            Image($r('app.media.app_icon')).width(20).height(20) // éœ€æ›¿æ¢ä¸ºæ”¶è—icon
-            Text('æ”¶è—').fontSize(10).fontColor('#666').margin({ top: 2 })
-          }
-        }
-        .padding({ left: 16, right: 16 })
-
-        Blank()
-
-        // å³ä¾§æŒ‰é’®åŒº
-        Row() {
-          Button('åŠ å…¥è´­ç‰©è½¦')
-            .type(ButtonType.Normal)
-            .backgroundColor('#FFC107') // é»„è‰²
-            .fontColor(Color.White)
-            .fontSize(14)
-            .height(40)
-            .width(100)
-            .borderRadius({ topLeft: 20, bottomLeft: 20 })
-
-          Button('ç«‹å³è´­ä¹°')
-            .type(ButtonType.Normal)
-            .backgroundColor('#FF5000') // æ·˜å®æ©™
-            .fontColor(Color.White)
-            .fontSize(14)
-            .height(40)
-            .width(100)
-            .borderRadius({ topRight: 20, bottomRight: 20 })
-            .onClick(() => {
-              // ç‚¹å‡»è´­ä¹°é€»è¾‘
-              console.info('ç‚¹å‡»äº†è´­ä¹°')
-            })
-        }
-        .margin({ right: 10 })
+        Button('ç«‹å³è´­ä¹°')
+          .type(ButtonType.Normal)
+          .backgroundColor('#FF5000')
+          .fontColor(Color.White)
+          .width('100%')
+          .height(50)
+          .onClick(() => { console.info('Buy') })
       }
       .width('100%')
-      .height(60)
       .backgroundColor(Color.White)
-      .border({ width: { top: 1 }, color: '#F0F0F0' }) // é¡¶éƒ¨åˆ†å‰²çº¿
 
-      // --- 3. æ‚¬æµ®è¿”å›žæŒ‰é’® ---
-      // æ”¾åœ¨ Stack æœ€ä¸Šå±‚ï¼Œè¦†ç›–åœ¨å›¾ç‰‡ä¸Š
+      // è¿”å›žæŒ‰é’®
       Row() {
-        Button('<') // è¿™é‡Œå¯ä»¥ç”¨ä½ çš„è¿”å›žå›¾æ ‡ app.media.ic_back
+        Button('<')
           .type(ButtonType.Circle)
-          .backgroundColor('#80000000') // åŠé€æ˜Žé»‘
+          .backgroundColor('#80000000')
           .fontColor(Color.White)
           .fontSize(18)
           .width(32)
           .height(32)
           .margin({ top: 10, left: 16 })
-          .onClick(() => {
-            router.back();
-          })
+          .onClick(() => { router.back(); })
       }
       .width('100%')
       .height('100%')
-      .hitTestBehavior(HitTestMode.Transparent) // è®©ç‚¹å‡»ç©¿é€ï¼Œåªå“åº”æŒ‰é’®
+      .hitTestBehavior(HitTestMode.Transparent)
       .alignItems(VerticalAlign.Top)
     }
   }
-}ÀÔrD’¬@ohos.router¸../viewmodel/ProductItemÔrE—ªassertions¨external¢id¤meta±moduleSideEffectsªresolvedByµsyntheticNamedExportsAÃÙi hvigor_ignore__Applications_DevEco-Studio.app_Contents_sdk_default_openharmony_ets_api_@ohos.router.d.tsÔrF‘¯hostModulesInfo’ÔrG’²hostDependencyName®hostModuleName¬@ohos.router¥entryG¬@ohos.router¥entryÃªoh-resolveÂEAÂÙG/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/ProductItem.etsAÃªoh-resolveÂ“ÔrH–§version¤fileªsourceRoot§sources¥names¨mappings´ProductDetailPage.js ‘µProductDetailPage.etsÜz–”    ”  ”  ”  ”!  !”"  "–”   ” ” ” ”2 2”3 3’” ” ‘”  ””6  ”: $”ÌE /”ÌF 0“” ” ”Ì &”” 	” 	” 	
-” 	”” 
-” 
-” 
-” 
-”” ” 	” ” ”” ” ” ” ”” ” ” ” ’”	 ”
- ’” $”ÌÌ ÌÑ‘” 3’” 	” ’” 	” ’” ” ™” ” 
-” ” ” ” ”' #”) %”* &”” ” ” ” —” ” 
-” ” ” ”! *”" +‘”	 ’” ” –” ” ” ” ” !” -’” ” ”” ” ” ” –” ” ” ” ” ” –” ” ” ” "” #” %–” ” ” '” 0” 1”% :š” ” ” <” ÌB” ÌC” ÌE”  ÌJ”" ÌL”# ÌM”% ÌO”” ” 
-” ” –” ” 
-” ” ” ” –” ” 
-” ” '” (”! .’” ” 
-’” ” ‘”  ‘” "’” #”- #%š” $” $	” $
-” $”' $”) $”2 $#”3 $$”9 $*”; $,’” &”  &’” '” '’” &”  &–” '” '” Ìº” Ìº” Ìº” Ìº’” &”  &–” '” '” Ì»” Ì»” Ì»”  Ì»’” &”  &˜” '” '” Ì¼” Ì¼” Ì¼”% Ì¼”& Ì¼”) Ì¼’” (” (–” (” (” Ì·	” Ì·” Ì·” Ì·–” (” (” Ì¸	”" Ì¸”# Ì¸”, Ì¸"’” )
-” )š” *
-” *” *” *”' *”) * ”2 *)”3 **”< *3”> *5˜” +” +” +” +” +”% +”& +”/ +(–” +” +” ,” ,” ,” ,–” +” +” -” -” -” -˜” +” +” .” .” .”$ .!”% ."”* .'’” 0” 0”” 1” 1” 1” 1’” 0” 0–” 1” 1” 2” 2” 2” 2’” 0” 0˜” 1” 1” 3” 3” 3”  3”! 3”& 3$’” 0” 0–” 1” 1” 4”  4”! 4”, 4*’” 0” 0Ü ” 1” 1” 5” 5” 5” 5” 5”! 5”# 5!”% 5#”* 5(”, 5*”. 5,”0 5.”3 51”5 53”6 54”8 56”> 5<”Ì@ 5>”ÌA 5?”ÌC 5ÌA’” 0” 0–” 1” 1” 6” 6” 6”  6’” 0” 0ž” 1” 1” 7” 7” 7” 7” 7”! 7”# 7!”% 7#”+ 7)”- 7+”/ 7-”1 7/’” 0” 0’” 1” 1’” )
-” )’” *
-” *’” :
-” :’” ;
-” ;’” :
-” :–” ;
-” ;” ÌV” ÌV” ÌV” ÌV’” :
-” :˜” ;
-” ;” ÌW”" ÌW”# ÌW”( ÌW ”) ÌW!”. ÌW&’” <” <–” <” <” ÌK” ÌK” ÌK” ÌK˜” <” <” ÌK” ÌK&” ÌK'”( ÌK4”) ÌK5”/ ÌK;š” <” <” ÌK=” ÌKÌC” ÌKÌD” ÌKÌF” ÌKÌL”! ÌKÌN”" ÌKÌO”$ ÌKÌQ’” =” =’” >” >”” ?” ?” ?” ?’” =” =’” >” >–” ?” ?” ?” ? ” ?!” ?#’” =” =’” >” >–” ?” ?” ?%” ?.” ?/”$ ?8’” =” =’” >” >—” ?” ?” ?:” ?ÌH”  ?ÌI”! ?ÌJ”" ?ÌK’” =” =’” >” >˜” ?” ?” ?ÌM” ?ÌW” ?ÌX”& ?Ìb”' ?Ìc”+ ?Ìg’” =” =’” >” >’” ?” ?’” ÌA”ÌE ÌAÌGŸ” ÌB” ÌB” ÌB” ÌB” ÌB”$ ÌB”% ÌB ”* ÌB%”+ ÌB&”2 ÌB-”3 ÌB.”< ÌB7”> ÌB9”Ì@ ÌB;”ÌA ÌB<’” ÌA”ÌE ÌAÌG–” ÌB” ÌB” ÌC” ÌC” ÌC” ÌC’” ÌA”ÌE ÌAÌG–” ÌB” ÌB” ÌD” ÌD” ÌD”$ ÌD$’” ÌA”ÌE ÌAÌG˜” ÌB” ÌB” ÌE” ÌE” ÌE”& ÌE&”' ÌE'”+ ÌE+’” ÌA”ÌE ÌAÌGš” ÌB” ÌB” ÌF” ÌF” ÌF” ÌF” ÌF”! ÌF!”" ÌF"”$ ÌF$’” ÌA”ÌA ÌAÌG’” ÌB” ÌB”” ÌH” ÌH” ÌH” ÌH–” ÌH” ÌH” ÌH” ÌH!” ÌH"” ÌH$–” ÌH” ÌH” ÌH&” ÌH/” ÌH0”$ ÌH9–” ÌH” ÌH” ÌH;”  ÌHÌJ”! ÌHÌK”* ÌHÌTÜ ” ÌH” ÌH” ÌHÌV” ÌHÌ]” ÌHÌ^” ÌHÌ_” ÌHÌc”! ÌHÌd”" ÌHÌe”$ ÌHÌg”) ÌHÌl”+ ÌHÌm”, ÌHÌn”. ÌHÌp”1 ÌHÌs”3 ÌHÌt”4 ÌHÌu”6 ÌHÌw”< ÌHÌ}”> ÌHÌ~”? ÌHÌ”ÌA ÌHÌ€–” ÌH” ÌH” ÌHÌ‚” ÌHÌŽ” ÌHÌ” ÌHÌ’” ÌH” ÌH’” ÌI” ÌI’” ÌI” ÌI”” ÌJ” ÌJ” ÌJ”  ÌJ–” ÌJ” ÌJ” ÌJ” ÌJ%” ÌJ&” ÌJ(–” ÌJ” ÌJ” ÌJ*” ÌJ3” ÌJ4”! ÌJ:’” ÌJ” ÌJ’” <” <’” ÌM” ÌM–” ÌM” ÌM” ÌT” ÌT” ÌT” ÌT’” ÌN” ÌN’” ÌO”3 ÌO5Ü ” ÌP” ÌP” ÌP” ÌP”" ÌP”# ÌP”- ÌP(”. ÌP)”2 ÌP-”3 ÌP.”: ÌP5”; ÌP6”Ì@ ÌP;”ÌA ÌP<”ÌH ÌPÌC”ÌI ÌPÌD”ÌR ÌPÌM”ÌT ÌPÌO”ÌV ÌPÌQ”ÌW ÌPÌR”Ì[ ÌPÌV”Ì^ ÌPÌY”Ì_ ÌPÌZ”Ìb ÌPÌ]”Ìe ÌPÌ`”Ìf ÌPÌa”Ìg ÌPÌb”Ìn ÌPÌi”Ìo ÌPÌj”Ìp ÌPÌk”Ìq ÌPÌl’” ÌN” ÌN’” ÌO”3 ÌO5–” ÌP” ÌP” ÌQ” ÌQ” ÌQ” ÌQ’” ÌN” ÌN’” ÌO”3 ÌO5–” ÌP” ÌP” ÌR” ÌR” ÌR”! ÌR!’” ÌN” ÌN’” ÌO”3 ÌO5œ” ÌP” ÌP” ÌS” ÌS” ÌS” ÌS”" ÌS"”$ ÌS$”6 ÌS6”7 ÌS7”ÌB ÌSÌB”ÌD ÌSÌD’” ÌN” ÌN’” ÌO”/ ÌO5’” ÌP” ÌP’” ÌM” ÌM’” :
-” :’” ;
-” ;’” ÌY
-” ÌY’” ÌZ
+}ÀÔrD’¬@ohos.router¸../viewmodel/ProductItemÔrE—ªassertions¨external¢id¤meta±moduleSideEffectsªresolvedByµsyntheticNamedExportsAÃÙi hvigor_ignore__Applications_DevEco-Studio.app_Contents_sdk_default_openharmony_ets_api_@ohos.router.d.tsÔrF‘¯hostModulesInfo’ÔrG’²hostDependencyName®hostModuleName¬@ohos.router¥entryG¬@ohos.router¥entryÃªoh-resolveÂEAÂÙG/Users/zouchaoxu/WaterFlow/entry/src/main/ets/viewmodel/ProductItem.etsAÃªoh-resolveÂ“ÔrH–§version¤fileªsourceRoot§sources¥names¨mappings´ProductDetailPage.js ‘µProductDetailPage.etsÜ3–”    ”  ”  ”  ”!  !”"  "–”   ” ” ” ”2 2”3 3’” ” ‘”  Ü ”6  ”: $”ÌE /”Ì² 	”Ì´ 	”Ì¶ 
+”Ì¸ 
+”Ìº ”Ì¼ ”Ì¾ ”ÌÀ ”ÌÂ ”ÌÄ ”ÌÆ ”ÌÈ ”ÌÊ ”ÌÌ ”ÌÍ ‘” 3’” 	” ’” 	” ’” ” ™” ” 
+” ” ” ” ”' #”) %”* &”” ” ” ” —” ” 
+” ” ” ”! *”" +‘”	 ’” ” ‘” š” ” 	” 
+” ”' ”) ”2 #”3 $”< -”> /’” ” –” ” ” Ìx” Ìx” Ìx” Ìx–” ” ” Ìy” Ìy” Ìy”  Ìy˜” ” ” Ìz” Ìz” Ìz”% Ìz”& Ìz”) Ìz’” ” –” ” ” Ìu	” Ìu” Ìu” Ìu–” ” ” Ìv	”" Ìv”# Ìv”, Ìv"’” 
+” š” 
+” ” ” ”' ”)  ”2 )”3 *”< 3”> 5˜” ” ” ” ” ”% ”& ”/ (–” ” ”  ”  ”  ”  –” ” ” !” !” !” !˜” ” ” "” "” "”$ "!”% ""”* "'”” $” $” $” $–” $” $” %” %” %” %˜” $” $” &” &” &”  &”! &”& &$–” $” $” '”  '”! '”, '*Ü ” $” $” (” (” (” (” (”! (”# (!”% (#”* ((”, (*”. (,”0 (.”3 (1”5 (3”6 (4”8 (6”> (<”Ì@ (>”ÌA (?”ÌC (ÌA–” $” $” )” )” )”  )ž” $” $” *” *” *” *” *”! *”# *!”% *#”+ *)”- *+”/ *-”1 */’” $” $’” 
+” ’” 
+” ’” -
+” -’” .
+” .’” -
+” -–” .
+” .” ÌB” ÌB” ÌB” ÌB’” -
+” -˜” .
+” .” ÌC”" ÌC”# ÌC”( ÌC ”) ÌC!”. ÌC&’” /” /–” /” /” 9” 9” 9” 9˜” /” /” 9” 9&” 9'”( 94”) 95”/ 9;š” /” /” 9=” 9ÌC” 9ÌD” 9ÌF” 9ÌL”! 9ÌN”" 9ÌO”$ 9ÌQ”” 0” 0” 0” 0–” 0” 0” 0” 0 ” 0!” 0#–” 0” 0” 0%” 0.” 0/”$ 08—” 0” 0” 0:” 0ÌH”  0ÌI”! 0ÌJ”" 0ÌK˜” 0” 0” 0ÌM” 0ÌW” 0ÌX”& 0Ìb”' 0Ìc”+ 0Ìg’” 0” 0Ÿ” 1” 1” 1” 1” 1”$ 1”% 1 ”* 1%”+ 1&”2 1-”3 1.”< 17”> 19”Ì@ 1;”ÌA 1<–” 1” 1” 2” 2” 2” 2–” 1” 1” 3” 3” 3”$ 3$˜” 1” 1” 4” 4” 4”& 4&”' 4'”+ 4+š” 1” 1” 5” 5” 5” 5” 5”! 5!”" 5"”$ 5$’” 1” 1”” 6” 6” 6” 6–” 6” 6” 6” 6!” 6"” 6$–” 6” 6” 6&” 6/” 60”$ 69–” 6” 6” 6;”  6ÌJ”! 6ÌK”* 6ÌTÜ ” 6” 6” 6ÌV” 6Ì]” 6Ì^” 6Ì_” 6Ìc”! 6Ìd”" 6Ìe”$ 6Ìg”) 6Ìl”+ 6Ìm”, 6Ìn”. 6Ìp”1 6Ìs”3 6Ìt”4 6Ìu”6 6Ìw”< 6Ì}”> 6Ì~”? 6Ì”ÌA 6Ì€–” 6” 6” 6Ì‚” 6ÌŽ” 6Ì” 6Ì’” 6” 6’” 7” 7’” 7” 7”” 8” 8” 8”  8–” 8” 8” 8” 8%” 8&” 8(–” 8” 8” 8*” 83” 84”! 8:’” 8” 8’” /” /’” ;” ;–” ;” ;” Ì@” Ì@” Ì@” Ì@Ü ” <” <” <” <”" <”# <”- <(”. <)”2 <-”3 <.”: <5”; <6”Ì@ <;”ÌA <<”ÌH <ÌC”ÌI <ÌD”ÌR <ÌM”ÌT <ÌO”ÌV <ÌQ”ÌW <ÌR”Ì[ <ÌV”Ì^ <ÌY”Ì_ <ÌZ”Ìb <Ì]”Ìe <Ì`”Ìf <Ìa”Ìg <Ìb”Ìn <Ìi”Ìo <Ìj”Ìp <Ìk”Ìq <Ìl–” <” <” =” =” =” =–” <” <” >” >” >”! >!œ” <” <” ?” ?” ?” ?”" ?"”$ ?$”6 ?6”7 ?7”ÌB ?ÌB”ÌD ?ÌD’” <” <’” ;” ;’” -
+” -’” .
+” .’” ÌE
+” ÌE’” ÌF
+” ÌF’” ÌE
+” ÌEÜ ” ÌF
+” ÌF” ÌT” ÌT” ÌT” ÌT”! ÌT”# ÌT”% ÌT”' ÌT”, ÌT$”. ÌT&”0 ÌT(”2 ÌT*”8 ÌT0”: ÌT2”< ÌT4”> ÌT6’” ÌE
+” ÌE˜” ÌF
+” ÌF” ÌU”" ÌU”# ÌU”( ÌU ”) ÌU!”. ÌU&˜” ÌG” ÌG” ÌG” ÌG” ÌG”$ ÌG”% ÌG”) ÌG"–” ÌG” ÌG” ÌH” ÌH” ÌH” ÌH˜” ÌG” ÌG” ÌI” ÌI” ÌI”& ÌI$”' ÌI%”+ ÌI)–” ÌG” ÌG” ÌJ” ÌJ” ÌJ” ÌJœ” ÌG” ÌG” ÌK” ÌK” ÌK”  ÌK”( ÌK&”* ÌK(”6 ÌK4”7 ÌK5”? ÌK=”ÌA ÌK?–” ÌG” ÌG” ÌL” ÌL” ÌL” ÌLš” ÌG” ÌG” ÌM” ÌM” ÌM” ÌM”  ÌM”" ÌM ”# ÌM!”% ÌM#’” ÌG” ÌG˜” ÌO” ÌO” ÌO” ÌO” ÌO”  ÌO”! ÌO”# ÌO–” ÌO” ÌO” ÌR” ÌR” ÌR” ÌR”” ÌP” ÌP” ÌP” ÌP–” ÌP” ÌP” ÌP” ÌP#” ÌP$” ÌP&–” ÌP” ÌP” ÌP(” ÌP1” ÌP2”$ ÌP;ž” ÌP” ÌP” ÌP=” ÌPÌC” ÌPÌD” ÌPÌF” ÌPÌK”! ÌPÌM”" ÌPÌN”$ ÌPÌP”) ÌPÌU”+ ÌPÌW”4 ÌPÌ`”6 ÌPÌb–” ÌP” ÌP” ÌPÌd” ÌPÌk” ÌPÌl” ÌPÌm–” ÌP” ÌP” ÌPÌo” ÌPÌ{” ÌPÌ|” ÌPÌ}’” ÌP” ÌP”” ÌQ” ÌQ” ÌQ” ÌQ–” ÌQ” ÌQ” ÌQ” ÌQ!” ÌQ"” ÌQ$–” ÌQ” ÌQ” ÌQ&” ÌQ/” ÌQ0”$ ÌQ9ž” ÌQ” ÌQ” ÌQ;” ÌQÌA” ÌQÌB” ÌQÌD” ÌQÌI”! ÌQÌK”" ÌQÌL”$ ÌQÌN”) ÌQÌS”+ ÌQÌU”4 ÌQÌ^”6 ÌQÌ`–” ÌQ” ÌQ” ÌQÌb” ÌQÌi” ÌQÌj” ÌQÌk–” ÌQ” ÌQ” ÌQÌm” ÌQÌy” ÌQÌz” ÌQÌ{’” ÌQ” ÌQ’” ÌO” ÌO’” ÌE
+” ÌE’” ÌF
+” ÌF’” ÌW
+” ÌW–” ÌW
+” ÌW” ÌW” ÌW”  ÌW ”! ÌW!–” ÌW
+” ÌW” ÌW#” ÌW(” ÌW)”# ÌW2’” ÌY
+”* ÌY(’” ÌZ
 ” ÌZ’” ÌY
-” ÌYÜ ” ÌZ
-” ÌZ” Ìk” Ìk” Ìk” Ìk”! Ìk”# Ìk”% Ìk”' Ìk”, Ìk$”. Ìk&”0 Ìk(”2 Ìk*”8 Ìk0”: Ìk2”< Ìk4”> Ìk6’” ÌY
-” ÌY˜” ÌZ
-” ÌZ” Ìl”" Ìl”# Ìl”( Ìl ”) Ìl!”. Ìl&š” Ì[” Ì[” Ì[” Ì[” Ì[”$ Ì[”% Ì[”) Ì["”, Ì[%”ÌD Ì[=–” Ì[” Ì[” Ì\” Ì\” Ì\” Ì\˜” Ì[” Ì[” Ì]” Ì]” Ì]”& Ì]$”' Ì]%”+ Ì])–” Ì[” Ì[” Ì^” Ì^” Ì^” Ì^œ” Ì[” Ì[” Ì_” Ì_” Ì_”  Ì_”( Ì_&”* Ì_(”6 Ì_4”7 Ì_5”? Ì_=”ÌA Ì_?–” Ì[” Ì[” Ì`” Ì`” Ì`” Ì`š” Ì[” Ì[” Ìa” Ìa” Ìa” Ìa”  Ìa”" Ìa ”# Ìa!”% Ìa#’” Ì[” Ì[’” Ìc” Ìc˜” Ìd” Ìd” Ìd” Ìd” Ìd”  Ìd”! Ìd”# Ìd’” Ìc” Ìc–” Ìd” Ìd” Ìi” Ìi” Ìi” Ìi”” Ìe” Ìe” Ìe” Ìe–” Ìe” Ìe” Ìe” Ìe#” Ìe$” Ìe&–” Ìe” Ìe” Ìe(” Ìe1” Ìe2”$ Ìe;ž” Ìe” Ìe” Ìe=” ÌeÌC” ÌeÌD” ÌeÌF” ÌeÌK”! ÌeÌM”" ÌeÌN”$ ÌeÌP”) ÌeÌU”+ ÌeÌW”4 ÌeÌ`”6 ÌeÌb–” Ìe” Ìe” ÌeÌd” ÌeÌk” ÌeÌl” ÌeÌm–” Ìe” Ìe” ÌeÌo” ÌeÌ{” ÌeÌ|” ÌeÌ}’” Ìe” Ìe”” Ìf” Ìf” Ìf” Ìf–” Ìf” Ìf” Ìf” Ìf!” Ìf"” Ìf$–” Ìf” Ìf” Ìf&” Ìf/” Ìf0”$ Ìf9ž” Ìf” Ìf” Ìf;” ÌfÌA” ÌfÌB” ÌfÌD” ÌfÌI”! ÌfÌK”" ÌfÌL”$ ÌfÌN”) ÌfÌS”+ ÌfÌU”4 ÌfÌ^”6 ÌfÌ`–” Ìf” Ìf” ÌfÌb” ÌfÌi” ÌfÌj” ÌfÌk–” Ìf” Ìf” ÌfÌm” ÌfÌy” ÌfÌz” ÌfÌ{’” Ìf” Ìf”” Ìg” Ìg” Ìg” Ìg–” Ìg” Ìg” Ìg” Ìg!” Ìg"” Ìg$˜” Ìg” Ìg” Ìg&” Ìg/” Ìg0”  Ìg5”! Ìg6”& Ìg;–” Ìg” Ìg” Ìg=”  ÌgÌL”! ÌgÌM”* ÌgÌV–” Ìg” Ìg” ÌgÌX” ÌgÌ_” ÌgÌ`” ÌgÌa–” Ìg” Ìg” ÌgÌc” ÌgÌo” ÌgÌp” ÌgÌq’” Ìg” Ìg’” Ìc” Ìc’” Ìd” Ìd’” ÌY
-” ÌY’” ÌZ
-” ÌZ’” Ìn
-” Ìn’” Ìo
-” Ìo’” Ìn
-” Ìn–” Ìo
-” Ìo” Ìo” Ìo”  Ìo ”! Ìo!’” Ìn
-” Ìn–” Ìo
-” Ìo” Ìo#” Ìo(” Ìo)”# Ìo2’” Ìq
-” Ìq’” Ìr
-” Ìr’” Ìq
-” Ìqž” Ìr
-” Ìr” Ì‰” Ì‰” Ì‰” Ì‰”! Ì‰”# Ì‰”% Ì‰”' Ì‰”, Ì‰$”. Ì‰&”0 Ì‰(”2 Ì‰*’” Ìq
-” Ìq˜” Ìr
-” Ìr” ÌŠ”" ÌŠ”# ÌŠ”( ÌŠ ”) ÌŠ!”. ÌŠ&’” Ìs” Ìs–” Ìs” Ìs” Ìy” Ìy” Ìy” Ìyž” Ìs” Ìs” Ìy” Ìy"” Ìy#” Ìy%” Ìy(” Ìy*”! Ìy,”# Ìy.”) Ìy4”+ Ìy6”- Ìy8”/ Ìy:”” Ìt” Ìt” Ìt” Ìt–” Ìt” Ìt” Ìt” Ìt"” Ìt#”! Ìt)–” Ìt” Ìt” Ìt+” Ìt3” Ìt4” Ìt6–” Ìt” Ìt” Ìt8” Ìt=” Ìt>” ÌtÌ@’” Ìt” Ìt”” Ìu” Ìu” Ìu”) Ìu$–” Ìu” Ìu” Ìu&” Ìu.” Ìu/” Ìu1–” Ìu” Ìu” Ìu3” Ìu<” Ìu=”! ÌuÌC’” Ìu” Ìu’” Ìv” Ìv’” Ìv” Ìv”” Ìw” Ìw” Ìw”! Ìw–” Ìw” Ìw” Ìw” Ìw&” Ìw'” Ìw)–” Ìw” Ìw” Ìw+” Ìw4” Ìw5”! Ìw;’” Ìw” Ìw’” Ìs” Ìs’” Ì{” Ì{–” Ì{” Ì{” Ì{” Ì{” Ì{”  Ì{"’” Ì}” Ì}–” Ì}” Ì}” Ì‡” Ì‡” Ì‡” Ì‡ž” Ì}” Ì}” Ì‡” Ì‡"” Ì‡#” Ì‡%” Ì‡(” Ì‡*”! Ì‡,”# Ì‡.”) Ì‡4”+ Ì‡6”- Ì‡8”/ Ì‡:”” Ì~” Ì~” Ì~” Ì~–” Ì~” Ì~” Ì~” Ì~"” Ì~#”! Ì~)–” Ì~” Ì~” Ì~+” Ì~3” Ì~4” Ì~6–” Ì~” Ì~” Ì~8” Ì~=” Ì~>” Ì~Ì@’” Ì~” Ì~˜” Ì” Ì” Ì” Ì” Ì”  Ì”" Ì”$ Ì”” Ì€” Ì€” Ì€” Ì€–” Ì€” Ì€” Ì€” Ì€&” Ì€'” Ì€)–” Ì€” Ì€” Ì€+” Ì€4” Ì€5”! Ì€;’” Ì€” Ì€”” Ì” Ì” Ì” Ì–” Ì” Ì” Ì” Ì$” Ì%” Ì'–” Ì” Ì” Ì)” Ì2” Ì3”! Ì9’” Ì” Ì”” Ì‚” Ì‚” Ì‚” Ì‚–” Ì‚” Ì‚” Ì‚” Ì‚%” Ì‚&” Ì‚(–” Ì‚” Ì‚” Ì‚*” Ì‚3” Ì‚4”! Ì‚:’” Ì‚” Ì‚’” Ì” Ì’” Ì„” Ì„’” Ì„” Ì„”” Ì…” Ì…” Ì…” Ì…–” Ì…” Ì…” Ì…” Ì…!” Ì…"”! Ì…(’” Ì…” Ì…’” Ì}” Ì}’” Ìq
-” Ìq’” Ìr
-” Ìr’” ÌŒ
-” ÌŒ–” ÌŒ
-” ÌŒ” ÌŒ” ÌŒ”  ÌŒ ”! ÌŒ!–” ÌŒ
-” ÌŒ” ÌŒ#” ÌŒ(” ÌŒ)”# ÌŒ2’” ÌŽ
-” ÌŽ’” Ì
-” Ì’” ÌŽ
-” ÌŽ˜” Ì
-” Ì” Ì”" Ì”# Ì”( Ì ”) Ì!”. Ì&’” Ì” Ì–” Ì” Ì” Ì”” Ì”” Ì”” Ì”–” Ì” Ì” Ì”” Ì”#” Ì”$” Ì”&”” Ì‘” Ì‘” Ì‘”# Ì‘–” Ì‘” Ì‘” Ì‘ ” Ì‘(” Ì‘)” Ì‘+˜” Ì‘” Ì‘” Ì‘-” Ì‘7” Ì‘8”& Ì‘ÌB”' Ì‘ÌC”+ Ì‘ÌG’” Ì‘” Ì‘’” Ì’” Ì’’” Ì’” Ì’”” Ì“” Ì“” Ì“”  Ì“–” Ì“” Ì“” Ì“” Ì“%” Ì“&” Ì“(–” Ì“” Ì“” Ì“*” Ì“3” Ì“4”$ Ì“=’” Ì“” Ì“’” Ì” Ì’” Ì–” Ì–’” Ì—” Ì—’” Ì–” Ì––” Ì—” Ì—” Ìš” Ìš” Ìš” Ìš’” Ì–” Ì–ž” Ì—” Ì—” Ìš” Ìš#” Ìš$” Ìš%” Ìš)”  Ìš*”" Ìš,”$ Ìš.”* Ìš4”, Ìš5”- Ìš6”/ Ìš7’” Ì˜” Ì˜–” Ì˜” Ì˜” Ì˜.” Ì˜3” Ì˜4” Ì˜6–” Ì˜” Ì˜” Ì˜8” Ì˜>” Ì˜?” Ì˜ÌA–” Ì˜” Ì˜” Ì˜ÌC” Ì˜ÌO” Ì˜ÌP”! Ì˜ÌRš” Ì˜” Ì˜” Ì˜ÌT” Ì˜ÌZ” Ì˜Ì[” Ì˜Ì\”  Ì˜Ìa”" Ì˜Ìb”# Ì˜Ìc”% Ì˜Ìd”” Ì™” Ì™” Ì™” Ì™–” Ì™” Ì™” Ì™” Ì™$” Ì™%” Ì™'–” Ì™” Ì™” Ì™)” Ì™2” Ì™3”! Ì™9’” Ì™” Ì™’” Ì–” Ì–’” Ì—” Ì—”” Ì›” Ì›” Ì›”1 Ì›*–” Ì›” Ì›” Ì›,” Ì›4” Ì›5” Ì›7Ü ” Ì›” Ì›” Ì›9” Ì›Ì@” Ì›ÌA” Ì›ÌB” Ì›ÌF”! Ì›ÌG”# Ì›ÌI”% Ì›ÌK”* Ì›ÌP”, Ì›ÌQ”. Ì›ÌS”0 Ì›ÌU”6 Ì›Ì[”8 Ì›Ì\”: Ì›Ì^”< Ì›Ì_’” Ì›” Ì›’” ÌŽ
-” ÌŽ’” Ì
-” Ì’” ÌŸ
-” ÌŸ–” ÌŸ
-” ÌŸ” ÌŸ” ÌŸ”  ÌŸ ”! ÌŸ!–” ÌŸ
-” ÌŸ” ÌŸ#” ÌŸ(” ÌŸ)”# ÌŸ2’” Ì¡
-”% Ì¡#’” Ì¢
-” Ì¢’” Ì¡
-”% Ì¡#˜” Ì¢
-” Ì¢” Ì²”" Ì²”# Ì²”( Ì² ”) Ì²!”. Ì²&’” Ì¡
-”% Ì¡#–” Ì¢
-” Ì¢” Ì³” Ì³” Ì³” Ì³’” Ì¡
-”% Ì¡#˜” Ì¢
-” Ì¢” Ì´” Ì´” Ì´”- Ì´%”. Ì´&”3 Ì´+’” Ì£” Ì£–” Ì£” Ì£” Ì§” Ì§” Ì§” Ì§˜” Ì£” Ì£” Ì§” Ì§*” Ì§+”( Ì§4”) Ì§5”/ Ì§;–” Ì£” Ì£” Ì§=” Ì§ÌD” Ì§ÌE” Ì§ÌG’” Ì¤” Ì¤–” Ì¤” Ì¤” Ì¤” Ì¤” Ì¤” Ì¤–” Ì¤” Ì¤” Ì¤” Ì¤%” Ì¤&” Ì¤'–” Ì¤” Ì¤” Ì¤)”  Ì¤8”! Ì¤9”' Ì¤?”” Ì¥” Ì¥” Ì¥”  Ì¥–” Ì¥” Ì¥” Ì¥” Ì¥%” Ì¥&” Ì¥(–” Ì¥” Ì¥” Ì¥*” Ì¥3” Ì¥4”! Ì¥:’” Ì¥” Ì¥’” Ì¦” Ì¦–” Ì¦” Ì¦” Ì¦” Ì¦” Ì¦” Ì¦–” Ì¦” Ì¦” Ì¦” Ì¦%” Ì¦&” Ì¦'–” Ì¦” Ì¦” Ì¦)”  Ì¦8”! Ì¦9”' Ì¦?’” Ì£” Ì£–” Ì©” Ì©” Ì©” Ì©” Ì©”, Ì©%–” Ì©” Ì©” Ìª” Ìª” Ìª” Ìª–” Ì©” Ì©” Ì«” Ì«” Ì«” Ì«–” Ì©” Ì©” Ì¬” Ì¬” Ì¬”! Ì¬–” Ì©” Ì©” Ì­” Ì­” Ì­” Ì­’” Ì©” Ì©’” Ì¯” Ì¯’” Ì°” Ì°’” Ì¯” Ì¯–” Ì°” Ì°” Ì°” Ì°” Ì°” Ì°’” Ì¯” Ì¯’” Ì°” Ì°’” Ì¡
-”! Ì¡#’” Ì¢
-” Ì¢’” (” (’” &” &’” '” '’” Ì¿”! Ì¿’” ÌÀ” ÌÀ	’” Ì¿”! Ì¿–” ÌÀ” ÌÀ	” Ìî” Ìî” Ìî” Ìî’” Ì¿”! Ì¿–” ÌÀ” ÌÀ	” Ìï” Ìï” Ìï” Ìï’” Ì¿”! Ì¿˜” ÌÀ” ÌÀ	” Ìð” Ìð”  Ìð”% Ìð”& Ìð”+ Ìð"’” Ì¿”! Ì¿Ü ” ÌÀ” ÌÀ	” Ìñ” Ìñ” Ìñ” Ìñ” Ìñ”  Ìñ”" Ìñ”% Ìñ”' Ìñ”( Ìñ”* Ìñ!”, Ìñ#”1 Ìñ(”3 Ìñ*”< Ìñ3”> Ìñ5’” ÌÁ” ÌÁ˜” ÌÂ” ÌÂ” ÌÂ” ÌÂ” ÌÂ”  ÌÂ”" ÌÂ”$ ÌÂ’” ÌÁ” ÌÁž” ÌÂ” ÌÂ” ÌÐ	” ÌÐ” ÌÐ” ÌÐ” ÌÐ”  ÌÐ”" ÌÐ”$ ÌÐ”) ÌÐ"”+ ÌÐ$”- ÌÐ&”/ ÌÐ(’” ÌÃ
-” ÌÃ’” ÌÄ” ÌÄ–” ÌÄ” ÌÄ” ÌÄ,” ÌÄ1” ÌÄ2” ÌÄ4–” ÌÄ” ÌÄ” ÌÄ6” ÌÄ<” ÌÄ=” ÌÄ?”” ÌÅ” ÌÅ” ÌÅ” ÌÅ–” ÌÅ” ÌÅ” ÌÅ” ÌÅ” ÌÅ ” ÌÅ"–” ÌÅ” ÌÅ” ÌÅ$” ÌÅ-” ÌÅ.”! ÌÅ4š” ÌÅ” ÌÅ” ÌÅ6” ÌÅ<” ÌÅ=” ÌÅ?” ÌÅÌB” ÌÅÌD”  ÌÅÌE”" ÌÅÌG’” ÌÅ” ÌÅ’” ÌÃ
-” ÌÃ’” ÌÇ
-” ÌÇ’” ÌÈ” ÌÈ–” ÌÈ” ÌÈ” ÌÈ,” ÌÈ1” ÌÈ2” ÌÈ4–” ÌÈ” ÌÈ” ÌÈ6” ÌÈ<” ÌÈ=” ÌÈ?”” ÌÉ” ÌÉ” ÌÉ” ÌÉ–” ÌÉ” ÌÉ” ÌÉ” ÌÉ” ÌÉ ” ÌÉ"–” ÌÉ” ÌÉ” ÌÉ$” ÌÉ-” ÌÉ.”! ÌÉ4š” ÌÉ” ÌÉ” ÌÉ6” ÌÉ<” ÌÉ=” ÌÉ?” ÌÉÌB” ÌÉÌD”  ÌÉÌE”" ÌÉÌG’” ÌÉ” ÌÉ’” ÌÇ
-” ÌÇ’” ÌË
-” ÌË’” ÌÌ” ÌÌ–” ÌÌ” ÌÌ” ÌÌ,” ÌÌ1” ÌÌ2” ÌÌ4–” ÌÌ” ÌÌ” ÌÌ6” ÌÌ<” ÌÌ=” ÌÌ?”” ÌÍ” ÌÍ” ÌÍ” ÌÍ–” ÌÍ” ÌÍ” ÌÍ” ÌÍ” ÌÍ ” ÌÍ"–” ÌÍ” ÌÍ” ÌÍ$” ÌÍ-” ÌÍ.”! ÌÍ4š” ÌÍ” ÌÍ” ÌÍ6” ÌÍ<” ÌÍ=” ÌÍ?” ÌÍÌB” ÌÍÌD”  ÌÍÌE”" ÌÍÌG’” ÌÍ” ÌÍ’” ÌË
-” ÌË’” ÌÁ” ÌÁ’” ÌÂ” ÌÂ’” ÌÒ” ÌÒ’” ÌÒ” ÌÒ’” ÌÔ” ÌÔ’” ÌÕ” ÌÕ’” ÌÔ” ÌÔš” ÌÕ” ÌÕ” Ìì	” Ìì” Ìì” Ìì” Ìì”  Ìì”" Ìì”$ Ìì”” ÌÖ
-” ÌÖ”# ÌÖ”* ÌÖ˜” ÌÖ
-” ÌÖ” Ì×” Ì×” Ì×”" Ì×”# Ì×”) Ì×#–” ÌÖ
-” ÌÖ” ÌØ”" ÌØ”# ÌØ”, ÌØ&˜” ÌÖ
-” ÌÖ” ÌÙ” ÌÙ” ÌÙ”" ÌÙ”# ÌÙ”( ÌÙ"–” ÌÖ
-” ÌÖ” ÌÚ” ÌÚ” ÌÚ” ÌÚ–” ÌÖ
-” ÌÖ” ÌÛ” ÌÛ” ÌÛ” ÌÛ–” ÌÖ
-” ÌÖ” ÌÜ” ÌÜ” ÌÜ” ÌÜž” ÌÖ
-” ÌÖ” ÌÝ” ÌÝ”  ÌÝ”" ÌÝ”) ÌÝ#”+ ÌÝ%”- ÌÝ'”/ ÌÝ)”9 ÌÝ3”; ÌÝ5”= ÌÝ7”? ÌÝ9’” ÌÖ
-” ÌÖ”” Ìß
-” Ìß”# Ìß”) Ìß˜” Ìß
-” Ìß” Ìà” Ìà” Ìà”" Ìà”# Ìà”) Ìà#–” Ìß
-” Ìß” Ìá”" Ìá”# Ìá”, Ìá&˜” Ìß
-” Ìß” Ìâ” Ìâ” Ìâ”" Ìâ”# Ìâ”( Ìâ"–” Ìß
-” Ìß” Ìã” Ìã” Ìã” Ìã–” Ìß
-” Ìß” Ìä” Ìä” Ìä” Ìä–” Ìß
-” Ìß” Ìå” Ìå” Ìå” Ìåž” Ìß
-” Ìß” Ìæ” Ìæ”  Ìæ”" Ìæ”* Ìæ$”, Ìæ&”. Ìæ(”0 Ìæ*”; Ìæ5”= Ìæ7”? Ìæ9”ÌA Ìæ;—” Ìß
-” Ìß” Ìç” Ìç” Ìç” Ìç”  Ìç’” Ìè” Ìè˜” Ìé” Ìé” Ìé” Ìé” Ìé”$ Ìé"”% Ìé#”& Ìé#’” Ìê” Ìê’” Ìß
-” Ìß’” ÌÔ” ÌÔ’” ÌÕ” ÌÕ’” Ì¿” Ì¿’” ÌÀ” ÌÀ	’” Ìó”  Ìó’” Ìô”" Ìô’” Ìõ” Ìõ	’” Ìó”  Ìó’” Ìô”" Ìô–” Ìõ” Ìõ	” Í” Í” Í” Í’” Ìó”  Ìó’” Ìô”" Ìô–” Ìõ” Ìõ	” Í” Í” Í” Í’” Ìó”  Ìó’” Ìô”" Ìô˜” Ìõ” Ìõ	” Í” Í”  Í”+ Í"”, Í#”7 Í.’” Ìó”  Ìó’” Ìô”" Ìô˜” Ìõ” Ìõ	” Í” Í” Í”( Í”) Í ”, Í#”” Ìö” Ìö”# Ìö”& Ìö˜” Ìö” Ìö” Ì÷” Ì÷” Ì÷”" Ì÷”# Ì÷”) Ì÷!–” Ìö” Ìö” Ìø”" Ìø”# Ìø”. Ìø&˜” Ìö” Ìö” Ìù” Ìù” Ìù”" Ìù”# Ìù”( Ìù –” Ìö” Ìö” Ìú” Ìú” Ìú” Ìú–” Ìö” Ìö” Ìû” Ìû” Ìû” Ìû–” Ìö” Ìö” Ìü” Ìü” Ìü” Ìüž” Ìö” Ìö” Ìý” Ìý” Ìý” Ìý” Ìý”! Ìý”# Ìý”% Ìý”) Ìý!”+ Ìý#”- Ìý%”/ Ìý'—” Ìö” Ìö” Ìþ” Ìþ” Ìþ” Ìþ”  Ìþ–” Ìÿ” Ìÿ” Ìÿ” Ìÿ” Ìÿ” Ìÿ’” Í 
-” Í ’” Ìö” Ìö’” Ìó” Ìó’” Ìô” Ìô’” Ìõ” Ìõ	’” #”) #%’” $” $	‘” ÍÔrI–§version¤file§sources®sourcesContent¥names¨mappingsÀ‘À‘ÀÜƒ‘”    ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”  	 ‘”  
+”* ÌY(˜” ÌZ
+” ÌZ” Ìq”" Ìq”# Ìq”( Ìq ”) Ìq!”. Ìq&’” ÌY
+”* ÌY(–” ÌZ
+” ÌZ” Ìr” Ìr” Ìr” Ìr’” ÌY
+”* ÌY(˜” ÌZ
+” ÌZ” Ìs” Ìs” Ìs”- Ìs%”. Ìs&”3 Ìs+’” Ì[” Ì[–” Ì[” Ì[” Ì_” Ì_” Ì_” Ì_˜” Ì[” Ì[” Ì_” Ì_*” Ì_+”( Ì_4”) Ì_5”/ Ì_;–” Ì[” Ì[” Ì_=” Ì_ÌD” Ì_ÌE” Ì_ÌG’” Ì\” Ì\–” Ì\” Ì\” Ì\” Ì\” Ì\” Ì\–” Ì\” Ì\” Ì\” Ì\%” Ì\&” Ì\'–” Ì\” Ì\” Ì\)”  Ì\8”! Ì\9”' Ì\?”” Ì]” Ì]” Ì]”  Ì]–” Ì]” Ì]” Ì]” Ì]%” Ì]&” Ì](–” Ì]” Ì]” Ì]*” Ì]3” Ì]4”! Ì]:’” Ì]” Ì]’” Ì^” Ì^–” Ì^” Ì^” Ì^” Ì^” Ì^” Ì^–” Ì^” Ì^” Ì^” Ì^%” Ì^&” Ì^'–” Ì^” Ì^” Ì^)”  Ì^8”! Ì^9”' Ì^?’” Ì[” Ì[˜” Ìa” Ìa” Ìa” Ìa” Ìa”$ Ìa”% Ìa”0 Ìa)–” Ìa” Ìa” Ìb” Ìb” Ìb” Ìb–” Ìa” Ìa” Ìc” Ìc” Ìc” Ìc–” Ìa” Ìa” Ìd” Ìd” Ìd”! Ìd–” Ìa” Ìa” Ìe” Ìe” Ìe” Ìe’” Ìa” Ìa’” Ìg” Ìg’” Ìh” Ìh”” Ìi” Ìi”! Ìi”$ Ìi–” Ìi” Ìi” Ìj” Ìj”  Ìj”& Ìj˜” Ìi” Ìi” Ìk”# Ìk”$ Ìk”, Ìk#”- Ìk$”2 Ìk)š” Ìi” Ìi” Ìl”  Ìl”! Ìl”# Ìl”) Ìl ”+ Ìl"”- Ìl$”/ Ìl&–”/ Ìh”3 Ìh”4 Ìh”; Ìh ”< Ìh!”ÌH Ìh-’” Ìg” Ìg’” Ìh” Ìh’” Ìo” Ìo–” Ìo” Ìo” Ìo” Ìo” Ìo” Ìo’” Ìo” Ìo’” ÌY
+”& ÌY(’” ÌZ
+” ÌZ’” ” ’” ” ’” Ì|” Ì|’” Ì}” Ì}	’” Ì|” Ì|–” Ì}” Ì}	” Ì†” Ì†” Ì†” Ì†’” Ì|” Ì|˜” Ì}” Ì}	” Ì‡” Ì‡”  Ì‡”% Ì‡”& Ì‡”+ Ì‡"”” Ì~” Ì~”# Ì~”) Ì~˜” Ì~” Ì~” Ì” Ì” Ì”" Ì”# Ì”) Ì!–” Ì~” Ì~” Ì€”" Ì€”# Ì€”, Ì€$˜” Ì~” Ì~” Ì” Ì” Ì”" Ì”# Ì”( Ì –” Ì~” Ì~” Ì‚” Ì‚” Ì‚” Ì‚–” Ì~” Ì~” Ìƒ” Ìƒ” Ìƒ” ÌƒÜ ” Ì~” Ì~” Ì„” Ì„” Ì„” Ì„”  Ì„”# Ì„”* Ì„"”+ Ì„#”/ Ì„'”0 Ì„(”5 Ì„-”6 Ì„.”7 Ì„.”8 Ì„/”9 Ì„0’” Ì~” Ì~’” Ì|” Ì|’” Ì}” Ì}	’” Ì‰” Ì‰’” ÌŠ” ÌŠ	’” Ì‰” Ì‰–” ÌŠ” ÌŠ	” Ì•” Ì•” Ì•” Ì•’” Ì‰” Ì‰–” ÌŠ” ÌŠ	” Ì–” Ì–” Ì–” Ì–’” Ì‰” Ì‰˜” ÌŠ” ÌŠ	” Ì—” Ì—”  Ì—”+ Ì—"”, Ì—#”7 Ì—.’” Ì‰” Ì‰˜” ÌŠ” ÌŠ	” Ì˜” Ì˜” Ì˜”( Ì˜”) Ì˜ ”, Ì˜#”” Ì‹” Ì‹”# Ì‹”& Ì‹˜” Ì‹” Ì‹” ÌŒ” ÌŒ” ÌŒ”" ÌŒ”# ÌŒ”) ÌŒ!–” Ì‹” Ì‹” Ì”" Ì”# Ì”. Ì&˜” Ì‹” Ì‹” ÌŽ” ÌŽ” ÌŽ”" ÌŽ”# ÌŽ”( ÌŽ –” Ì‹” Ì‹” Ì” Ì” Ì” Ì–” Ì‹” Ì‹” Ì” Ì” Ì” Ì–” Ì‹” Ì‹” Ì‘” Ì‘” Ì‘” Ì‘ž” Ì‹” Ì‹” Ì’” Ì’” Ì’” Ì’” Ì’”! Ì’”# Ì’”% Ì’”) Ì’!”+ Ì’#”- Ì’%”/ Ì’'Ÿ” Ì‹” Ì‹” Ì“” Ì“” Ì“” Ì“”  Ì“”# Ì“”) Ì“!”* Ì“"”. Ì“&”0 Ì“(”1 Ì“)”2 Ì“*”3 Ì“+’” Ì‹” Ì‹’” Ì‰” Ì‰’” ÌŠ” ÌŠ	’” ” 	‘” ÌšÔrI–§version¤file§sources®sourcesContent¥names¨mappingsÀ‘À‘ÀÜ<‘”    ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”  	 ‘”  
  ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”    ‘”  ! ‘”  " ‘”  # ‘”  $ ‘”  % ‘”  & ‘”  ' ‘”  ( ‘”  ) ‘”  * ‘”  + ‘”  , ‘”  - ‘”  . ‘”  / ‘”  0 ‘”  1 ‘”  2 ‘”  3 ‘”  4 ‘”  5 ‘”  6 ‘”  7 ‘”  8 ‘”  9 ‘”  : ‘”  ; ‘”  < ‘”  = ‘”  > ‘”  ? ‘”  Ì@ ‘”  ÌA ‘”  ÌB ‘”  ÌC ‘”  ÌD ‘”  ÌE ‘”  ÌF ‘”  ÌG ‘”  ÌH ‘”  ÌI ‘”  ÌJ ‘”  ÌK ‘”  ÌL ‘”  ÌM ‘”  ÌN ‘”  ÌO ‘”  ÌP ‘”  ÌQ ‘”  ÌR ‘”  ÌS ‘”  ÌT ‘”  ÌU ‘”  ÌV ‘”  ÌW ‘”  ÌX ‘”  ÌY ‘”  ÌZ ‘”  Ì[ ‘”  Ì\ ‘”  Ì] ‘”  Ì^ ‘”  Ì_ ‘”  Ì` ‘”  Ìa ‘”  Ìb ‘”  Ìc ‘”  Ìd ‘”  Ìe ‘”  Ìf ‘”  Ìg ‘”  Ìh ‘”  Ìi ‘”  Ìj ‘”  Ìk ‘”  Ìl ‘”  Ìm ‘”  Ìn ‘”  Ìo ‘”  Ìp ‘”  Ìq ‘”  Ìr ‘”  Ìs ‘”  Ìt ‘”  Ìu ‘”  Ìv ‘”  Ìw ‘”  Ìx ‘”  Ìy ‘”  Ìz ‘”  Ì{ ‘”  Ì| ‘”  Ì} ‘”  Ì~ ‘”  Ì ‘”  Ì€ ‘”  Ì ‘”  Ì‚ ‘”  Ìƒ ‘”  Ì„ ‘”  Ì… ‘”  Ì† ‘”  Ì‡ ‘”  Ìˆ ‘”  Ì‰ ‘”  ÌŠ ‘”  Ì‹ ‘”  ÌŒ ‘”  Ì ‘”  ÌŽ ‘”  Ì ‘”  Ì ‘”  Ì‘ ‘”  Ì’ ‘”  Ì“ ‘”  Ì” ‘”  Ì• ‘”  Ì– ‘”  Ì— ‘”  Ì˜ ‘”  Ì™ ‘”  Ìš ‘”  Ì› ‘”  Ìœ ‘”  Ì ‘”  Ìž ‘”  ÌŸ ‘”  Ì  ‘”  Ì¡ ‘”  Ì¢ ‘”  Ì£ ‘”  Ì¤ ‘”  Ì¥ ‘”  Ì¦ ‘”  Ì§ ‘”  Ì¨ ‘”  Ì© ‘”  Ìª ‘”  Ì« ‘”  Ì¬ ‘”  Ì­ ‘”  Ì® ‘”  Ì¯ ‘”  Ì° ‘”  Ì± ‘”  Ì² ‘”  Ì³ ‘”  Ì´ ‘”  Ìµ ‘”  Ì¶ ‘”  Ì· ‘”  Ì¸ ‘”  Ì¹ ‘”  Ìº ‘”  Ì» ‘”  Ì¼ ‘”  Ì½ ‘”  Ì¾ ‘”  Ì¿ ‘”  ÌÀ ‘”  ÌÁ ‘”  ÌÂ ‘”  ÌÃ ‘”  ÌÄ ‘”  ÌÅ ‘”  ÌÆ ‘”  ÌÇ ‘”  ÌÈ ‘”  ÌÉ ‘”  ÌÊ ‘”  ÌË ‘”  ÌÌ ‘”  ÌÍ ‘”  ÌÎ ‘”  ÌÏ ‘”  ÌÐ ‘”  ÌÑ ‘”  ÌÒ ‘”  ÌÓ ‘”  ÌÔ ‘”  ÌÕ ‘”  ÌÖ ‘”  Ì× ‘”  ÌØ ‘”  ÌÙ ‘”  ÌÚ ‘”  ÌÛ ‘”  ÌÜ ‘”  ÌÝ ‘”  ÌÞ ‘”  Ìß ‘”  Ìà ‘”  Ìá ‘”  Ìâ ‘”  Ìã ‘”  Ìä ‘”  Ìå ‘”  Ìæ ‘”  Ìç ‘”  Ìè ‘”  Ìé ‘”  Ìê ‘”  Ìë ‘”  Ìì ‘”  Ìí ‘”  Ìî ‘”  Ìï ‘”  Ìð ‘”  Ìñ ‘”  Ìò ‘”  Ìó ‘”  Ìô ‘”  Ìõ ‘”  Ìö ‘”  Ì÷ ‘”  Ìø ‘”  Ìù ‘”  Ìú ‘”  Ìû ‘”  Ìü ‘”  Ìý ‘”  Ìþ ‘”  Ìÿ ‘”  Í  ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í	 ‘”  Í
- ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í  ‘”  Í! ‘”  Í" ‘”  Í# ‘”  Í$ ‘”  Í% ‘”  Í& ‘”  Í' ‘”  Í( ‘”  Í) ‘”  Í* ‘”  Í+ ‘”  Í, ‘”  Í- ‘”  Í. ‘”  Í/ ‘”  Í0 ‘”  Í1 ‘”  Í2 ‘”  Í3 ‘”  Í4 ‘”  Í5 ‘”  Í6 ‘”  Í7 ‘”  Í8 ‘”  Í9 ‘”  Í: ‘”  Í; ‘”  Í< ‘”  Í= ‘”  Í> ‘”  Í? ‘”  Í@ ‘”  ÍA ‘”  ÍB ‘”  ÍC ‘”  ÍD ‘”  ÍE ‘”  ÍF ‘”  ÍG ‘”  ÍH ‘”  ÍI ‘”  ÍJ ‘”  ÍK ‘”  ÍL ‘”  ÍM ‘”  ÍN ‘”  ÍO ‘”  ÍP ‘”  ÍQ ‘”  ÍR ‘”  ÍS ‘”  ÍT ‘”  ÍU ‘”  ÍV ‘”  ÍW ‘”  ÍX ‘”  ÍY ‘”  ÍZ ‘”  Í[ ‘”  Í\ ‘”  Í] ‘”  Í^ ‘”  Í_ ‘”  Í` ‘”  Ía ‘”  Íb ‘”  Íc ‘”  Íd ‘”  Íe ‘”  Íf ‘”  Íg ‘”  Íh ‘”  Íi ‘”  Íj ‘”  Ík ‘”  Íl ‘”  Ím ‘”  Ín ‘”  Ío ‘”  Íp ‘”  Íq ‘”  Ír ‘”  Ís ‘”  Ít ‘”  Íu ‘”  Ív ‘”  Íw ‘”  Íx ‘”  Íy ‘”  Íz ‘”  Í{ ‘”  Í| ‘”  Í} ‘”  Í~ ‘”  Í ‘”  Í€ ‘”  Í ‘”  Í‚ ‘”  Íƒ ‘”  Í„ ‘”  Í… ‘”  Í† ‘”  Í‡ ‘”  Íˆ ‘”  Í‰ ‘”  ÍŠ ‘”  Í‹ ‘”  ÍŒ ‘”  Í ‘”  ÍŽ ‘”  Í ‘”  Í ‘”  Í‘ ‘”  Í’ ‘”  Í“ ‘”  Í” ‘”  Í• ‘”  Í– ‘”  Í— ‘”  Í˜ ‘”  Í™ ‘”  Íš ‘”  Í› ‘”  Íœ ‘”  Í ‘”  Íž ‘”  ÍŸ ‘”  Í  ‘”  Í¡ ‘”  Í¢ ‘”  Í£ ‘”  Í¤ ‘”  Í¥ ‘”  Í¦ ‘”  Í§ ‘”  Í¨ ‘”  Í© ‘”  Íª ‘”  Í« ‘”  Í¬ ‘”  Í­ ‘”  Í® ‘”  Í¯ ‘”  Í° ‘”  Í± ‘”  Í² ‘”  Í³ ‘”  Í´ ‘”  Íµ ‘”  Í¶ ‘”  Í· ‘”  Í¸ ‘”  Í¹ ‘”  Íº ‘”  Í» ‘”  Í¼ ‘”  Í½ ‘”  Í¾ ‘”  Í¿ ‘”  ÍÀ ‘”  ÍÁ ‘”  ÍÂ ‘”  ÍÃ ‘”  ÍÄ ‘”  ÍÅ ‘”  ÍÆ ‘”  ÍÇ ‘”  ÍÈ ‘”  ÍÉ ‘”  ÍÊ ‘”  ÍË ‘”  ÍÌ ‘”  ÍÍ ‘”  ÍÎ ‘”  ÍÏ ‘”  ÍÐ ‘”  ÍÑ ‘”  ÍÒ ‘”  ÍÓ ‘”  ÍÔ ‘”  ÍÕ ‘”  ÍÖ ‘”  Í× ‘”  ÍØ ‘”  ÍÙ ‘”  ÍÚ ‘”  ÍÛ ‘”  ÍÜ ‘”  ÍÝ ‘”  ÍÞ ‘”  Íß ‘”  Íà ‘”  Íá ‘”  Íâ ‘”  Íã ‘”  Íä ‘”  Íå ‘”  Íæ ‘”  Íç ‘”  Íè ‘”  Íé ‘”  Íê ‘”  Íë ‘”  Íì ‘”  Íí ‘”  Íî ‘”  Íï ‘”  Íð ‘”  Íñ ‘”  Íò ‘”  Íó ‘”  Íô ‘”  Íõ ‘”  Íö ‘”  Í÷ ‘”  Íø ‘”  Íù ‘”  Íú ‘”  Íû ‘”  Íü ‘”  Íý ‘”  Íþ ‘”  Íÿ ‘”  Í  ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í	 ‘”  Í
- ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í  ‘”  Í! ‘”  Í" ‘”  Í# ‘”  Í$ ‘”  Í% ‘”  Í& ‘”  Í' ‘”  Í( ‘”  Í) ‘”  Í* ‘”  Í+ ‘”  Í, ‘”  Í- ‘”  Í. ‘”  Í/ ‘”  Í0 ‘”  Í1 ‘”  Í2 ‘”  Í3 ‘”  Í4 ‘”  Í5 ‘”  Í6 ‘”  Í7 ‘”  Í8 ‘”  Í9 ‘”  Í: ‘”  Í; ‘”  Í< ‘”  Í= ‘”  Í> ‘”  Í? ‘”  Í@ ‘”  ÍA ‘”  ÍB ‘”  ÍC ‘”  ÍD ‘”  ÍE ‘”  ÍF ‘”  ÍG ‘”  ÍH ‘”  ÍI ‘”  ÍJ ‘”  ÍK ‘”  ÍL ‘”  ÍM ‘”  ÍN ‘”  ÍO ‘”  ÍP ‘”  ÍQ ‘”  ÍR ‘”  ÍS ‘”  ÍT ‘”  ÍU ‘”  ÍV ‘”  ÍW ‘”  ÍX ‘”  ÍY ‘”  ÍZ ‘”  Í[ ‘”  Í\ ‘”  Í] ‘”  Í^ ‘”  Í_ ‘”  Í` ‘”  Ía ‘”  Íb ‘”  Íc ‘”  Íd ‘”  Íe ‘”  Íf ‘”  Íg ‘”  Íh ‘”  Íi ‘”  Íj ‘”  Ík ‘”  Íl ‘”  Ím ‘”  Ín ‘”  Ío ‘”  Íp ‘”  Íq ‘”  Ír ‘”  Ís ‘”  Ít ‘”  Íu ‘”  Ív ‘”  Íw ‘”  Íx ‘”  Íy ‘”  Íz ‘”  Í{ ‘”  Í| ‘”  Í} ‘”  Í~ ‘”  Í ‘”  Í€ ‘”  Í ‘”  Í‚ ÔrJ’§missing¦pluginÃ¦genAbcÂÔ  ÔrK”²dynamicImportCache¹exportAllDeclarationCache»exportNamedDeclarationCache«importCache’ÔrL•¤type¥start£endªspecifiers¦source±ImportDeclarationÌ€Ì¢‘ÔrM”¤type¥start£end¥local¶ImportDefaultSpecifierÌ‡ÌÔrN”¤type¥start£end¤nameªIdentifierÌ‡Ì¦routerÔrO•¤type¥start£end¥value£raw§LiteralÌ“Ì¡¬@ohos.router®'@ohos.router'L±ImportDeclarationÌ¤Ì×‘M¶ImportDefaultSpecifierÌ«Ì¶NªIdentifierÌ«Ì¶«ProductItemO§LiteralÌ¼ÌÖ¸../viewmodel/ProductItemº'../viewmodel/ProductItem'
+ ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í ‘”  Í  ‘”  Í! ‘”  Í" ‘”  Í# ‘”  Í$ ‘”  Í% ‘”  Í& ‘”  Í' ‘”  Í( ‘”  Í) ‘”  Í* ‘”  Í+ ‘”  Í, ‘”  Í- ‘”  Í. ‘”  Í/ ‘”  Í0 ‘”  Í1 ‘”  Í2 ‘”  Í3 ‘”  Í4 ‘”  Í5 ‘”  Í6 ‘”  Í7 ‘”  Í8 ‘”  Í9 ‘”  Í: ‘”  Í; ÔrJ’§missing¦pluginÃ¦genAbcÂÔ  ÔrK”²dynamicImportCache¹exportAllDeclarationCache»exportNamedDeclarationCache«importCache’ÔrL•¤type¥start£endªspecifiers¦source±ImportDeclarationÌ€Ì¢‘ÔrM”¤type¥start£end¥local¶ImportDefaultSpecifierÌ‡ÌÔrN”¤type¥start£end¤nameªIdentifierÌ‡Ì¦routerÔrO•¤type¥start£end¥value£raw§LiteralÌ“Ì¡¬@ohos.router®'@ohos.router'L±ImportDeclarationÌ¤Ì×‘M¶ImportDefaultSpecifierÌ«Ì¶NªIdentifierÌ«Ì¶«ProductItemO§LiteralÌ¼ÌÖ¸../viewmodel/ProductItemº'../viewmodel/ProductItem'

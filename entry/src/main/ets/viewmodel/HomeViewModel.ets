@@ -4,7 +4,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -13,7 +13,8 @@
  * limitations under the License.
  */
 
-import { IProductItem } from './ProductItem';
+// ✅ 修复点1：去掉花括号，使用默认导入
+import ProductItem from './ProductItem';
 
 /**
  * Home page classify title data.
@@ -41,119 +42,149 @@ const swiperImage: Resource[] = [
 /**
  * Home page water flow item init data.
  */
-const waterFlowData: IProductItem[] = [
-  {
-    image_url: $r('app.media.ic_holder_50e'),
-    name: 'XXX50E',
-    discount: '',
-    price: '¥4088',
-    promotion: '',
-    bonus_points: ''
-  },
-  {
-    image_url: $r('app.media.ic_holder_xs2'),
-    name: 'XXXPadMate Xs 2 \n8GB+256GB （雅黑）',
-    discount: '',
-    price: '¥9999',
-    promotion: '限时',
-    bonus_points: ''
-  },
-  {
-    image_url: $r('app.media.ic_holder_computer'),
-    name: 'XX设备  新品优惠！新品优惠！机不可失！失不再来！快来购买！快来购买！',
-    discount: '限时省200',
-    price: '¥10099',
-    promotion: '商品',
-    bonus_points: ''
-  },
-  {
-    image_url: $r('app.media.ic_holder_mouse'),
-    name: '送给亲人  快速购买！',
-    discount: '限时省200',
-    price: '¥199',
-    promotion: '',
-    bonus_points: ''
-  },
-  {
-    image_url: $r('app.media.ic_holder_pad'),
-    name: 'XXXPad Pro',
-    discount: '',
-    price: '¥3499',
-    promotion: '',
-    bonus_points: ''
-  },
-  {
-    image_url: $r('app.media.ic_holder_mate50'),
-    name: 'XXXMate 50 8GB+256GB',
-    discount: '',
-    price: '¥5499',
-    promotion: '',
-    bonus_points: ''
-  },
-  {
-    image_url: $r('app.media.ic_holder_60pro'),
-    name: 'XXX60 Pro 新品上市！\n你值得拥有！\n限时折扣！\n速速购买！',
-    discount: '限时省200',
-    price: '¥1299',
-    promotion: '限时',
-    bonus_points: ''
-  },
-  {
-    image_url: $r('app.media.ic_holder_50e'),
-    name: 'XXX50E',
-    discount: '',
-    price: '¥4088',
-    promotion: '',
-    bonus_points: ''
-  },
-  {
-    image_url: $r('app.media.ic_holder_xs2'),
-    name: 'XXXPadMate Xs 2 \n8GB+256GB （雅黑）',
-    discount: '限时省200',
-    price: '¥9999',
-    promotion: '限时',
-    bonus_points: ''
-  },
-  {
-    image_url: $r('app.media.ic_holder_computer'),
-    name: 'XX设备  新品优惠！新品优惠！',
-    discount: '限时省200',
-    price: '¥10099',
-    promotion: '商品',
-    bonus_points: ''
-  },
-  {
-    image_url: $r('app.media.ic_holder_mouse'),
-    name: '送给亲人  快速购买！',
-    discount: '限时省200',
-    price: '¥199',
-    promotion: '限时',
-    bonus_points: '赠送积分'
-  },
-  {
-    image_url: $r('app.media.ic_holder_pad'),
-    name: 'XXXPad Pro\n限时折扣！\n速速购买！\n机不可失！失不再来！',
-    discount: '限时省200',
-    price: '¥3499',
-    promotion: '',
-    bonus_points: '赠送积分'
-  },
-  {
-    image_url: $r('app.media.ic_holder_mate50'),
-    name: 'XXXMate 50 \n8GB+256GB',
-    discount: '',
-    price: '¥5499',
-    promotion: '',
-    bonus_points: ''
-  },
-  {
-    image_url: $r('app.media.ic_holder_60pro'),
-    name: 'XXX60 Pro',
-    discount: '限时省200',
-    price: '¥1299',
-    promotion: '限时',
-    bonus_points: '',
-  }
+// ✅ 修复点2：类型改为 ProductItem[]
+const waterFlowData: ProductItem[] = [
+  // ✅ 修复点3：全部改为 new ProductItem(...) 并补全8个参数
+  new ProductItem(
+    $r('app.media.ic_holder_50e'),
+    'XXX50E',
+    '',
+    '¥4088',
+    '',
+    '',
+    '超长续航，告别电量焦虑。', // 补充简介
+    [] // 补充详情图
+  ),
+  new ProductItem(
+    $r('app.media.ic_holder_xs2'),
+    'XXXPadMate Xs 2 \n8GB+256GB （雅黑）',
+    '',
+    '¥9999',
+    '限时',
+    '',
+    '超轻薄折叠设计，展开即是沉浸大屏。',
+    []
+  ),
+  new ProductItem(
+    $r('app.media.ic_holder_computer'),
+    'XX设备  新品优惠！机不可失！',
+    '限时省200',
+    '¥10099',
+    '商品',
+    '',
+    '高性能生产力工具，办公娱乐两不误。',
+    []
+  ),
+  new ProductItem(
+    $r('app.media.ic_holder_mouse'),
+    '送给亲人  快速购买！',
+    '限时省200',
+    '¥199',
+    '',
+    '',
+    '静音无线鼠标，手感舒适。',
+    []
+  ),
+  new ProductItem(
+    $r('app.media.ic_holder_pad'),
+    'XXXPad Pro',
+    '',
+    '¥3499',
+    '',
+    '',
+    '120Hz高刷屏幕，哈曼卡顿调音。',
+    []
+  ),
+  new ProductItem(
+    $r('app.media.ic_holder_mate50'),
+    'XXXMate 50 8GB+256GB',
+    '',
+    '¥5499',
+    '',
+    '',
+    '昆仑玻璃，十档可变光圈。',
+    []
+  ),
+  new ProductItem(
+    $r('app.media.ic_holder_60pro'),
+    'XXX60 Pro 新品上市！',
+    '限时省200',
+    '¥1299',
+    '限时',
+    '',
+    '遥遥领先，卫星通话。',
+    []
+  ),
+  new ProductItem(
+    $r('app.media.ic_holder_50e'),
+    'XXX50E',
+    '',
+    '¥4088',
+    '',
+    '',
+    '备用机首选，大电池大音量。',
+    []
+  ),
+  new ProductItem(
+    $r('app.media.ic_holder_xs2'),
+    'XXXPadMate Xs 2 \n8GB+256GB （雅黑）',
+    '限时省200',
+    '¥9999',
+    '限时',
+    '',
+    '折叠旗舰，轻薄手感。',
+    []
+  ),
+  new ProductItem(
+    $r('app.media.ic_holder_computer'),
+    'XX设备  新品优惠！新品优惠！',
+    '限时省200',
+    '¥10099',
+    '商品',
+    '',
+    '设计师首选笔记本。',
+    []
+  ),
+  new ProductItem(
+    $r('app.media.ic_holder_mouse'),
+    '送给亲人  快速购买！',
+    '限时省200',
+    '¥199',
+    '限时',
+    '赠送积分',
+    '蓝牙双模连接，多设备切换。',
+    []
+  ),
+  new ProductItem(
+    $r('app.media.ic_holder_pad'),
+    'XXXPad Pro\n限时折扣！',
+    '限时省200',
+    '¥3499',
+    '',
+    '赠送积分',
+    '网课神器，护眼屏幕。',
+    []
+  ),
+  new ProductItem(
+    $r('app.media.ic_holder_mate50'),
+    'XXXMate 50 \n8GB+256GB',
+    '',
+    '¥5499',
+    '',
+    '',
+    '经典星环设计，XMAGE影像。',
+    []
+  ),
+  new ProductItem(
+    $r('app.media.ic_holder_60pro'),
+    'XXX60 Pro',
+    '限时省200',
+    '¥1299',
+    '限时',
+    '',
+    '全新玄武架构，超可靠。',
+    []
+  )
 ];
 
 export { classifyTitle, swiperImage, waterFlowData };
