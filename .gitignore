@@ -1,0 +1,58 @@
+# Build and output directories
+build/
+outputs/
+dist/
+*.hap
+*.hsp
+
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# IDE and Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+
+# Temporary files
+.temp/
+temp/
+*.tmp
+
+# HarmonyOS specific
+.hvigor/
+hvigor_modules/
+.hvigorignore
+.ohpm/
+
+# OS specific
+.DS_Store
+Thumbs.db
+*.log
+
+# Gradle wrapper
+.gradle/
+gradlew
+gradlew.bat
+
+# Java/Kotlin compiled files
+*.class
+*.jar
+*.aar
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+.env.local
